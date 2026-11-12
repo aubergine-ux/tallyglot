@@ -8,7 +8,7 @@
 import { execFileSync } from 'node:child_process';
 import { readFile, rm, readdir, writeFile } from 'node:fs/promises';
 import { dirname, join } from 'node:path';
-import { createInterface } from 'node:readline/promises';
+import { createInterface } from 'node:readline';
 import { fileURLToPath } from 'node:url';
 
 import { normalizeBaseUrl } from '../src/api.js';
@@ -21,11 +21,15 @@ const flag = (name) => {
   return i === -1 ? undefined : args[i + 1] && !args[i + 1].startsWith('--') ? args[i + 1] : true;
 };
 const yes = flag('yes') === true;
-const rl = createInterface({ input: process.stdin, output: process.stdout });
+const rl = createInterface({ input: process.stdin });
+const lines = rl[Symbol.asyncIterator]();
+// Reads one line at a time, so answers can also be piped in.
 const ask = async (question, fallback = '') => {
   if (yes) return fallback;
-  const answer = (await rl.question(`${question}${fallback ? ` [${fallback}]` : ''}: `)).trim();
-  return answer || fallback;
+  process.stdout.write(`${question}${fallback ? ` [${fallback}]` : ''}: `);
+  const { value, done } = await lines.next();
+  if (done) process.stdout.write('\n');
+  return (value || '').trim() || fallback;
 };
 const split = (v) => String(v || '').split(',').map((s) => s.trim()).filter(Boolean);
 const run = (cmd, argv, opts = {}) =>
