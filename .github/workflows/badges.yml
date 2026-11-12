@@ -1,0 +1,49 @@
+name: Update badges
+
+on:
+  schedule:
+    - cron: '17 5 * * *' # once a day; anonymous Weblate API access allows 100 requests/day
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - tallyglot.config.json
+      - scripts/**
+      - src/**
+
+permissions:
+  contents: write
+
+concurrency:
+  group: badges
+  cancel-in-progress: false
+
+jobs:
+  badges:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Fetch stats and render badges
+        run: node scripts/build-data.mjs
+        env:
+          # Optional. JSON object of API tokens keyed by instance id, e.g.
+          # {"hosted":"wlu_...","fedora":"wlu_..."}
+          WEBLATE_TOKENS: ${{ secrets.WEBLATE_TOKENS }}
+
+      - name: Commit changes
+        run: |
+          git add data badges
+          if git diff --cached --quiet; then
+            echo "Nothing changed."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Update translation stats and badges"
+          git pull --rebase --autostash
+          git push
