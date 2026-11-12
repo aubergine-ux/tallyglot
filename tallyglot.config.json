@@ -1,0 +1,15 @@
+{
+  "language": "sq",
+  "usernames": [],
+  "instances": [
+    {
+      "id": "hosted",
+      "usernames": [],
+      "pinned": ["weblate/application", "weblate/glossary"]
+    },
+    { "id": "codeberg", "usernames": [], "pinned": [] },
+    { "id": "fedora", "usernames": [], "pinned": [] }
+  ],
+  "staleDays": 30,
+  "cacheHours": 12
+}
