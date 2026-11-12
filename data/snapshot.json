@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generatedAt": "2026-11-12T09:13:32.330Z",
+ "generatedAt": "2026-11-12T09:21:41.907Z",
  "language": {
   "code": "sq",
   "name": "Albanian"
@@ -9,90 +9,548 @@
   "hosted": {
    "name": "Hosted Weblate",
    "url": "https://hosted.weblate.org",
-   "fingerprint": "[\"https://hosted.weblate.org\",\"sq\",[],[\"weblate/application\",\"weblate/glossary\"]]",
-   "updatedAt": "2026-11-12T09:13:32.330Z",
+   "fingerprint": "[\"https://hosted.weblate.org\",\"sq\",[\"aubergine-ux\"],[]]",
+   "updatedAt": "2026-11-12T09:21:41.907Z",
    "entries": [
     {
-     "id": "hosted:weblate/application",
-     "apiUrl": "https://hosted.weblate.org/api/translations/weblate/application/sq/",
+     "id": "hosted:adventurelog/web-app",
+     "apiUrl": "https://hosted.weblate.org/api/translations/adventurelog/web-app/sq/",
      "instance": "hosted",
      "project": {
-      "slug": "weblate",
-      "name": "Weblate",
-      "url": "https://hosted.weblate.org/projects/weblate/"
+      "slug": "adventurelog",
+      "name": "AdventureLog",
+      "url": "https://hosted.weblate.org/projects/adventurelog/"
      },
      "component": {
-      "slug": "application",
-      "name": "Application"
+      "slug": "web-app",
+      "name": "Web App"
      },
      "language": {
       "code": "sq",
       "name": "Albanian"
      },
-     "total": 5886,
-     "translated": 5249,
-     "fuzzy": 14,
-     "untranslated": 623,
-     "translatedPercent": 89.1,
-     "review": true,
-     "approved": 0,
-     "approvedPercent": 0,
-     "failing": 306,
+     "total": 2007,
+     "translated": 1612,
+     "fuzzy": 5,
+     "untranslated": 390,
+     "translatedPercent": 80.3,
+     "review": false,
+     "approved": null,
+     "approvedPercent": null,
+     "failing": 37,
      "suggestions": 0,
-     "lastChange": "2026-11-10T15:37:20.076Z",
-     "lastContribution": null,
-     "webUrl": "https://hosted.weblate.org/projects/weblate/application/sq/",
-     "translateUrl": "https://hosted.weblate.org/translate/weblate/application/sq/",
-     "pinned": true,
-     "fetchedAt": "2026-11-12T09:13:32.330Z"
+     "lastChange": "2026-11-05T02:56:18.272Z",
+     "lastContribution": "2026-08-20T14:38:49.150Z",
+     "webUrl": "https://hosted.weblate.org/projects/adventurelog/web-app/sq/",
+     "translateUrl": "https://hosted.weblate.org/translate/adventurelog/web-app/sq/",
+     "pinned": false,
+     "fetchedAt": "2026-11-12T09:21:41.907Z"
     },
     {
-     "id": "hosted:weblate/glossary",
-     "apiUrl": "https://hosted.weblate.org/api/translations/weblate/glossary/sq/",
+     "id": "hosted:aurora-store/aurorastore-translations",
+     "apiUrl": "https://hosted.weblate.org/api/translations/aurora-store/aurorastore-translations/sq/",
      "instance": "hosted",
      "project": {
-      "slug": "weblate",
-      "name": "Weblate",
-      "url": "https://hosted.weblate.org/projects/weblate/"
+      "slug": "aurora-store",
+      "name": "Aurora Store",
+      "url": "https://hosted.weblate.org/projects/aurora-store/"
+     },
+     "component": {
+      "slug": "aurorastore-translations",
+      "name": "Android"
+     },
+     "language": {
+      "code": "sq",
+      "name": "Albanian"
+     },
+     "total": 661,
+     "translated": 621,
+     "fuzzy": 0,
+     "untranslated": 40,
+     "translatedPercent": 93.9,
+     "review": false,
+     "approved": null,
+     "approvedPercent": null,
+     "failing": 0,
+     "suggestions": 0,
+     "lastChange": "2026-11-03T20:26:15.139Z",
+     "lastContribution": "2026-08-01T12:14:42.168Z",
+     "webUrl": "https://hosted.weblate.org/projects/aurora-store/aurorastore-translations/sq/",
+     "translateUrl": "https://hosted.weblate.org/translate/aurora-store/aurorastore-translations/sq/",
+     "pinned": false,
+     "fetchedAt": "2026-11-12T09:21:41.907Z"
+    },
+    {
+     "id": "hosted:f-droid/f-droid",
+     "apiUrl": "https://hosted.weblate.org/api/translations/f-droid/f-droid/sq/",
+     "instance": "hosted",
+     "project": {
+      "slug": "f-droid",
+      "name": "F-Droid",
+      "url": "https://hosted.weblate.org/projects/f-droid/"
+     },
+     "component": {
+      "slug": "f-droid",
+      "name": "F-Droid"
+     },
+     "language": {
+      "code": "sq",
+      "name": "Albanian"
+     },
+     "total": 472,
+     "translated": 461,
+     "fuzzy": 0,
+     "untranslated": 11,
+     "translatedPercent": 97.6,
+     "review": true,
+     "approved": 461,
+     "approvedPercent": 97.6,
+     "failing": 0,
+     "suggestions": 0,
+     "lastChange": "2026-11-10T22:14:49.480Z",
+     "lastContribution": "2026-08-30T02:41:00.350Z",
+     "webUrl": "https://hosted.weblate.org/projects/f-droid/f-droid/sq/",
+     "translateUrl": "https://hosted.weblate.org/translate/f-droid/f-droid/sq/",
+     "pinned": false,
+     "fetchedAt": "2026-11-12T09:21:41.907Z"
+    },
+    {
+     "id": "hosted:grit/strings",
+     "apiUrl": "https://hosted.weblate.org/api/translations/grit/strings/sq/",
+     "instance": "hosted",
+     "project": {
+      "slug": "grit",
+      "name": "Grit",
+      "url": "https://hosted.weblate.org/projects/grit/"
+     },
+     "component": {
+      "slug": "strings",
+      "name": "strings"
+     },
+     "language": {
+      "code": "sq",
+      "name": "Albanian"
+     },
+     "total": 103,
+     "translated": 86,
+     "fuzzy": 1,
+     "untranslated": 16,
+     "translatedPercent": 83.4,
+     "review": false,
+     "approved": null,
+     "approvedPercent": null,
+     "failing": 0,
+     "suggestions": 0,
+     "lastChange": "2026-10-22T08:03:42.473Z",
+     "lastContribution": "2026-08-15T17:30:43.239Z",
+     "webUrl": "https://hosted.weblate.org/projects/grit/strings/sq/",
+     "translateUrl": "https://hosted.weblate.org/translate/grit/strings/sq/",
+     "pinned": false,
+     "fetchedAt": "2026-11-12T09:21:41.907Z"
+    },
+    {
+     "id": "hosted:immich/immich",
+     "apiUrl": "https://hosted.weblate.org/api/translations/immich/immich/sq/",
+     "instance": "hosted",
+     "project": {
+      "slug": "immich",
+      "name": "Immich",
+      "url": "https://hosted.weblate.org/projects/immich/"
+     },
+     "component": {
+      "slug": "immich",
+      "name": "immich"
+     },
+     "language": {
+      "code": "sq",
+      "name": "Albanian"
+     },
+     "total": 2419,
+     "translated": 1578,
+     "fuzzy": 3,
+     "untranslated": 838,
+     "translatedPercent": 65.2,
+     "review": false,
+     "approved": null,
+     "approvedPercent": null,
+     "failing": 1,
+     "suggestions": 0,
+     "lastChange": "2026-11-06T17:47:25.955Z",
+     "lastContribution": "2026-08-30T02:41:59.527Z",
+     "webUrl": "https://hosted.weblate.org/projects/immich/immich/sq/",
+     "translateUrl": "https://hosted.weblate.org/translate/immich/immich/sq/",
+     "pinned": false,
+     "fetchedAt": "2026-11-12T09:21:41.907Z"
+    },
+    {
+     "id": "hosted:mona/mona-app",
+     "apiUrl": "https://hosted.weblate.org/api/translations/mona/mona-app/sq/",
+     "instance": "hosted",
+     "project": {
+      "slug": "mona",
+      "name": "Mona",
+      "url": "https://hosted.weblate.org/projects/mona/"
+     },
+     "component": {
+      "slug": "mona-app",
+      "name": "Mona App"
+     },
+     "language": {
+      "code": "sq",
+      "name": "Albanian"
+     },
+     "total": 306,
+     "translated": 288,
+     "fuzzy": 0,
+     "untranslated": 18,
+     "translatedPercent": 94.1,
+     "review": false,
+     "approved": null,
+     "approvedPercent": null,
+     "failing": 1,
+     "suggestions": 0,
+     "lastChange": "2026-11-04T19:21:37.743Z",
+     "lastContribution": "2026-09-22T12:41:50.426Z",
+     "webUrl": "https://hosted.weblate.org/projects/mona/mona-app/sq/",
+     "translateUrl": "https://hosted.weblate.org/translate/mona/mona-app/sq/",
+     "pinned": false,
+     "fetchedAt": "2026-11-12T09:21:41.907Z"
+    },
+    {
+     "id": "hosted:next-player/android-strings-core",
+     "apiUrl": "https://hosted.weblate.org/api/translations/next-player/android-strings-core/sq/",
+     "instance": "hosted",
+     "project": {
+      "slug": "next-player",
+      "name": "Next Player",
+      "url": "https://hosted.weblate.org/projects/next-player/"
+     },
+     "component": {
+      "slug": "android-strings-core",
+      "name": "Android Strings Core"
+     },
+     "language": {
+      "code": "sq",
+      "name": "Albanian"
+     },
+     "total": 525,
+     "translated": 428,
+     "fuzzy": 3,
+     "untranslated": 94,
+     "translatedPercent": 81.5,
+     "review": false,
+     "approved": null,
+     "approvedPercent": null,
+     "failing": 0,
+     "suggestions": 0,
+     "lastChange": "2026-11-06T18:03:41.338Z",
+     "lastContribution": "2026-08-14T15:08:24.780Z",
+     "webUrl": "https://hosted.weblate.org/projects/next-player/android-strings-core/sq/",
+     "translateUrl": "https://hosted.weblate.org/translate/next-player/android-strings-core/sq/",
+     "pinned": false,
+     "fetchedAt": "2026-11-12T09:21:41.907Z"
+    },
+    {
+     "id": "hosted:pfa/notes%252Fnotes-android-app",
+     "apiUrl": "https://hosted.weblate.org/api/translations/pfa/notes%252Fnotes-android-app/sq/",
+     "instance": "hosted",
+     "project": {
+      "slug": "pfa",
+      "name": "Privacy Friendly Apps",
+      "url": "https://hosted.weblate.org/projects/pfa/"
+     },
+     "component": {
+      "slug": "notes-android-app",
+      "name": "Notes android app"
+     },
+     "language": {
+      "code": "sq",
+      "name": "Albanian"
+     },
+     "total": 187,
+     "translated": 187,
+     "fuzzy": 0,
+     "untranslated": 0,
+     "translatedPercent": 100,
+     "review": false,
+     "approved": null,
+     "approvedPercent": null,
+     "failing": 0,
+     "suggestions": 0,
+     "lastChange": "2026-08-02T13:01:49.561Z",
+     "lastContribution": "2026-08-01T12:07:11.036Z",
+     "webUrl": "https://hosted.weblate.org/projects/pfa/notes/notes-android-app/sq/",
+     "translateUrl": "https://hosted.weblate.org/translate/pfa/notes/notes-android-app/sq/",
+     "pinned": false,
+     "fetchedAt": "2026-11-12T09:21:41.907Z"
+    },
+    {
+     "id": "hosted:prismlauncher/launcher",
+     "apiUrl": "https://hosted.weblate.org/api/translations/prismlauncher/launcher/sq/",
+     "instance": "hosted",
+     "project": {
+      "slug": "prismlauncher",
+      "name": "Prism Launcher",
+      "url": "https://hosted.weblate.org/projects/prismlauncher/"
+     },
+     "component": {
+      "slug": "launcher",
+      "name": "Launcher"
+     },
+     "language": {
+      "code": "sq",
+      "name": "Albanian"
+     },
+     "total": 2581,
+     "translated": 2373,
+     "fuzzy": 19,
+     "untranslated": 189,
+     "translatedPercent": 91.9,
+     "review": false,
+     "approved": null,
+     "approvedPercent": null,
+     "failing": 64,
+     "suggestions": 19,
+     "lastChange": "2026-11-12T00:02:53.928Z",
+     "lastContribution": "2026-08-01T12:14:23.021Z",
+     "webUrl": "https://hosted.weblate.org/projects/prismlauncher/launcher/sq/",
+     "translateUrl": "https://hosted.weblate.org/translate/prismlauncher/launcher/sq/",
+     "pinned": false,
+     "fetchedAt": "2026-11-12T09:21:41.907Z"
+    },
+    {
+     "id": "hosted:readyou/android-strings",
+     "apiUrl": "https://hosted.weblate.org/api/translations/readyou/android-strings/sq/",
+     "instance": "hosted",
+     "project": {
+      "slug": "readyou",
+      "name": "ReadYou",
+      "url": "https://hosted.weblate.org/projects/readyou/"
+     },
+     "component": {
+      "slug": "android-strings",
+      "name": "Android strings"
+     },
+     "language": {
+      "code": "sq",
+      "name": "Albanian"
+     },
+     "total": 375,
+     "translated": 375,
+     "fuzzy": 0,
+     "untranslated": 0,
+     "translatedPercent": 100,
+     "review": false,
+     "approved": null,
+     "approvedPercent": null,
+     "failing": 0,
+     "suggestions": 0,
+     "lastChange": "2026-08-20T19:52:16.458Z",
+     "lastContribution": "2026-08-20T14:39:44.675Z",
+     "webUrl": "https://hosted.weblate.org/projects/readyou/android-strings/sq/",
+     "translateUrl": "https://hosted.weblate.org/translate/readyou/android-strings/sq/",
+     "pinned": false,
+     "fetchedAt": "2026-11-12T09:21:41.907Z"
+    },
+    {
+     "id": "hosted:seal/glossary",
+     "apiUrl": "https://hosted.weblate.org/api/translations/seal/glossary/sq/",
+     "instance": "hosted",
+     "project": {
+      "slug": "seal",
+      "name": "Seal",
+      "url": "https://hosted.weblate.org/projects/seal/"
      },
      "component": {
       "slug": "glossary",
-      "name": "Weblate"
+      "name": "Seal"
      },
      "language": {
       "code": "sq",
       "name": "Albanian"
      },
-     "total": 98,
-     "translated": 87,
+     "total": 7,
+     "translated": 7,
      "fuzzy": 0,
-     "untranslated": 11,
-     "translatedPercent": 88.7,
-     "review": true,
-     "approved": 0,
-     "approvedPercent": 0,
+     "untranslated": 0,
+     "translatedPercent": 100,
+     "review": false,
+     "approved": null,
+     "approvedPercent": null,
      "failing": 0,
      "suggestions": 0,
-     "lastChange": "2026-11-07T17:31:58.334Z",
-     "lastContribution": null,
-     "webUrl": "https://hosted.weblate.org/projects/weblate/glossary/sq/",
-     "translateUrl": "https://hosted.weblate.org/translate/weblate/glossary/sq/",
-     "pinned": true,
-     "fetchedAt": "2026-11-12T09:13:32.330Z"
+     "lastChange": "2026-09-17T10:30:07.827Z",
+     "lastContribution": "2026-08-26T11:50:16.161Z",
+     "webUrl": "https://hosted.weblate.org/projects/seal/glossary/sq/",
+     "translateUrl": "https://hosted.weblate.org/translate/seal/glossary/sq/",
+     "pinned": false,
+     "fetchedAt": "2026-11-12T09:21:41.907Z"
+    },
+    {
+     "id": "hosted:seal/strings",
+     "apiUrl": "https://hosted.weblate.org/api/translations/seal/strings/sq/",
+     "instance": "hosted",
+     "project": {
+      "slug": "seal",
+      "name": "Seal",
+      "url": "https://hosted.weblate.org/projects/seal/"
+     },
+     "component": {
+      "slug": "strings",
+      "name": "strings"
+     },
+     "language": {
+      "code": "sq",
+      "name": "Albanian"
+     },
+     "total": 433,
+     "translated": 433,
+     "fuzzy": 0,
+     "untranslated": 0,
+     "translatedPercent": 100,
+     "review": false,
+     "approved": null,
+     "approvedPercent": null,
+     "failing": 0,
+     "suggestions": 0,
+     "lastChange": "2026-08-26T12:51:27.676Z",
+     "lastContribution": "2026-08-26T11:47:23.461Z",
+     "webUrl": "https://hosted.weblate.org/projects/seal/strings/sq/",
+     "translateUrl": "https://hosted.weblate.org/translate/seal/strings/sq/",
+     "pinned": false,
+     "fetchedAt": "2026-11-12T09:21:41.907Z"
+    },
+    {
+     "id": "hosted:thunder/thunder",
+     "apiUrl": "https://hosted.weblate.org/api/translations/thunder/thunder/sq/",
+     "instance": "hosted",
+     "project": {
+      "slug": "thunder",
+      "name": "Thunder",
+      "url": "https://hosted.weblate.org/projects/thunder/"
+     },
+     "component": {
+      "slug": "thunder",
+      "name": "Thunder"
+     },
+     "language": {
+      "code": "sq",
+      "name": "Albanian"
+     },
+     "total": 968,
+     "translated": 963,
+     "fuzzy": 0,
+     "untranslated": 5,
+     "translatedPercent": 99.4,
+     "review": false,
+     "approved": null,
+     "approvedPercent": null,
+     "failing": 0,
+     "suggestions": 0,
+     "lastChange": "2026-08-03T16:34:45.328Z",
+     "lastContribution": "2026-07-07T15:45:30.243Z",
+     "webUrl": "https://hosted.weblate.org/projects/thunder/thunder/sq/",
+     "translateUrl": "https://hosted.weblate.org/translate/thunder/thunder/sq/",
+     "pinned": false,
+     "fetchedAt": "2026-11-12T09:21:41.907Z"
+    },
+    {
+     "id": "hosted:trale/localizations",
+     "apiUrl": "https://hosted.weblate.org/api/translations/trale/localizations/sq/",
+     "instance": "hosted",
+     "project": {
+      "slug": "trale",
+      "name": "trale",
+      "url": "https://hosted.weblate.org/projects/trale/"
+     },
+     "component": {
+      "slug": "localizations",
+      "name": "localizations"
+     },
+     "language": {
+      "code": "sq",
+      "name": "Albanian"
+     },
+     "total": 272,
+     "translated": 263,
+     "fuzzy": 0,
+     "untranslated": 9,
+     "translatedPercent": 96.6,
+     "review": false,
+     "approved": null,
+     "approvedPercent": null,
+     "failing": 0,
+     "suggestions": 0,
+     "lastChange": "2026-10-04T09:51:52.939Z",
+     "lastContribution": "2026-09-22T12:42:51.769Z",
+     "webUrl": "https://hosted.weblate.org/projects/trale/localizations/sq/",
+     "translateUrl": "https://hosted.weblate.org/translate/trale/localizations/sq/",
+     "pinned": false,
+     "fetchedAt": "2026-11-12T09:21:41.907Z"
     }
    ],
    "known": {
-    "users": {},
-    "translations": {},
+    "users": {
+     "aubergine-ux": {
+      "before": "2026-07-07T15:45:30.242Z",
+      "since": "2026-11-12T09:21:41.907Z"
+     }
+    },
+    "translations": {
+     "https://hosted.weblate.org/api/translations/trale/localizations/sq/": {
+      "lastContribution": "2026-09-22T12:42:51.769Z"
+     },
+     "https://hosted.weblate.org/api/translations/mona/mona-app/sq/": {
+      "lastContribution": "2026-09-22T12:41:50.426Z"
+     },
+     "https://hosted.weblate.org/api/translations/immich/immich/sq/": {
+      "lastContribution": "2026-08-30T02:41:59.527Z"
+     },
+     "https://hosted.weblate.org/api/translations/f-droid/f-droid/sq/": {
+      "lastContribution": "2026-08-30T02:41:00.350Z"
+     },
+     "https://hosted.weblate.org/api/translations/seal/glossary/sq/": {
+      "lastContribution": "2026-08-26T11:50:16.161Z"
+     },
+     "https://hosted.weblate.org/api/translations/seal/strings/sq/": {
+      "lastContribution": "2026-08-26T11:47:23.461Z"
+     },
+     "https://hosted.weblate.org/api/translations/readyou/android-strings/sq/": {
+      "lastContribution": "2026-08-20T14:39:44.675Z"
+     },
+     "https://hosted.weblate.org/api/translations/adventurelog/web-app/sq/": {
+      "lastContribution": "2026-08-20T14:38:49.150Z"
+     },
+     "https://hosted.weblate.org/api/translations/grit/strings/sq/": {
+      "lastContribution": "2026-08-15T17:30:43.239Z"
+     },
+     "https://hosted.weblate.org/api/translations/next-player/android-strings-core/sq/": {
+      "lastContribution": "2026-08-14T15:08:24.780Z"
+     },
+     "https://hosted.weblate.org/api/translations/aurora-store/aurorastore-translations/sq/": {
+      "lastContribution": "2026-08-01T12:14:42.168Z"
+     },
+     "https://hosted.weblate.org/api/translations/prismlauncher/launcher/sq/": {
+      "lastContribution": "2026-08-01T12:14:23.021Z"
+     },
+     "https://hosted.weblate.org/api/translations/pfa/notes%252Fnotes-android-app/sq/": {
+      "lastContribution": "2026-08-01T12:07:11.036Z"
+     },
+     "https://hosted.weblate.org/api/translations/thunder/thunder/sq/": {
+      "lastContribution": "2026-07-07T15:45:30.243Z"
+     }
+    },
     "pins": {},
     "missing": {}
    },
-   "errors": []
+   "errors": [
+    "older contribution history is still being read; more components may appear on the next run"
+   ]
   },
   "codeberg": {
    "name": "Codeberg Translate",
    "url": "https://translate.codeberg.org",
-   "fingerprint": "[\"https://translate.codeberg.org\",\"sq\",[],[]]",
+   "fingerprint": "[\"https://translate.codeberg.org\",\"sq\",[\"aubergine-ux\"],[]]",
    "updatedAt": "2026-11-12T08:54:28.105Z",
    "entries": [],
    "known": {
@@ -101,21 +559,9 @@
     "pins": {},
     "missing": {}
    },
-   "errors": []
-  },
-  "fedora": {
-   "name": "Fedora Weblate",
-   "url": "https://translate.fedoraproject.org",
-   "fingerprint": "[\"https://translate.fedoraproject.org\",\"sq\",[],[]]",
-   "updatedAt": "2026-11-12T08:54:28.105Z",
-   "entries": [],
-   "known": {
-    "users": {},
-    "translations": {},
-    "pins": {},
-    "missing": {}
-   },
-   "errors": []
+   "errors": [
+    "rate limit reached, some component(s) not refreshed this run (add a token to WEBLATE_TOKENS to avoid this)"
+   ]
   }
  }
 }
