@@ -31,9 +31,18 @@ const ask = async (question, fallback = '') => {
   if (done) process.stdout.write('\n');
   return (value || '').trim() || fallback;
 };
-const split = (v) => String(v || '').split(',').map((s) => s.trim()).filter(Boolean);
+const split = (v) =>
+  String(v || '')
+    .split(',')
+    .map((s) => s.trim())
+    .filter(Boolean);
 const run = (cmd, argv, opts = {}) =>
-  execFileSync(cmd, argv, { cwd: root, encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'], ...opts }).trim();
+  execFileSync(cmd, argv, {
+    cwd: root,
+    encoding: 'utf8',
+    stdio: ['ignore', 'pipe', 'pipe'],
+    ...opts,
+  }).trim();
 const tryRun = (...a) => {
   try {
     return run(...a);
@@ -44,7 +53,10 @@ const tryRun = (...a) => {
 
 console.log('\nTallyglot setup\n');
 
-const language = await ask('Language code (as used in Weblate URLs, e.g. sq, pt_BR)', flag('lang') || '');
+const language = await ask(
+  'Language code (as used in Weblate URLs, e.g. sq, pt_BR)',
+  flag('lang') || '',
+);
 if (!language) {
   console.error('A language code is required.');
   process.exit(1);
@@ -53,7 +65,10 @@ const usernames = split(await ask('Your Weblate username(s), comma separated', f
 
 console.log(`\nKnown instances: ${PRESETS.map((p) => `${p.id} (${p.name})`).join(', ')}`);
 const chosen = split(
-  await ask('Instances to track: ids from the list and/or full URLs', flag('instances') || 'hosted'),
+  await ask(
+    'Instances to track: ids from the list and/or full URLs',
+    flag('instances') || 'hosted',
+  ),
 );
 const instances = [];
 for (const item of chosen) {
@@ -63,7 +78,10 @@ for (const item of chosen) {
   const own = split(await ask(`  Username on ${label}, if different`, ''));
   if (own.length) entry.usernames = own;
   const pinned = split(
-    await ask(`  Projects to always show on ${label} (project or project/component)`, flag('pin') && chosen.length === 1 ? flag('pin') : ''),
+    await ask(
+      `  Projects to always show on ${label} (project or project/component)`,
+      flag('pin') && chosen.length === 1 ? flag('pin') : '',
+    ),
   );
   entry.pinned = pinned;
   instances.push(entry);
@@ -86,7 +104,7 @@ console.log('\n✓ Wrote tallyglot.config.json');
 
 // Data and badges from the repository this was forked from no longer apply.
 await rm(join(root, 'data', 'snapshot.json'), { force: true });
-for (const file of (await readdir(join(root, 'badges')).catch(() => []))) {
+for (const file of await readdir(join(root, 'badges')).catch(() => [])) {
   if (file.endsWith('.svg')) await rm(join(root, 'badges', file));
 }
 
@@ -100,7 +118,9 @@ if (!repo) {
   process.exit(0);
 }
 
-const go = (await ask(`\nCommit, push and publish ${repo} on GitHub Pages now? (y/n)`, 'y')).toLowerCase();
+const go = (
+  await ask(`\nCommit, push and publish ${repo} on GitHub Pages now? (y/n)`, 'y')
+).toLowerCase();
 rl.close();
 if (!go.startsWith('y')) process.exit(0);
 
@@ -109,7 +129,9 @@ const step = (label, fn) => {
     fn();
     console.log(`✓ ${label}`);
   } catch (err) {
-    console.log(`! ${label} failed: ${(err.stderr || err.message || '').toString().trim().split('\n')[0]}`);
+    console.log(
+      `! ${label} failed: ${(err.stderr || err.message || '').toString().trim().split('\n')[0]}`,
+    );
   }
 };
 const branch = run('git', ['rev-parse', '--abbrev-ref', 'HEAD']);
@@ -122,14 +144,25 @@ step('Committed and pushed the config', () => {
 });
 step('Enabled GitHub Pages', () => {
   if (tryRun('gh', ['api', `repos/${repo}/pages`]) === null) {
-    run('gh', ['api', '-X', 'POST', `repos/${repo}/pages`, '-f', `source[branch]=${branch}`, '-f', 'source[path]=/']);
+    run('gh', [
+      'api',
+      '-X',
+      'POST',
+      `repos/${repo}/pages`,
+      '-f',
+      `source[branch]=${branch}`,
+      '-f',
+      'source[path]=/',
+    ]);
   }
 });
 step('Enabled the badge workflow', () => {
   tryRun('gh', ['api', '-X', 'PUT', `repos/${repo}/actions/permissions`, '-F', 'enabled=true']);
   run('gh', ['workflow', 'enable', 'badges.yml']);
 });
-step('Started the first badge run', () => run('gh', ['workflow', 'run', 'badges.yml', '--ref', branch]));
+step('Started the first badge run', () =>
+  run('gh', ['workflow', 'run', 'badges.yml', '--ref', branch]),
+);
 
 const [owner, name] = repo.split('/');
 // Ask GitHub for the address: accounts with a custom domain don't use github.io.

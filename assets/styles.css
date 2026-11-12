@@ -735,7 +735,9 @@ dialog form {
   font-size: 0.9rem;
   opacity: 0;
   pointer-events: none;
-  transition: opacity 0.2s, transform 0.2s;
+  transition:
+    opacity 0.2s,
+    transform 0.2s;
   max-width: calc(100% - 32px);
 }
 #toast.show {

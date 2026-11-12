@@ -15,14 +15,14 @@ export function textWidth(text) {
     else if (WIDTHS.wide.includes(ch)) w += 10.6;
     else if (/[A-Z]/.test(ch)) w += 7.8;
     else if (/[0-9]/.test(ch)) w += 7;
-    else if (ch.charCodeAt(0) > 0x2e7f) w += 11; // CJK and other wide scripts
+    else if (ch.charCodeAt(0) > 0x2e7f)
+      w += 11; // CJK and other wide scripts
     else w += 6.6;
   }
   return w;
 }
 
-const esc = (s) =>
-  String(s).replace(/[&<>"']/g, (c) => `&#${c.charCodeAt(0)};`);
+const esc = (s) => String(s).replace(/[&<>"']/g, (c) => `&#${c.charCodeAt(0)};`);
 
 export function percentColor(percent) {
   if (percent >= 100) return '#2f9e44';
@@ -87,6 +87,9 @@ export function projectBadge({ group, languageCode }) {
 }
 
 export function badgeFileName(group) {
-  const safe = (s) => String(s).toLowerCase().replace(/[^a-z0-9_-]+/g, '-');
+  const safe = (s) =>
+    String(s)
+      .toLowerCase()
+      .replace(/[^a-z0-9_-]+/g, '-');
   return `${safe(group.instance)}--${safe(group.project.slug)}.svg`;
 }

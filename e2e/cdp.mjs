@@ -7,7 +7,13 @@ import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 
 export function findChrome() {
-  const names = [process.env.CHROME_BIN, 'chromium', 'chromium-browser', 'google-chrome', 'google-chrome-stable'];
+  const names = [
+    process.env.CHROME_BIN,
+    'chromium',
+    'chromium-browser',
+    'google-chrome',
+    'google-chrome-stable',
+  ];
   for (const name of names.filter(Boolean)) {
     const found = spawnSync('which', [name], { encoding: 'utf8' });
     if (found.status === 0) return found.stdout.trim();
@@ -78,7 +84,11 @@ export async function launch({ width = 1280, height = 900, scale = 1 } = {}) {
     sleep,
     /** Run an expression in the page and return its (JSON-serialisable) value. */
     async eval(expression) {
-      const res = await cmd('Runtime.evaluate', { expression, awaitPromise: true, returnByValue: true });
+      const res = await cmd('Runtime.evaluate', {
+        expression,
+        awaitPromise: true,
+        returnByValue: true,
+      });
       if (res.exceptionDetails) {
         throw new Error(res.exceptionDetails.exception?.description || res.exceptionDetails.text);
       }
@@ -97,11 +107,18 @@ export async function launch({ width = 1280, height = 900, scale = 1 } = {}) {
       }
     },
     click: (selector) =>
-      page.eval(`(() => { const el = document.querySelector(${JSON.stringify(selector)}); if (!el) throw new Error('No element: ' + ${JSON.stringify(selector)}); el.click(); })()`),
+      page.eval(
+        `(() => { const el = document.querySelector(${JSON.stringify(selector)}); if (!el) throw new Error('No element: ' + ${JSON.stringify(selector)}); el.click(); })()`,
+      ),
     /** Set a form control's value the way typing would. */
     fill: (selector, value) =>
-      page.eval(`(() => { const el = document.querySelector(${JSON.stringify(selector)}); if (!el) throw new Error('No element: ' + ${JSON.stringify(selector)}); el.value = ${JSON.stringify(value)}; el.dispatchEvent(new Event('input', { bubbles: true })); el.dispatchEvent(new Event('change', { bubbles: true })); })()`),
-    text: (selector) => page.eval(`document.querySelector(${JSON.stringify(selector)})?.textContent.replace(/\\s+/g, ' ').trim() ?? null`),
+      page.eval(
+        `(() => { const el = document.querySelector(${JSON.stringify(selector)}); if (!el) throw new Error('No element: ' + ${JSON.stringify(selector)}); el.value = ${JSON.stringify(value)}; el.dispatchEvent(new Event('input', { bubbles: true })); el.dispatchEvent(new Event('change', { bubbles: true })); })()`,
+      ),
+    text: (selector) =>
+      page.eval(
+        `document.querySelector(${JSON.stringify(selector)})?.textContent.replace(/\\s+/g, ' ').trim() ?? null`,
+      ),
     count: (selector) => page.eval(`document.querySelectorAll(${JSON.stringify(selector)}).length`),
     async screenshot() {
       const { data } = await cmd('Page.captureScreenshot', { format: 'png' });

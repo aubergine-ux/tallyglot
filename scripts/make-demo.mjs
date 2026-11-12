@@ -46,7 +46,19 @@ const snapshot = {
 for (const [id, inst] of Object.entries(instances)) {
   snapshot.instances[id] = { ...inst, updatedAt: snapshot.generatedAt, entries: [], errors: [] };
 }
-for (const [inst, project, component, total, translated, fuzzy, approved, failing, active, own, pinned] of rows) {
+for (const [
+  inst,
+  project,
+  component,
+  total,
+  translated,
+  fuzzy,
+  approved,
+  failing,
+  active,
+  own,
+  pinned,
+] of rows) {
   const base = instances[inst].url;
   const path = `${slug(project)}/${slug(component)}`;
   snapshot.instances[inst].entries.push({

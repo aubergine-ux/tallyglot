@@ -94,12 +94,14 @@ async function main() {
     const notes = [...result.errors];
     if (result.limited) {
       notes.push(
-        `rate limit reached, ${result.pending} component(s) kept from the previous run` +
+        `rate limit reached, ${result.pending || 'some'} component(s) not refreshed this run` +
           (tokens[instance.id] ? '' : ' (add a token to WEBLATE_TOKENS to avoid this)'),
       );
     }
     if (result.moreHistory) {
-      notes.push('older contribution history is still being read; more components may appear on the next run');
+      notes.push(
+        'older contribution history is still being read; more components may appear on the next run',
+      );
     }
     if (result.limited || result.unreachable) failed += 1;
     console.log(
@@ -129,7 +131,10 @@ async function main() {
   const badgeDir = join(root, 'badges');
   await mkdir(badgeDir, { recursive: true });
   const wanted = new Map();
-  wanted.set('overall.svg', overallBadge({ label: config.badgeLabel || snapshot.language.name, stats }));
+  wanted.set(
+    'overall.svg',
+    overallBadge({ label: config.badgeLabel || snapshot.language.name, stats }),
+  );
   for (const group of groupByProject(entries)) {
     wanted.set(badgeFileName(group), projectBadge({ group, languageCode: config.language }));
   }

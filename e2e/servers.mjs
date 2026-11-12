@@ -55,7 +55,12 @@ export async function startWeblate() {
     component: {
       slug: component,
       name: component[0].toUpperCase() + component.slice(1),
-      project: { slug: project, name: project[0].toUpperCase() + project.slice(1), web_url: `${base}/projects/${project}/`, translation_review: review },
+      project: {
+        slug: project,
+        name: project[0].toUpperCase() + project.slice(1),
+        web_url: `${base}/projects/${project}/`,
+        translation_review: review,
+      },
     },
     total,
     translated,
@@ -81,13 +86,18 @@ export async function startWeblate() {
       res.end();
       return;
     }
-    state.requests.push({ path: url.pathname, query: Object.fromEntries(url.searchParams), auth: req.headers.authorization || null });
+    state.requests.push({
+      path: url.pathname,
+      query: Object.fromEntries(url.searchParams),
+      auth: req.headers.authorization || null,
+    });
     if (state.delay) await new Promise((r) => setTimeout(r, state.delay));
     const json = (status, body, extra = {}) => {
       res.writeHead(status, { 'Content-Type': 'application/json', ...cors, ...extra });
       res.end(JSON.stringify(body));
     };
-    if (state.mode === 'limit') return json(429, { detail: 'throttled' }, { 'Retry-After': '1800' });
+    if (state.mode === 'limit')
+      return json(429, { detail: 'throttled' }, { 'Retry-After': '1800' });
     if (state.mode === 'error') return json(500, { detail: 'boom' });
 
     const t = (p, c) => `${base}/api/translations/${p}/${c}/sq/`;
@@ -104,11 +114,15 @@ export async function startWeblate() {
               ],
             }
           : { next: null, results: [] },
-      '/api/translations/alpha/ui/sq/': () => translation('alpha', 'ui', 200, 190, 4, false, daysAgo(1)),
-      '/api/translations/alpha/docs/sq/': () => translation('alpha', 'docs', 1000, 400, 0, false, daysAgo(45)),
-      '/api/translations/beta/app/sq/': () => translation('beta', 'app', 50, 50, 0, true, daysAgo(3)),
+      '/api/translations/alpha/ui/sq/': () =>
+        translation('alpha', 'ui', 200, 190, 4, false, daysAgo(1)),
+      '/api/translations/alpha/docs/sq/': () =>
+        translation('alpha', 'docs', 1000, 400, 0, false, daysAgo(45)),
+      '/api/translations/beta/app/sq/': () =>
+        translation('beta', 'app', 50, 50, 0, true, daysAgo(3)),
       '/api/translations/beta/app/sq/statistics/': () => ({ approved: 40, approved_percent: 80 }),
-      '/api/translations/gamma/extra/sq/': () => translation('gamma', 'extra', 10, 0, 0, false, daysAgo(400)),
+      '/api/translations/gamma/extra/sq/': () =>
+        translation('gamma', 'extra', 10, 0, 0, false, daysAgo(400)),
     };
     const route = routes[url.pathname];
     return route ? json(200, route()) : json(404, { detail: 'Not found.' });

@@ -4,14 +4,18 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="description" content="Translation progress for one language across multiple Weblate instances." />
+    <meta
+      name="description"
+      content="Translation progress for one language across multiple Weblate instances."
+    />
     <title>Tallyglot</title>
     <link rel="icon" href="assets/icon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="assets/styles.css" />
     <script>
       // Apply the saved theme before first paint.
       try {
-        var t = new URLSearchParams(location.search).get('theme') ||
+        var t =
+          new URLSearchParams(location.search).get('theme') ||
           JSON.parse(localStorage.getItem('tallyglot:prefs') || '{}').theme;
         if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t;
       } catch (e) {}
@@ -32,14 +36,47 @@
       </a>
       <div class="top-actions">
         <button id="refresh" class="btn" type="button">
-          <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M20 12a8 8 0 1 1-2.6-5.9M20 4v5h-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg>
+          <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true">
+            <path
+              d="M20 12a8 8 0 1 1-2.6-5.9M20 4v5h-5"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
           <span>Refresh</span>
         </button>
-        <button id="theme" class="btn icon" type="button" aria-label="Switch theme" title="Switch theme">
-          <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" /></svg>
+        <button
+          id="theme"
+          class="btn icon"
+          type="button"
+          aria-label="Switch theme"
+          title="Switch theme"
+        >
+          <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true">
+            <path
+              d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5z"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linejoin="round"
+            />
+          </svg>
         </button>
         <button id="open-settings" class="btn" type="button">
-          <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M4 7h10M18 7h2M4 17h2M10 17h10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" /><circle cx="16" cy="7" r="2.2" fill="none" stroke="currentColor" stroke-width="2" /><circle cx="8" cy="17" r="2.2" fill="none" stroke="currentColor" stroke-width="2" /></svg>
+          <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true">
+            <path
+              d="M4 7h10M18 7h2M4 17h2M10 17h10"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+            <circle cx="16" cy="7" r="2.2" fill="none" stroke="currentColor" stroke-width="2" />
+            <circle cx="8" cy="17" r="2.2" fill="none" stroke="currentColor" stroke-width="2" />
+          </svg>
           <span>Settings</span>
         </button>
       </div>
@@ -58,6 +95,8 @@
 
     <dialog id="settings" aria-labelledby="settings-title"></dialog>
     <div id="toast" role="status" aria-live="polite"></div>
-    <noscript><p class="loading">Tallyglot needs JavaScript to load translation statistics.</p></noscript>
+    <noscript
+      ><p class="loading">Tallyglot needs JavaScript to load translation statistics.</p></noscript
+    >
   </body>
 </html>

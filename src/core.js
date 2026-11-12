@@ -53,9 +53,10 @@ export function normalizeConfig(raw = {}) {
     usernames: globalUsers,
     instances: instances.filter((i) => i.url),
     staleDays: Number(raw.staleDays) > 0 ? Number(raw.staleDays) : DEFAULTS.staleDays,
-    cacheHours: Number(raw.cacheHours) >= 0 && raw.cacheHours !== undefined && raw.cacheHours !== ''
-      ? Number(raw.cacheHours)
-      : DEFAULTS.cacheHours,
+    cacheHours:
+      Number(raw.cacheHours) >= 0 && raw.cacheHours !== undefined && raw.cacheHours !== ''
+        ? Number(raw.cacheHours)
+        : DEFAULTS.cacheHours,
     discoveryPages:
       Number(raw.discoveryPages) > 0 ? Number(raw.discoveryPages) : DEFAULTS.discoveryPages,
     badgeLabel: String(raw.badgeLabel || '').trim(),
@@ -246,7 +247,8 @@ export function nextStringUrl(entry) {
   if (!entry.translateUrl) return entry.webUrl;
   if (entry.untranslated > 0) return `${entry.translateUrl}?q=state:empty`;
   if (entry.fuzzy > 0) return `${entry.translateUrl}?q=state:needs-editing`;
-  if (entry.review && entry.approved < entry.total) return `${entry.translateUrl}?q=state:translated`;
+  if (entry.review && entry.approved < entry.total)
+    return `${entry.translateUrl}?q=state:translated`;
   return entry.webUrl || entry.translateUrl;
 }
 

@@ -11,7 +11,8 @@
     "build-data": "node scripts/build-data.mjs",
     "demo-data": "node scripts/make-demo.mjs",
     "test": "node --test",
-    "test:e2e": "node e2e/run.mjs"
+    "test:e2e": "node e2e/run.mjs",
+    "format": "npx prettier@3 --write ."
   },
   "engines": {
     "node": ">=20"

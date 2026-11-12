@@ -32,15 +32,21 @@ const state = {
   config: null, // normalized, effective config (repo or browser override)
   overridden: false,
   data: {}, // instance id -> { fingerprint, entries, known, updatedAt, errors, source, limitedUntil, unreachableAt }
-  prefs: { instance: 'all', stale: false, unfinished: false, query: '', sort: 'closest', ...load('prefs', {}) },
+  prefs: {
+    instance: 'all',
+    stale: false,
+    unfinished: false,
+    query: '',
+    sort: 'closest',
+    ...load('prefs', {}),
+  },
   refreshing: false,
   progress: {},
 };
 
 /* ---------- helpers ---------- */
 
-const esc = (s) =>
-  String(s ?? '').replace(/[&<>"']/g, (c) => `&#${c.charCodeAt(0)};`);
+const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => `&#${c.charCodeAt(0)};`);
 const num = (n) => new Intl.NumberFormat().format(n);
 const plural = (n, one, many = `${one}s`) => `${num(n)} ${n === 1 ? one : many}`;
 
@@ -256,7 +262,9 @@ function render() {
     renderHero(entries) +
     `<div id="status">${renderStatusInner()}</div>` +
     (entries.length
-      ? renderToolbar(entries) + `<section id="grid" class="grid" aria-label="Components"></section>` + renderBadges(entries)
+      ? renderToolbar(entries) +
+        `<section id="grid" class="grid" aria-label="Components"></section>` +
+        renderBadges(entries)
       : renderEmpty());
   if (entries.length) renderGrid();
 }
@@ -333,14 +341,19 @@ function renderStatusInner() {
     }
     if (!d) continue;
     if (d.limitedUntil && d.limitedUntil > now) {
-      const kept = d.pending ? `${plural(d.pending, 'component')} could not be refreshed and show saved data. ` : 'Showing saved data. ';
+      const kept = d.pending
+        ? `${plural(d.pending, 'component')} could not be refreshed and show saved data. `
+        : 'Showing saved data. ';
       notes.push([
         'warn',
         `<strong>${name}</strong> rate limit reached. ${kept}Try again ${esc(ago(new Date(d.limitedUntil).toISOString()))},
          or add an API token in <button class="link" data-action="settings" type="button">Settings</button> to lift the limit.`,
       ]);
     } else if (d.offline) {
-      notes.push(['warn', `You appear to be offline. Showing saved data for <strong>${name}</strong>.`]);
+      notes.push([
+        'warn',
+        `You appear to be offline. Showing saved data for <strong>${name}</strong>.`,
+      ]);
     } else if (d.unreachableAt) {
       notes.push([
         'info',
@@ -387,7 +400,10 @@ function renderToolbar(entries) {
           <span>Sort</span>
           <select id="sort">
             ${Object.entries(SORTS)
-              .map(([key, s]) => `<option value="${key}"${p.sort === key ? ' selected' : ''}>${s.label}</option>`)
+              .map(
+                ([key, s]) =>
+                  `<option value="${key}"${p.sort === key ? ' selected' : ''}>${s.label}</option>`,
+              )
               .join('')}
           </select>
         </label>
@@ -491,7 +507,9 @@ function renderBadges(entries) {
       <code>${esc(snippet(alt, file))}</code>
       <button class="btn small" type="button" data-copy="${esc(snippet(alt, file))}">Copy</button>
     </li>`;
-  const groups = groupByProject(entries).sort((a, b) => a.project.name.localeCompare(b.project.name));
+  const groups = groupByProject(entries).sort((a, b) =>
+    a.project.name.localeCompare(b.project.name),
+  );
   return `
     <section class="badges card" aria-labelledby="badges-title">
       <h2 id="badges-title">Badges</h2>
@@ -583,7 +601,11 @@ function renderSettings() {
 /** Read the settings form into a raw config object + tokens. */
 function readSettings() {
   const form = $('#settings-form');
-  const split = (v) => v.split(',').map((s) => s.trim()).filter(Boolean);
+  const split = (v) =>
+    v
+      .split(',')
+      .map((s) => s.trim())
+      .filter(Boolean);
   const tokens = {};
   const instances = [...form.querySelectorAll('.inst')].map((el) => {
     const get = (name) => el.querySelector(`[name="${name}"]`);
@@ -653,9 +675,9 @@ function bindGlobal() {
     } else if (el.dataset.instance) {
       state.prefs.instance = el.dataset.instance;
       savePrefs();
-      el.parentElement.querySelectorAll('[data-instance]').forEach((c) =>
-        c.setAttribute('aria-pressed', String(c === el)),
-      );
+      el.parentElement
+        .querySelectorAll('[data-instance]')
+        .forEach((c) => c.setAttribute('aria-pressed', String(c === el)));
       renderGrid();
     } else if (el.dataset.toggle) {
       const key = el.dataset.toggle;
@@ -699,12 +721,12 @@ function bindGlobal() {
         raw.instances.push({ url, usernames: [], pinned: [] });
       }
       // Re-render the form with the new row, keeping what was typed.
-      const keep = { config: state.config, overridden: state.overridden };
+      const current = state.config;
       state.config = normalizeConfig(raw);
       const saved = load('tokens', {});
       save('tokens', { ...saved, ...tokens });
       renderSettings();
-      state.config = keep.config;
+      state.config = current;
     }
   });
 

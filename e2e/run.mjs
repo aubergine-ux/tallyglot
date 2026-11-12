@@ -19,8 +19,12 @@ const app = await startApp({
 });
 const page = await launch();
 const apiCalls = () => weblate.state.requests.length;
-const cards = () => page.eval(`[...document.querySelectorAll('.entry h3')].map((h) => h.textContent.trim())`);
-const notices = () => page.eval(`[...document.querySelectorAll('#status .notice')].map((n) => n.textContent.replace(/\\s+/g, ' ').trim())`);
+const cards = () =>
+  page.eval(`[...document.querySelectorAll('.entry h3')].map((h) => h.textContent.trim())`);
+const notices = () =>
+  page.eval(
+    `[...document.querySelectorAll('#status .notice')].map((n) => n.textContent.replace(/\\s+/g, ' ').trim())`,
+  );
 const settled = () => page.waitFor(`!document.querySelector('#refresh').disabled`);
 
 let failed = false;
@@ -88,15 +92,25 @@ try {
   });
 
   await step('cards show stats, approval and a link to the next string', async () => {
-    const card = (name) => `[...document.querySelectorAll('.entry')].find((c) => c.querySelector('h3').textContent.trim() === '${name}')`;
+    const card = (name) =>
+      `[...document.querySelectorAll('.entry')].find((c) => c.querySelector('h3').textContent.trim() === '${name}')`;
     const ui = await page.eval(`${card('Ui')}.textContent.replace(/\\s+/g, ' ')`);
     assert.match(ui, /95% translated/);
     assert.match(ui, /6 untranslated · 4 need editing · 2 failing checks/);
     assert.match(ui, /Last activity yesterday/);
     assert.match(ui, /You: yesterday/);
-    assert.equal(await page.eval(`${card('Ui')}.querySelector('.btn.primary').href`), `${weblate.url}/translate/alpha/ui/sq/?q=state:empty`);
-    assert.match(await page.eval(`${card('App')}.textContent.replace(/\\s+/g, ' ')`), /100% translated 80% approved/);
-    assert.match(await page.eval(`${card('App')}.querySelector('.entry-foot .btn').textContent`), /Review next string/);
+    assert.equal(
+      await page.eval(`${card('Ui')}.querySelector('.btn.primary').href`),
+      `${weblate.url}/translate/alpha/ui/sq/?q=state:empty`,
+    );
+    assert.match(
+      await page.eval(`${card('App')}.textContent.replace(/\\s+/g, ' ')`),
+      /100% translated 80% approved/,
+    );
+    assert.match(
+      await page.eval(`${card('App')}.querySelector('.entry-foot .btn').textContent`),
+      /Review next string/,
+    );
     assert.match(await page.eval(`${card('Docs')}.textContent`), /Stale/);
     assert.equal(await page.eval(`${card('Ui')}.querySelector('.bar > span').style.width`), '95%');
   });
@@ -128,8 +142,14 @@ try {
   });
 
   await step('badge section offers markdown for static badge files', async () => {
-    assert.match(await page.text('.badge-row code'), /^\[!\[Albanian translation progress\]\(http.*\/badges\/overall\.svg\)\]/);
-    assert.match(decodeURIComponent(await page.eval(`document.querySelector('.badge-row img').src`)), /51\.2% across 2 projects/);
+    assert.match(
+      await page.text('.badge-row code'),
+      /^\[!\[Albanian translation progress\]\(http.*\/badges\/overall\.svg\)\]/,
+    );
+    assert.match(
+      decodeURIComponent(await page.eval(`document.querySelector('.badge-row img').src`)),
+      /51\.2% across 2 projects/,
+    );
     assert.equal(await page.count('.badges details .badge-row'), 2);
   });
 
@@ -147,7 +167,10 @@ try {
     await page.click('#refresh');
     await page.waitFor(`document.querySelector('#status .notice.warn')`);
     await settled();
-    assert.match((await notices()).join(' '), /rate limit reached.*Try again in 30 minutes.*API token/);
+    assert.match(
+      (await notices()).join(' '),
+      /rate limit reached.*Try again in 30 minutes.*API token/,
+    );
     assert.equal((await cards()).length, 3);
     weblate.state.mode = 'ok';
     const before = apiCalls();
@@ -182,7 +205,9 @@ try {
     await configure({ user: 'alice', pinned: '' }); // new fingerprint -> full refetch
     weblate.state.delay = 400;
     await page.waitFor(`document.querySelector('#refresh').disabled`);
-    await page.waitFor(`/Looking for your translations|Refreshing/.test(document.querySelector('#app').textContent)`);
+    await page.waitFor(
+      `/Looking for your translations|Refreshing/.test(document.querySelector('#app').textContent)`,
+    );
     weblate.state.delay = 0;
     await page.waitFor(`document.querySelectorAll('.entry').length === 3`);
     await settled();
@@ -201,14 +226,18 @@ try {
     await page.waitFor(`document.querySelector('.inst[data-url="http://127.0.0.1:9"]')`);
     await page.fill('#settings .pair [name="usernames"]', 'alice');
     await page.eval(`document.querySelector('#settings-form').requestSubmit()`);
-    await page.waitFor(`/could not be reached/.test(document.querySelector('#status').textContent)`);
+    await page.waitFor(
+      `/could not be reached/.test(document.querySelector('#status').textContent)`,
+    );
     await page.waitFor(`document.querySelectorAll('.entry').length === 3`);
     assert.equal(await page.count('.chip[data-instance]'), 0); // only one instance has data
   });
 
   await step('copy config produces committable JSON without tokens', async () => {
     await page.click('#open-settings');
-    await page.eval(`(() => { window.__copied = null; navigator.clipboard.writeText = async (t) => { window.__copied = t; }; })()`);
+    await page.eval(
+      `(() => { window.__copied = null; navigator.clipboard.writeText = async (t) => { window.__copied = t; }; })()`,
+    );
     await page.click('[data-action="copy-config"]');
     await page.waitFor(`window.__copied`);
     const copied = JSON.parse(await page.eval(`window.__copied`));
@@ -246,10 +275,18 @@ try {
   });
 
   await step('no horizontal overflow at phone width', async () => {
-    await page.cmd('Emulation.setDeviceMetricsOverride', { width: 360, height: 780, deviceScaleFactor: 1, mobile: true });
+    await page.cmd('Emulation.setDeviceMetricsOverride', {
+      width: 360,
+      height: 780,
+      deviceScaleFactor: 1,
+      mobile: true,
+    });
     await page.goto(`${app.url}/?demo`);
     await page.waitFor(`document.querySelectorAll('.entry').length === 16`);
-    assert.equal(await page.eval(`document.documentElement.scrollWidth <= window.innerWidth`), true);
+    assert.equal(
+      await page.eval(`document.documentElement.scrollWidth <= window.innerWidth`),
+      true,
+    );
   });
 } finally {
   await page.close();
