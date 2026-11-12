@@ -9,13 +9,13 @@ how complete each one is, and jump straight to the next string that needs you.
 
 <br>
 
-[![Albanian translation progress](https://aubergine-ux.github.io/tallyglot/badges/overall.svg)](https://aubergine-ux.github.io/tallyglot/)
+[![Albanian translation progress](https://armd.one/tallyglot/badges/overall.svg)](https://armd.one/tallyglot/)
 [![Update badges](https://github.com/aubergine-ux/tallyglot/actions/workflows/badges.yml/badge.svg)](https://github.com/aubergine-ux/tallyglot/actions/workflows/badges.yml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-e8590c.svg)](LICENSE)
 ![No build step](https://img.shields.io/badge/build_step-none-0891b2.svg)
 
-**[Live dashboard](https://aubergine-ux.github.io/tallyglot/)** &nbsp;·&nbsp;
-**[Demo with sample data](https://aubergine-ux.github.io/tallyglot/?demo)** &nbsp;·&nbsp;
+**[Live dashboard](https://armd.one/tallyglot/)** &nbsp;·&nbsp;
+**[Demo with sample data](https://armd.one/tallyglot/?demo)** &nbsp;·&nbsp;
 **[Set up your own](#-set-up-your-own-in-5-minutes)**
 
 <br>
@@ -83,7 +83,7 @@ A minute or two later your dashboard is live at `https://<you>.github.io/tallygl
 
 <br>
 
-Open the [live dashboard](https://aubergine-ux.github.io/tallyglot/), click **Settings**, and enter your
+Open the [live dashboard](https://armd.one/tallyglot/), click **Settings**, and enter your
 language and username. These settings stay in your browser. Instances that allow browser requests
 (Hosted Weblate does) load live; the others need the snapshot from your own fork.
 
@@ -128,7 +128,7 @@ so they are plain image URLs that work anywhere:
 [![Albanian translation progress](https://<you>.github.io/tallyglot/badges/overall.svg)](https://<you>.github.io/tallyglot/)
 ```
 
-[![Albanian translation progress](https://aubergine-ux.github.io/tallyglot/badges/overall.svg)](https://aubergine-ux.github.io/tallyglot/)
+[![Albanian translation progress](https://armd.one/tallyglot/badges/overall.svg)](https://armd.one/tallyglot/)
 
 The dashboard has a **Badges** section with ready-to-copy Markdown for each one.
 
