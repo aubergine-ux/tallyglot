@@ -165,7 +165,7 @@ so they are plain image URLs that work anywhere:
 
 [![Albanian translation progress](https://armd.one/tallyglot/badges/overall.svg)](https://armd.one/tallyglot/)
 &nbsp;
-[![Weblate Albanian translation](https://armd.one/tallyglot/badges/hosted--weblate.svg)](https://armd.one/tallyglot/)
+[![F-Droid Albanian translation](https://armd.one/tallyglot/badges/hosted--f-droid.svg)](https://armd.one/tallyglot/)
 
 </div>
 
