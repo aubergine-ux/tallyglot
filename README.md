@@ -33,17 +33,17 @@ how complete each one is, and jump straight to the next string that needs you.
 
 ## ✨ Features
 
-| | | |
-|:-:|---|---|
-| 🌍 | **Many instances, one view** | Hosted Weblate, Codeberg Translate and Fedora Weblate are built in. Add any other Weblate by URL. |
-| 🃏 | **A card per component** | % translated, % approved, untranslated count, last activity, your own last contribution. |
-| 🎯 | **Next string, one click** | Every card links straight to the next untranslated string in Weblate's editor. |
-| 🔎 | **Sort and filter** | Closest to 100%, least or most complete, fewest strings left, recently active. Filter by instance, unfinished, or stale. |
-| 🏷️ | **Badges for your README** | An overall badge plus one per project, kept fresh by a scheduled GitHub Action. |
-| 🧾 | **One JSON config** | Language, usernames, instances and pinned projects in `tallyglot.config.json`. |
-| ⚡ | **Kind to the API** | Cached in your browser with a "last updated" time. Rate limits are detected and saved data stays on screen. |
-| 🌗 | **Light and dark** | Mobile-first, themed with CSS custom properties. |
-| 📦 | **No backend, no build** | Plain HTML, CSS and ES modules. Zero dependencies. GitHub Pages serves it as is. |
+<table>
+  <tr><td align="center">🌍</td><td><b>Many instances, one view</b></td><td>Hosted Weblate, Codeberg Translate and Fedora Weblate are built in. Add any other Weblate by URL.</td></tr>
+  <tr><td align="center">🃏</td><td><b>A card per component</b></td><td>% translated, % approved, untranslated count, last activity, your own last contribution.</td></tr>
+  <tr><td align="center">🎯</td><td><b>Next string, one click</b></td><td>Every card links straight to the next untranslated string in Weblate's editor.</td></tr>
+  <tr><td align="center">🔎</td><td><b>Sort and filter</b></td><td>Closest to 100%, least or most complete, fewest strings left, recently active. Filter by instance, unfinished, or stale.</td></tr>
+  <tr><td align="center">🏷️</td><td><b>Badges for your README</b></td><td>An overall badge plus one per project, kept fresh by a scheduled GitHub Action.</td></tr>
+  <tr><td align="center">🧾</td><td><b>One JSON config</b></td><td>Language, usernames, instances and pinned projects in <code>tallyglot.config.json</code>.</td></tr>
+  <tr><td align="center">⚡</td><td><b>Kind to the API</b></td><td>Cached in your browser with a "last updated" time. Rate limits are detected and saved data stays on screen.</td></tr>
+  <tr><td align="center">🌗</td><td><b>Light and dark</b></td><td>Mobile-first, themed with CSS custom properties.</td></tr>
+  <tr><td align="center">📦</td><td><b>No backend, no build</b></td><td>Plain HTML, CSS and ES modules. Zero dependencies. GitHub Pages serves it as is.</td></tr>
+</table>
 
 <div align="center">
 <br>
