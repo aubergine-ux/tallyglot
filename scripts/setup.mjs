@@ -128,7 +128,11 @@ step('Enabled the badge workflow', () => {
 step('Started the first badge run', () => run('gh', ['workflow', 'run', 'badges.yml', '--ref', branch]));
 
 const [owner, name] = repo.split('/');
-const site = `https://${owner.toLowerCase()}.github.io/${name}/`;
+// Ask GitHub for the address: accounts with a custom domain don't use github.io.
+const site = (
+  tryRun('gh', ['api', `repos/${repo}/pages`, '--jq', '.html_url']) ||
+  `https://${owner.toLowerCase()}.github.io/${name}/`
+).replace(/^http:/, 'https:');
 console.log(`
 Your dashboard: ${site}   (first deploy takes a minute or two)
 Profile badge:  [![${language} translation progress](${site}badges/overall.svg)](${site})
