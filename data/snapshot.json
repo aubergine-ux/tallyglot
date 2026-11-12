@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generatedAt": "2026-11-12T09:04:57.519Z",
+ "generatedAt": "2026-11-12T09:13:32.330Z",
  "language": {
   "code": "sq",
   "name": "Albanian"
@@ -10,7 +10,7 @@
    "name": "Hosted Weblate",
    "url": "https://hosted.weblate.org",
    "fingerprint": "[\"https://hosted.weblate.org\",\"sq\",[],[\"weblate/application\",\"weblate/glossary\"]]",
-   "updatedAt": "2026-11-12T09:04:57.519Z",
+   "updatedAt": "2026-11-12T09:13:32.330Z",
    "entries": [
     {
      "id": "hosted:weblate/application",
@@ -44,7 +44,7 @@
      "webUrl": "https://hosted.weblate.org/projects/weblate/application/sq/",
      "translateUrl": "https://hosted.weblate.org/translate/weblate/application/sq/",
      "pinned": true,
-     "fetchedAt": "2026-11-12T09:04:57.519Z"
+     "fetchedAt": "2026-11-12T09:13:32.330Z"
     },
     {
      "id": "hosted:weblate/glossary",
@@ -78,7 +78,7 @@
      "webUrl": "https://hosted.weblate.org/projects/weblate/glossary/sq/",
      "translateUrl": "https://hosted.weblate.org/translate/weblate/glossary/sq/",
      "pinned": true,
-     "fetchedAt": "2026-11-12T09:04:57.519Z"
+     "fetchedAt": "2026-11-12T09:13:32.330Z"
     }
    ],
    "known": {
