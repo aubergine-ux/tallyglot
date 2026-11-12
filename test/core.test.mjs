@@ -171,3 +171,81 @@ test('badges are valid, escaped SVG', () => {
   const overall = overallBadge({ label: 'Albanian', stats: { components: 30, projects: 24, percent: 87.04 } });
   assert.ok(overall.includes('87% across 24 projects'));
 });
+
+test('long histories are walked back over several runs', async () => {
+  const plain = normalizeConfig({ language: 'sq', instances: [{ id: 'test', url: BASE, usernames: ['alice'] }] }).instances[0];
+  const calls = [];
+  const changes = (u) => {
+    calls.push(Object.fromEntries(u.searchParams));
+    if (u.searchParams.get('timestamp_before')) {
+      return { next: null, results: [{ translation: tUrl('old', 'ui'), timestamp: '2025-01-01T00:00:00Z' }] };
+    }
+    if (u.searchParams.get('timestamp_after')) return { next: null, results: [] };
+    return {
+      next: `${BASE}/api/changes/?page=2`,
+      results: [
+        { translation: tUrl('new', 'ui'), timestamp: '2026-05-20T00:00:00Z' },
+        { translation: tUrl('new', 'ui', 'de'), timestamp: '2026-05-01T00:00:00Z' },
+      ],
+    };
+  };
+  const routes = {
+    '/api/changes/': changes,
+    '/api/translations/new/ui/sq/': detail('new', 'ui'),
+    '/api/translations/old/ui/sq/': detail('old', 'ui'),
+  };
+  const run = (extra) =>
+    refreshInstance(new WeblateClient({ baseUrl: BASE, fetch: fakeFetch(routes) }), plain, { language: 'sq', discoveryPages: 1, ...extra });
+
+  const first = await run({ now: NOW });
+  assert.deepEqual(first.entries.map((e) => e.id), ['test:new/ui']);
+  assert.equal(first.moreHistory, true);
+  assert.equal(first.known.users.alice.before, '2026-05-01T00:00:00.000Z');
+
+  const second = await run({ now: NOW + 1000, known: first.known, previous: first.entries });
+  assert.deepEqual(second.entries.map((e) => e.id).sort(), ['test:new/ui', 'test:old/ui']);
+  assert.equal(second.moreHistory, false);
+  assert.equal(calls.at(-1).timestamp_before, '2026-05-01T00:00:00.000Z');
+});
+
+test('pins: category components and whole projects', async () => {
+  const pinned = normalizeConfig({
+    language: 'sq',
+    instances: [{ id: 'test', url: BASE, pinned: ['proj/docs/guide', 'whole', 'star/*'] }],
+  }).instances[0];
+  const log = [];
+  const comps = (p) => ({ next: null, results: [{ url: `${BASE}/api/components/${p}/a/` }, { url: `${BASE}/api/components/${p}/b/` }] });
+  const client = new WeblateClient({
+    baseUrl: BASE,
+    fetch: fakeFetch(
+      {
+        '/api/translations/proj/docs%252Fguide/sq/': detail('proj', 'guide'),
+        '/api/projects/whole/components/': comps('whole'),
+        '/api/projects/star/components/': comps('star'),
+        '/api/translations/whole/a/sq/': detail('whole', 'a'),
+        '/api/translations/whole/b/sq/': detail('whole', 'b'),
+        '/api/translations/star/a/sq/': detail('star', 'a'),
+      },
+      log,
+    ),
+  });
+  const res = await refreshInstance(client, pinned, { language: 'sq', now: NOW });
+  assert.deepEqual(res.entries.map((e) => e.id).sort(), ['test:proj/docs%252Fguide', 'test:star/a', 'test:whole/a', 'test:whole/b']);
+  assert.ok(res.entries.every((e) => e.pinned));
+  assert.ok(res.known.missing[tUrl('star', 'b')]);
+  assert.ok(!log.some((u) => u.includes('/api/changes/')));
+});
+
+test('a bad username is reported without losing other data', async () => {
+  const two = normalizeConfig({ language: 'sq', instances: [{ id: 'test', url: BASE, usernames: ['ghost', 'alice'] }] }).instances[0];
+  const client = new WeblateClient({
+    baseUrl: BASE,
+    fetch: fakeFetch({
+      '/api/changes/': (u) => (u.searchParams.get('user') === 'ghost' ? 400 : { next: null, results: [{ translation: tUrl('alpha', 'ui'), timestamp: '2026-05-20T10:00:00Z' }] }),
+      '/api/translations/alpha/ui/sq/': detail('alpha', 'ui'),
+    }),
+  });
+  const res = await refreshInstance(client, two, { language: 'sq', now: NOW });
+  assert.equal(res.entries.length, 1);
+  assert.match(res.errors[0], /ghost/);
+});

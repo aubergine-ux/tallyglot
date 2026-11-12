@@ -97,41 +97,65 @@ export function emptyKnown() {
 
 /**
  * Find the translations a user has contributed to by reading their change
- * history. After the first run only changes newer than the last run are read.
+ * history, newest first. Each run reads what is new since the previous run,
+ * and, while older history remains, another `pages` thousand changes of it.
+ * A very long history is therefore walked back over several runs.
  */
 export async function discover(client, { usernames, language, known, pages, now }) {
   const errors = [];
+  const record = (changes) => {
+    let oldest = null;
+    for (const change of changes) {
+      const stamp = change.timestamp ? new Date(change.timestamp).toISOString() : null;
+      if (stamp && (!oldest || stamp < oldest)) oldest = stamp;
+      const parsed = parseTranslationUrl(change.translation);
+      if (!parsed || !sameLang(parsed.language, language)) continue;
+      const prev = known.translations[change.translation];
+      if (!prev) known.translations[change.translation] = { lastContribution: stamp };
+      else if (stamp && (!prev.lastContribution || stamp > prev.lastContribution)) {
+        prev.lastContribution = stamp;
+      }
+      delete known.missing[change.translation];
+    }
+    return oldest;
+  };
+
   for (const username of usernames) {
-    const since = known.users[username];
+    // { since: read everything newer than this, before: history older than this is unread }
+    const saved = known.users[username];
+    const state = typeof saved === 'string' ? { since: saved, before: null } : { ...saved };
+    const query = { user: username, action: TRANSLATION_ACTIONS, page_size: 1000 };
     try {
-      const { results } = await client.getPaged(
+      const fresh = await client.getPaged(
         'changes/',
-        {
-          user: username,
-          action: TRANSLATION_ACTIONS,
-          page_size: 1000,
-          timestamp_after: since,
-        },
+        { ...query, timestamp_after: state.since },
         pages,
       );
-      for (const change of results) {
-        const parsed = parseTranslationUrl(change.translation);
-        if (!parsed || !sameLang(parsed.language, language)) continue;
-        const prev = known.translations[change.translation];
-        const stamp = change.timestamp ? new Date(change.timestamp).toISOString() : null;
-        if (!prev) known.translations[change.translation] = { lastContribution: stamp };
-        else if (stamp && (!prev.lastContribution || stamp > prev.lastContribution)) {
-          prev.lastContribution = stamp;
-        }
-        delete known.missing[change.translation];
+      const oldestFresh = record(fresh.results);
+      if (!state.since) {
+        state.before = fresh.complete ? null : oldestFresh;
+      } else if (state.before) {
+        const older = await client.getPaged(
+          'changes/',
+          { ...query, timestamp_before: state.before },
+          pages,
+        );
+        const oldest = record(older.results);
+        state.before = older.complete || !oldest || oldest === state.before ? null : oldest;
       }
-      known.users[username] = new Date(now).toISOString();
+      state.since = new Date(now).toISOString();
+      known.users[username] = state;
     } catch (err) {
       if (err instanceof RateLimitError || err instanceof NetworkError) throw err;
       errors.push(`Could not read contributions of "${username}": ${err.message}`);
     }
   }
   return errors;
+}
+
+/** True while some username still has older history left to read. */
+export function hasUnreadHistory(known) {
+  return Object.values(known?.users || {}).some((u) => u && typeof u === 'object' && u.before);
 }
 
 /** Turn pins ("project/component", "project" or "project/*") into translation URLs. */
@@ -244,7 +268,7 @@ export function isStale(entry, staleDays = DEFAULTS.staleDays, now = Date.now())
  *
  * @returns {{entries: object[], known: object, errors: string[],
  *            limited: boolean, retryAfter: number|null, unreachable: boolean,
- *            fetched: number, pending: number}}
+ *            fetched: number, pending: number, moreHistory: boolean}}
  */
 export async function refreshInstance(client, instance, opts) {
   const {
@@ -267,6 +291,7 @@ export async function refreshInstance(client, instance, opts) {
     unreachable: false,
     fetched: 0,
     pending: 0,
+    moreHistory: false,
   };
   const stop = (err) => {
     if (err instanceof RateLimitError) {
@@ -361,6 +386,7 @@ export async function refreshInstance(client, instance, opts) {
   await Promise.all(Array.from({ length: Math.min(4, queue.length) }, worker));
 
   out.pending = queue.length;
+  out.moreHistory = hasUnreadHistory(known);
   out.entries = [...results.values()].map((e) => ({
     ...e,
     pinned: pinSet.has(e.apiUrl),

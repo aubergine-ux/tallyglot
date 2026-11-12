@@ -98,6 +98,9 @@ async function main() {
           (tokens[instance.id] ? '' : ' (add a token to WEBLATE_TOKENS to avoid this)'),
       );
     }
+    if (result.moreHistory) {
+      notes.push('older contribution history is still being read; more components may appear on the next run');
+    }
     if (result.limited || result.unreachable) failed += 1;
     console.log(
       `${result.entries.length} component(s), ${result.fetched} refreshed, ${client.requests} request(s)` +
