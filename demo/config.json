@@ -1,0 +1,17 @@
+{
+  "language": "sq",
+  "usernames": [
+    "demo"
+  ],
+  "instances": [
+    {
+      "id": "hosted"
+    },
+    {
+      "id": "codeberg"
+    },
+    {
+      "id": "fedora"
+    }
+  ]
+}

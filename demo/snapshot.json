@@ -1,0 +1,578 @@
+{
+ "version": 1,
+ "generatedAt": "2026-01-15T09:00:00.000Z",
+ "language": {
+  "code": "sq",
+  "name": "Albanian"
+ },
+ "instances": {
+  "hosted": {
+   "name": "Hosted Weblate",
+   "url": "https://hosted.weblate.org",
+   "updatedAt": "2026-01-15T09:00:00.000Z",
+   "entries": [
+    {
+     "id": "hosted:lanternfish-reader/android-app",
+     "apiUrl": "https://hosted.weblate.org/api/translations/lanternfish-reader/android-app/sq/",
+     "instance": "hosted",
+     "project": {
+      "slug": "lanternfish-reader",
+      "name": "Lanternfish Reader",
+      "url": "https://hosted.weblate.org/projects/lanternfish-reader/"
+     },
+     "component": {
+      "slug": "android-app",
+      "name": "Android app"
+     },
+     "language": {
+      "code": "sq",
+      "name": "Albanian"
+     },
+     "total": 1240,
+     "translated": 1240,
+     "fuzzy": 0,
+     "untranslated": 0,
+     "translatedPercent": 100,
+     "review": true,
+     "approved": 1198,
+     "approvedPercent": 96.6,
+     "failing": 3,
+     "suggestions": 0,
+     "lastChange": "2026-01-13T09:00:00.000Z",
+     "lastContribution": "2026-01-13T09:00:00.000Z",
+     "webUrl": "https://hosted.weblate.org/projects/lanternfish-reader/android-app/sq/",
+     "translateUrl": "https://hosted.weblate.org/translate/lanternfish-reader/android-app/sq/",
+     "pinned": true,
+     "fetchedAt": "2026-01-15T09:00:00.000Z"
+    },
+    {
+     "id": "hosted:lanternfish-reader/store-listing",
+     "apiUrl": "https://hosted.weblate.org/api/translations/lanternfish-reader/store-listing/sq/",
+     "instance": "hosted",
+     "project": {
+      "slug": "lanternfish-reader",
+      "name": "Lanternfish Reader",
+      "url": "https://hosted.weblate.org/projects/lanternfish-reader/"
+     },
+     "component": {
+      "slug": "store-listing",
+      "name": "Store listing"
+     },
+     "language": {
+      "code": "sq",
+      "name": "Albanian"
+     },
+     "total": 46,
+     "translated": 46,
+     "fuzzy": 0,
+     "untranslated": 0,
+     "translatedPercent": 100,
+     "review": true,
+     "approved": 46,
+     "approvedPercent": 100,
+     "failing": 0,
+     "suggestions": 0,
+     "lastChange": "2025-11-12T09:00:00.000Z",
+     "lastContribution": "2025-11-12T09:00:00.000Z",
+     "webUrl": "https://hosted.weblate.org/projects/lanternfish-reader/store-listing/sq/",
+     "translateUrl": "https://hosted.weblate.org/translate/lanternfish-reader/store-listing/sq/",
+     "pinned": false,
+     "fetchedAt": "2026-01-15T09:00:00.000Z"
+    },
+    {
+     "id": "hosted:quillpad/web-client",
+     "apiUrl": "https://hosted.weblate.org/api/translations/quillpad/web-client/sq/",
+     "instance": "hosted",
+     "project": {
+      "slug": "quillpad",
+      "name": "Quillpad",
+      "url": "https://hosted.weblate.org/projects/quillpad/"
+     },
+     "component": {
+      "slug": "web-client",
+      "name": "Web client"
+     },
+     "language": {
+      "code": "sq",
+      "name": "Albanian"
+     },
+     "total": 2310,
+     "translated": 2187,
+     "fuzzy": 21,
+     "untranslated": 102,
+     "translatedPercent": 94.6,
+     "review": false,
+     "approved": null,
+     "approvedPercent": null,
+     "failing": 12,
+     "suggestions": 0,
+     "lastChange": "2026-01-14T09:00:00.000Z",
+     "lastContribution": "2026-01-10T09:00:00.000Z",
+     "webUrl": "https://hosted.weblate.org/projects/quillpad/web-client/sq/",
+     "translateUrl": "https://hosted.weblate.org/translate/quillpad/web-client/sq/",
+     "pinned": true,
+     "fetchedAt": "2026-01-15T09:00:00.000Z"
+    },
+    {
+     "id": "hosted:quillpad/documentation",
+     "apiUrl": "https://hosted.weblate.org/api/translations/quillpad/documentation/sq/",
+     "instance": "hosted",
+     "project": {
+      "slug": "quillpad",
+      "name": "Quillpad",
+      "url": "https://hosted.weblate.org/projects/quillpad/"
+     },
+     "component": {
+      "slug": "documentation",
+      "name": "Documentation"
+     },
+     "language": {
+      "code": "sq",
+      "name": "Albanian"
+     },
+     "total": 5120,
+     "translated": 2890,
+     "fuzzy": 140,
+     "untranslated": 2090,
+     "translatedPercent": 56.4,
+     "review": false,
+     "approved": null,
+     "approvedPercent": null,
+     "failing": 31,
+     "suggestions": 0,
+     "lastChange": "2026-01-06T09:00:00.000Z",
+     "lastContribution": "2026-01-06T09:00:00.000Z",
+     "webUrl": "https://hosted.weblate.org/projects/quillpad/documentation/sq/",
+     "translateUrl": "https://hosted.weblate.org/translate/quillpad/documentation/sq/",
+     "pinned": false,
+     "fetchedAt": "2026-01-15T09:00:00.000Z"
+    },
+    {
+     "id": "hosted:papaya-maps/application",
+     "apiUrl": "https://hosted.weblate.org/api/translations/papaya-maps/application/sq/",
+     "instance": "hosted",
+     "project": {
+      "slug": "papaya-maps",
+      "name": "Papaya Maps",
+      "url": "https://hosted.weblate.org/projects/papaya-maps/"
+     },
+     "component": {
+      "slug": "application",
+      "name": "Application"
+     },
+     "language": {
+      "code": "sq",
+      "name": "Albanian"
+     },
+     "total": 3604,
+     "translated": 3571,
+     "fuzzy": 4,
+     "untranslated": 29,
+     "translatedPercent": 99,
+     "review": true,
+     "approved": 2950,
+     "approvedPercent": 81.8,
+     "failing": 6,
+     "suggestions": 0,
+     "lastChange": "2026-01-11T09:00:00.000Z",
+     "lastContribution": "2026-01-04T09:00:00.000Z",
+     "webUrl": "https://hosted.weblate.org/projects/papaya-maps/application/sq/",
+     "translateUrl": "https://hosted.weblate.org/translate/papaya-maps/application/sq/",
+     "pinned": false,
+     "fetchedAt": "2026-01-15T09:00:00.000Z"
+    },
+    {
+     "id": "hosted:papaya-maps/glossary",
+     "apiUrl": "https://hosted.weblate.org/api/translations/papaya-maps/glossary/sq/",
+     "instance": "hosted",
+     "project": {
+      "slug": "papaya-maps",
+      "name": "Papaya Maps",
+      "url": "https://hosted.weblate.org/projects/papaya-maps/"
+     },
+     "component": {
+      "slug": "glossary",
+      "name": "Glossary"
+     },
+     "language": {
+      "code": "sq",
+      "name": "Albanian"
+     },
+     "total": 88,
+     "translated": 88,
+     "fuzzy": 0,
+     "untranslated": 0,
+     "translatedPercent": 100,
+     "review": true,
+     "approved": 88,
+     "approvedPercent": 100,
+     "failing": 0,
+     "suggestions": 0,
+     "lastChange": "2025-09-17T09:00:00.000Z",
+     "lastContribution": "2025-09-17T09:00:00.000Z",
+     "webUrl": "https://hosted.weblate.org/projects/papaya-maps/glossary/sq/",
+     "translateUrl": "https://hosted.weblate.org/translate/papaya-maps/glossary/sq/",
+     "pinned": false,
+     "fetchedAt": "2026-01-15T09:00:00.000Z"
+    },
+    {
+     "id": "hosted:tinderbox-ci/dashboard",
+     "apiUrl": "https://hosted.weblate.org/api/translations/tinderbox-ci/dashboard/sq/",
+     "instance": "hosted",
+     "project": {
+      "slug": "tinderbox-ci",
+      "name": "Tinderbox CI",
+      "url": "https://hosted.weblate.org/projects/tinderbox-ci/"
+     },
+     "component": {
+      "slug": "dashboard",
+      "name": "Dashboard"
+     },
+     "language": {
+      "code": "sq",
+      "name": "Albanian"
+     },
+     "total": 912,
+     "translated": 501,
+     "fuzzy": 37,
+     "untranslated": 374,
+     "translatedPercent": 54.9,
+     "review": false,
+     "approved": null,
+     "approvedPercent": null,
+     "failing": 9,
+     "suggestions": 0,
+     "lastChange": "2025-11-29T09:00:00.000Z",
+     "lastContribution": "2025-11-29T09:00:00.000Z",
+     "webUrl": "https://hosted.weblate.org/projects/tinderbox-ci/dashboard/sq/",
+     "translateUrl": "https://hosted.weblate.org/translate/tinderbox-ci/dashboard/sq/",
+     "pinned": false,
+     "fetchedAt": "2026-01-15T09:00:00.000Z"
+    },
+    {
+     "id": "hosted:marrow-notes/desktop",
+     "apiUrl": "https://hosted.weblate.org/api/translations/marrow-notes/desktop/sq/",
+     "instance": "hosted",
+     "project": {
+      "slug": "marrow-notes",
+      "name": "Marrow Notes",
+      "url": "https://hosted.weblate.org/projects/marrow-notes/"
+     },
+     "component": {
+      "slug": "desktop",
+      "name": "Desktop"
+     },
+     "language": {
+      "code": "sq",
+      "name": "Albanian"
+     },
+     "total": 1675,
+     "translated": 1642,
+     "fuzzy": 0,
+     "untranslated": 33,
+     "translatedPercent": 98,
+     "review": false,
+     "approved": null,
+     "approvedPercent": null,
+     "failing": 2,
+     "suggestions": 0,
+     "lastChange": "2026-01-15T09:00:00.000Z",
+     "lastContribution": "2026-01-15T09:00:00.000Z",
+     "webUrl": "https://hosted.weblate.org/projects/marrow-notes/desktop/sq/",
+     "translateUrl": "https://hosted.weblate.org/translate/marrow-notes/desktop/sq/",
+     "pinned": false,
+     "fetchedAt": "2026-01-15T09:00:00.000Z"
+    }
+   ],
+   "errors": []
+  },
+  "codeberg": {
+   "name": "Codeberg Translate",
+   "url": "https://translate.codeberg.org",
+   "updatedAt": "2026-01-15T09:00:00.000Z",
+   "entries": [
+    {
+     "id": "codeberg:driftwood/core",
+     "apiUrl": "https://translate.codeberg.org/api/translations/driftwood/core/sq/",
+     "instance": "codeberg",
+     "project": {
+      "slug": "driftwood",
+      "name": "Driftwood",
+      "url": "https://translate.codeberg.org/projects/driftwood/"
+     },
+     "component": {
+      "slug": "core",
+      "name": "Core"
+     },
+     "language": {
+      "code": "sq",
+      "name": "Albanian"
+     },
+     "total": 780,
+     "translated": 780,
+     "fuzzy": 0,
+     "untranslated": 0,
+     "translatedPercent": 100,
+     "review": false,
+     "approved": null,
+     "approvedPercent": null,
+     "failing": 0,
+     "suggestions": 0,
+     "lastChange": "2025-12-31T09:00:00.000Z",
+     "lastContribution": "2025-12-31T09:00:00.000Z",
+     "webUrl": "https://translate.codeberg.org/projects/driftwood/core/sq/",
+     "translateUrl": "https://translate.codeberg.org/translate/driftwood/core/sq/",
+     "pinned": false,
+     "fetchedAt": "2026-01-15T09:00:00.000Z"
+    },
+    {
+     "id": "codeberg:driftwood/plugins",
+     "apiUrl": "https://translate.codeberg.org/api/translations/driftwood/plugins/sq/",
+     "instance": "codeberg",
+     "project": {
+      "slug": "driftwood",
+      "name": "Driftwood",
+      "url": "https://translate.codeberg.org/projects/driftwood/"
+     },
+     "component": {
+      "slug": "plugins",
+      "name": "Plugins"
+     },
+     "language": {
+      "code": "sq",
+      "name": "Albanian"
+     },
+     "total": 432,
+     "translated": 398,
+     "fuzzy": 6,
+     "untranslated": 28,
+     "translatedPercent": 92.1,
+     "review": false,
+     "approved": null,
+     "approvedPercent": null,
+     "failing": 1,
+     "suggestions": 0,
+     "lastChange": "2025-12-08T09:00:00.000Z",
+     "lastContribution": "2025-11-24T09:00:00.000Z",
+     "webUrl": "https://translate.codeberg.org/projects/driftwood/plugins/sq/",
+     "translateUrl": "https://translate.codeberg.org/translate/driftwood/plugins/sq/",
+     "pinned": false,
+     "fetchedAt": "2026-01-15T09:00:00.000Z"
+    },
+    {
+     "id": "codeberg:saltmarsh-mail/client",
+     "apiUrl": "https://translate.codeberg.org/api/translations/saltmarsh-mail/client/sq/",
+     "instance": "codeberg",
+     "project": {
+      "slug": "saltmarsh-mail",
+      "name": "Saltmarsh Mail",
+      "url": "https://translate.codeberg.org/projects/saltmarsh-mail/"
+     },
+     "component": {
+      "slug": "client",
+      "name": "Client"
+     },
+     "language": {
+      "code": "sq",
+      "name": "Albanian"
+     },
+     "total": 1490,
+     "translated": 1012,
+     "fuzzy": 55,
+     "untranslated": 423,
+     "translatedPercent": 67.9,
+     "review": false,
+     "approved": null,
+     "approvedPercent": null,
+     "failing": 14,
+     "suggestions": 0,
+     "lastChange": "2026-01-09T09:00:00.000Z",
+     "lastContribution": "2026-01-09T09:00:00.000Z",
+     "webUrl": "https://translate.codeberg.org/projects/saltmarsh-mail/client/sq/",
+     "translateUrl": "https://translate.codeberg.org/translate/saltmarsh-mail/client/sq/",
+     "pinned": true,
+     "fetchedAt": "2026-01-15T09:00:00.000Z"
+    },
+    {
+     "id": "codeberg:pebble-feeds/application",
+     "apiUrl": "https://translate.codeberg.org/api/translations/pebble-feeds/application/sq/",
+     "instance": "codeberg",
+     "project": {
+      "slug": "pebble-feeds",
+      "name": "Pebble Feeds",
+      "url": "https://translate.codeberg.org/projects/pebble-feeds/"
+     },
+     "component": {
+      "slug": "application",
+      "name": "Application"
+     },
+     "language": {
+      "code": "sq",
+      "name": "Albanian"
+     },
+     "total": 356,
+     "translated": 349,
+     "fuzzy": 0,
+     "untranslated": 7,
+     "translatedPercent": 98,
+     "review": false,
+     "approved": null,
+     "approvedPercent": null,
+     "failing": 0,
+     "suggestions": 0,
+     "lastChange": "2026-01-12T09:00:00.000Z",
+     "lastContribution": "2025-12-25T09:00:00.000Z",
+     "webUrl": "https://translate.codeberg.org/projects/pebble-feeds/application/sq/",
+     "translateUrl": "https://translate.codeberg.org/translate/pebble-feeds/application/sq/",
+     "pinned": false,
+     "fetchedAt": "2026-01-15T09:00:00.000Z"
+    }
+   ],
+   "errors": []
+  },
+  "fedora": {
+   "name": "Fedora Weblate",
+   "url": "https://translate.fedoraproject.org",
+   "updatedAt": "2026-01-15T09:00:00.000Z",
+   "entries": [
+    {
+     "id": "fedora:harbor-installer/main",
+     "apiUrl": "https://translate.fedoraproject.org/api/translations/harbor-installer/main/sq/",
+     "instance": "fedora",
+     "project": {
+      "slug": "harbor-installer",
+      "name": "Harbor Installer",
+      "url": "https://translate.fedoraproject.org/projects/harbor-installer/"
+     },
+     "component": {
+      "slug": "main",
+      "name": "Main"
+     },
+     "language": {
+      "code": "sq",
+      "name": "Albanian"
+     },
+     "total": 2044,
+     "translated": 1809,
+     "fuzzy": 62,
+     "untranslated": 173,
+     "translatedPercent": 88.5,
+     "review": true,
+     "approved": 1320,
+     "approvedPercent": 64.5,
+     "failing": 18,
+     "suggestions": 0,
+     "lastChange": "2026-01-03T09:00:00.000Z",
+     "lastContribution": "2025-12-16T09:00:00.000Z",
+     "webUrl": "https://translate.fedoraproject.org/projects/harbor-installer/main/sq/",
+     "translateUrl": "https://translate.fedoraproject.org/translate/harbor-installer/main/sq/",
+     "pinned": false,
+     "fetchedAt": "2026-01-15T09:00:00.000Z"
+    },
+    {
+     "id": "fedora:harbor-installer/release-notes",
+     "apiUrl": "https://translate.fedoraproject.org/api/translations/harbor-installer/release-notes/sq/",
+     "instance": "fedora",
+     "project": {
+      "slug": "harbor-installer",
+      "name": "Harbor Installer",
+      "url": "https://translate.fedoraproject.org/projects/harbor-installer/"
+     },
+     "component": {
+      "slug": "release-notes",
+      "name": "Release notes"
+     },
+     "language": {
+      "code": "sq",
+      "name": "Albanian"
+     },
+     "total": 640,
+     "translated": 212,
+     "fuzzy": 9,
+     "untranslated": 419,
+     "translatedPercent": 33.1,
+     "review": true,
+     "approved": 150,
+     "approvedPercent": 23.4,
+     "failing": 2,
+     "suggestions": 0,
+     "lastChange": "2025-11-05T09:00:00.000Z",
+     "lastContribution": "2025-10-11T09:00:00.000Z",
+     "webUrl": "https://translate.fedoraproject.org/projects/harbor-installer/release-notes/sq/",
+     "translateUrl": "https://translate.fedoraproject.org/translate/harbor-installer/release-notes/sq/",
+     "pinned": false,
+     "fetchedAt": "2026-01-15T09:00:00.000Z"
+    },
+    {
+     "id": "fedora:copperplate/ui",
+     "apiUrl": "https://translate.fedoraproject.org/api/translations/copperplate/ui/sq/",
+     "instance": "fedora",
+     "project": {
+      "slug": "copperplate",
+      "name": "Copperplate",
+      "url": "https://translate.fedoraproject.org/projects/copperplate/"
+     },
+     "component": {
+      "slug": "ui",
+      "name": "UI"
+     },
+     "language": {
+      "code": "sq",
+      "name": "Albanian"
+     },
+     "total": 518,
+     "translated": 518,
+     "fuzzy": 0,
+     "untranslated": 0,
+     "translatedPercent": 100,
+     "review": true,
+     "approved": 518,
+     "approvedPercent": 100,
+     "failing": 0,
+     "suggestions": 0,
+     "lastChange": "2026-01-07T09:00:00.000Z",
+     "lastContribution": "2026-01-07T09:00:00.000Z",
+     "webUrl": "https://translate.fedoraproject.org/projects/copperplate/ui/sq/",
+     "translateUrl": "https://translate.fedoraproject.org/translate/copperplate/ui/sq/",
+     "pinned": false,
+     "fetchedAt": "2026-01-15T09:00:00.000Z"
+    },
+    {
+     "id": "fedora:wicker-settings/control-panel",
+     "apiUrl": "https://translate.fedoraproject.org/api/translations/wicker-settings/control-panel/sq/",
+     "instance": "fedora",
+     "project": {
+      "slug": "wicker-settings",
+      "name": "Wicker Settings",
+      "url": "https://translate.fedoraproject.org/projects/wicker-settings/"
+     },
+     "component": {
+      "slug": "control-panel",
+      "name": "Control panel"
+     },
+     "language": {
+      "code": "sq",
+      "name": "Albanian"
+     },
+     "total": 1322,
+     "translated": 1290,
+     "fuzzy": 3,
+     "untranslated": 29,
+     "translatedPercent": 97.5,
+     "review": true,
+     "approved": 1004,
+     "approvedPercent": 75.9,
+     "failing": 5,
+     "suggestions": 0,
+     "lastChange": "2026-01-13T09:00:00.000Z",
+     "lastContribution": "2026-01-13T09:00:00.000Z",
+     "webUrl": "https://translate.fedoraproject.org/projects/wicker-settings/control-panel/sq/",
+     "translateUrl": "https://translate.fedoraproject.org/translate/wicker-settings/control-panel/sq/",
+     "pinned": false,
+     "fetchedAt": "2026-01-15T09:00:00.000Z"
+    }
+   ],
+   "errors": []
+  }
+ }
+}
