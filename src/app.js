@@ -4,6 +4,7 @@ import {
   SORTS,
   aggregate,
   daysSince,
+  hasUnreadHistory,
   groupByProject,
   instanceFingerprint,
   isComplete,
@@ -31,7 +32,7 @@ const state = {
   config: null, // normalized, effective config (repo or browser override)
   overridden: false,
   data: {}, // instance id -> { fingerprint, entries, known, updatedAt, errors, source, limitedUntil, unreachableAt }
-  prefs: { sort: 'closest', instance: 'all', stale: false, unfinished: false, query: '', ...load('prefs', {}) },
+  prefs: { instance: 'all', stale: false, unfinished: false, query: '', sort: 'closest', ...load('prefs', {}) },
   refreshing: false,
   progress: {},
 };
@@ -90,8 +91,9 @@ const languageName = () =>
   state.config.language;
 
 function savePrefs() {
-  const { query, ...rest } = state.prefs;
-  save('prefs', rest);
+  // Sort order and theme are remembered; filters start fresh on every visit.
+  const { sort, theme } = state.prefs;
+  save('prefs', { sort, theme });
 }
 
 function saveCache() {
@@ -342,8 +344,16 @@ function renderStatusInner() {
     } else if (d.unreachableAt) {
       notes.push([
         'info',
-        `<strong>${name}</strong> does not allow requests from web pages (no CORS headers), so it cannot be refreshed live.
+        `<strong>${name}</strong> could not be reached from this page. Most likely it does not allow requests
+         from other websites (no CORS headers); a mistyped address looks the same.
          ${d.entries.length ? `Showing the snapshot from ${esc(ago(d.updatedAt))}.` : 'Its data appears once the scheduled GitHub Action has generated a snapshot.'}`,
+      ]);
+    }
+    if (!state.refreshing && hasUnreadHistory(d.known)) {
+      notes.push([
+        'info',
+        `Still reading older contribution history on <strong>${name}</strong>. More components may appear after the next
+         refresh. Pin a project in <button class="link" data-action="settings" type="button">Settings</button> to show it right away.`,
       ]);
     }
     for (const message of (d.errors || []).slice(0, 3)) {
@@ -417,7 +427,7 @@ function renderGrid() {
 function bar(percent, kind, label) {
   return `
     <div class="meter">
-      <div class="meter-head"><span class="meter-value">${formatPercent(percent)}</span><span class="meter-label">${label}</span></div>
+      <div class="meter-head"><span class="meter-value">${formatPercent(percent)}</span> <span class="meter-label">${label}</span></div>
       <div class="bar ${kind}" role="img" aria-label="${formatPercent(percent)} ${label}"><span style="width:${Math.max(0, Math.min(100, percent))}%"></span></div>
     </div>`;
 }
