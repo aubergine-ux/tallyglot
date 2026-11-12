@@ -8,8 +8,6 @@ on:
     branches: [main]
     paths:
       - tallyglot.config.json
-      - scripts/**
-      - src/**
 
 permissions:
   contents: write
