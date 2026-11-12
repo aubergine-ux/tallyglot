@@ -10,7 +10,7 @@
     "setup": "node scripts/setup.mjs",
     "build-data": "node scripts/build-data.mjs",
     "demo-data": "node scripts/make-demo.mjs",
-    "test": "node --test test/",
+    "test": "node --test",
     "test:e2e": "node e2e/run.mjs"
   },
   "engines": {
