@@ -15,11 +15,14 @@ const TYPES = {
   '.png': 'image/png',
 };
 
-const listen = (server) =>
-  new Promise((resolve) => server.listen(0, '127.0.0.1', () => resolve(server.address().port)));
+const listen = (server, port = 0) =>
+  new Promise((resolve, reject) => {
+    server.once('error', reject);
+    server.listen(port, '127.0.0.1', () => resolve(server.address().port));
+  });
 
 /** Serves the repository. `overrides` maps a path to a JSON body (or null for 404). */
-export async function startApp(overrides = {}) {
+export async function startApp(overrides = {}, port = 0) {
   const server = createServer(async (req, res) => {
     const path = decodeURIComponent(new URL(req.url, 'http://x').pathname);
     if (path in overrides) {
@@ -38,8 +41,8 @@ export async function startApp(overrides = {}) {
       res.end();
     }
   });
-  const port = await listen(server);
-  return { url: `http://127.0.0.1:${port}`, close: () => server.close() };
+  const bound = await listen(server, port);
+  return { url: `http://127.0.0.1:${bound}`, close: () => server.close() };
 }
 
 /**
