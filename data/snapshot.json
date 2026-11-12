@@ -1,0 +1,121 @@
+{
+ "version": 1,
+ "generatedAt": "2026-11-12T08:54:28.105Z",
+ "language": {
+  "code": "sq",
+  "name": "Albanian"
+ },
+ "instances": {
+  "hosted": {
+   "name": "Hosted Weblate",
+   "url": "https://hosted.weblate.org",
+   "fingerprint": "[\"https://hosted.weblate.org\",\"sq\",[],[\"weblate/application\",\"weblate/glossary\"]]",
+   "updatedAt": "2026-11-12T08:54:28.105Z",
+   "entries": [
+    {
+     "id": "hosted:weblate/application",
+     "apiUrl": "https://hosted.weblate.org/api/translations/weblate/application/sq/",
+     "instance": "hosted",
+     "project": {
+      "slug": "weblate",
+      "name": "Weblate",
+      "url": "https://hosted.weblate.org/projects/weblate/"
+     },
+     "component": {
+      "slug": "application",
+      "name": "Application"
+     },
+     "language": {
+      "code": "sq",
+      "name": "Albanian"
+     },
+     "total": 5886,
+     "translated": 5249,
+     "fuzzy": 14,
+     "untranslated": 623,
+     "translatedPercent": 89.1,
+     "review": true,
+     "approved": 0,
+     "approvedPercent": 0,
+     "failing": 306,
+     "suggestions": 0,
+     "lastChange": "2026-11-10T15:37:20.076Z",
+     "lastContribution": null,
+     "webUrl": "https://hosted.weblate.org/projects/weblate/application/sq/",
+     "translateUrl": "https://hosted.weblate.org/translate/weblate/application/sq/",
+     "pinned": true,
+     "fetchedAt": "2026-11-12T08:54:28.105Z"
+    },
+    {
+     "id": "hosted:weblate/glossary",
+     "apiUrl": "https://hosted.weblate.org/api/translations/weblate/glossary/sq/",
+     "instance": "hosted",
+     "project": {
+      "slug": "weblate",
+      "name": "Weblate",
+      "url": "https://hosted.weblate.org/projects/weblate/"
+     },
+     "component": {
+      "slug": "glossary",
+      "name": "Weblate"
+     },
+     "language": {
+      "code": "sq",
+      "name": "Albanian"
+     },
+     "total": 98,
+     "translated": 87,
+     "fuzzy": 0,
+     "untranslated": 11,
+     "translatedPercent": 88.7,
+     "review": true,
+     "approved": 0,
+     "approvedPercent": 0,
+     "failing": 0,
+     "suggestions": 0,
+     "lastChange": "2026-11-07T17:31:58.334Z",
+     "lastContribution": null,
+     "webUrl": "https://hosted.weblate.org/projects/weblate/glossary/sq/",
+     "translateUrl": "https://hosted.weblate.org/translate/weblate/glossary/sq/",
+     "pinned": true,
+     "fetchedAt": "2026-11-12T08:54:28.105Z"
+    }
+   ],
+   "known": {
+    "users": {},
+    "translations": {},
+    "pins": {},
+    "missing": {}
+   },
+   "errors": []
+  },
+  "codeberg": {
+   "name": "Codeberg Translate",
+   "url": "https://translate.codeberg.org",
+   "fingerprint": "[\"https://translate.codeberg.org\",\"sq\",[],[]]",
+   "updatedAt": "2026-11-12T08:54:28.105Z",
+   "entries": [],
+   "known": {
+    "users": {},
+    "translations": {},
+    "pins": {},
+    "missing": {}
+   },
+   "errors": []
+  },
+  "fedora": {
+   "name": "Fedora Weblate",
+   "url": "https://translate.fedoraproject.org",
+   "fingerprint": "[\"https://translate.fedoraproject.org\",\"sq\",[],[]]",
+   "updatedAt": "2026-11-12T08:54:28.105Z",
+   "entries": [],
+   "known": {
+    "users": {},
+    "translations": {},
+    "pins": {},
+    "missing": {}
+   },
+   "errors": []
+  }
+ }
+}
