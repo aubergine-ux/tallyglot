@@ -1,14 +1,9 @@
 {
   "language": "sq",
-  "usernames": [],
+  "usernames": ["aubergine-ux"],
   "instances": [
-    {
-      "id": "hosted",
-      "usernames": [],
-      "pinned": ["weblate/application", "weblate/glossary"]
-    },
-    { "id": "codeberg", "usernames": [], "pinned": [] },
-    { "id": "fedora", "usernames": [], "pinned": [] }
+    { "id": "hosted", "pinned": [] },
+    { "id": "codeberg", "pinned": [] }
   ],
   "staleDays": 30,
   "cacheHours": 12
