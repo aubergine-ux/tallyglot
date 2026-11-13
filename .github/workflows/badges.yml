@@ -11,6 +11,7 @@ on:
 
 permissions:
   contents: write
+  issues: write # only used when alerts.channels includes "issue"
 
 concurrency:
   group: badges
@@ -30,12 +31,24 @@ jobs:
         run: node scripts/build-data.mjs
         env:
           # Optional. JSON object of API tokens keyed by instance id, e.g.
-          # {"hosted":"wlu_...","fedora":"wlu_..."}
-          WEBLATE_TOKENS: ${{ secrets.WEBLATE_TOKENS }}
+          # {"hosted":"wlu_...","crowdin":"..."}
+          TALLYGLOT_TOKENS: ${{ secrets.TALLYGLOT_TOKENS }}
+          WEBLATE_TOKENS: ${{ secrets.WEBLATE_TOKENS }} # the 1.0 name, still read
+          # Optional. Discord or Slack incoming webhook for alerts.
+          ALERT_WEBHOOK_URL: ${{ secrets.ALERT_WEBHOOK_URL }}
+          # Used to open an issue when alerts.channels includes "issue".
+          GITHUB_TOKEN: ${{ github.token }}
+          # Optional repository variable: the dashboard's address when it is not
+          # https://<owner>.github.io/<repo>/ (custom domains).
+          SITE_URL: ${{ vars.SITE_URL }}
 
       - name: Commit changes
         run: |
-          git add data badges
+          git add -A data badges cards
+          # these exist only when the matching feature is in use
+          for path in feed.xml maintainer; do
+            if [ -e "$path" ]; then git add -A "$path"; fi
+          done
           if git diff --cached --quiet; then
             echo "Nothing changed."
             exit 0

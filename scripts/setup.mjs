@@ -102,8 +102,10 @@ const config = {
 await writeFile(configPath, `${JSON.stringify(config, null, 2)}\n`);
 console.log('\n✓ Wrote tallyglot.config.json');
 
-// Data and badges from the repository this was forked from no longer apply.
-await rm(join(root, 'data', 'snapshot.json'), { force: true });
+// Everything generated for the repository this was forked from no longer applies.
+for (const path of ['data', 'cards', 'feed.xml']) {
+  await rm(join(root, path), { recursive: true, force: true });
+}
 for (const file of await readdir(join(root, 'badges')).catch(() => [])) {
   if (file.endsWith('.svg')) await rm(join(root, 'badges', file));
 }
@@ -136,7 +138,10 @@ const step = (label, fn) => {
 };
 const branch = run('git', ['rev-parse', '--abbrev-ref', 'HEAD']);
 step('Committed and pushed the config', () => {
-  run('git', ['add', '-A', 'tallyglot.config.json', 'data', 'badges']);
+  // Paths that never existed make `git add` fail, so they go one at a time.
+  for (const path of ['tallyglot.config.json', 'badges', 'data', 'cards', 'feed.xml']) {
+    tryRun('git', ['add', '-A', '--', path]);
+  }
   if (tryRun('git', ['diff', '--cached', '--quiet']) === null) {
     run('git', ['commit', '-m', `Configure Tallyglot for ${language}`]);
   }
