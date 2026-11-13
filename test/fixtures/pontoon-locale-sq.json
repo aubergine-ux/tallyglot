@@ -1,0 +1,347 @@
+{
+  "code": "sq",
+  "name": "Albanian",
+  "direction": "ltr",
+  "population": 6715000,
+  "cldr_plurals": "1,5",
+  "plural_rule": "(n != 1)",
+  "script": "Latn",
+  "script_name": "Latin",
+  "google_translate_code": "sq",
+  "ms_terminology_code": "sq-al",
+  "ms_translator_code": "",
+  "team_description": "",
+  "total_strings": 50329,
+  "approved_strings": 44927,
+  "pretranslated_strings": 0,
+  "strings_with_warnings": 0,
+  "strings_with_errors": 0,
+  "missing_strings": 5402,
+  "unreviewed_strings": 3,
+  "completed_strings": 44927,
+  "complete": false,
+  "projects": [
+    "amo",
+    "mozilla-accounts",
+    "sumo",
+    "amo-frontend",
+    "firefox",
+    "thunderbird",
+    "firefox-for-ios",
+    "focus-for-ios",
+    "thunderbirdnet",
+    "common-voice",
+    "mozilla-monitor-website",
+    "mozillaorg",
+    "terminology",
+    "mozilla-vpn-client",
+    "mozilla-vpn-website",
+    "firefox-for-android",
+    "focus-for-android",
+    "firefox-multi-account-containers",
+    "firefoxcom",
+    "mozilla-accounts-cms"
+  ],
+  "localizations": [
+    {
+      "project": {
+        "slug": "amo",
+        "name": "AMO"
+      },
+      "total_strings": 1680,
+      "approved_strings": 1584,
+      "pretranslated_strings": 0,
+      "strings_with_warnings": 0,
+      "strings_with_errors": 0,
+      "missing_strings": 96,
+      "unreviewed_strings": 0,
+      "completed_strings": 1584,
+      "complete": false
+    },
+    {
+      "project": {
+        "slug": "mozilla-accounts",
+        "name": "Mozilla accounts"
+      },
+      "total_strings": 2408,
+      "approved_strings": 2063,
+      "pretranslated_strings": 0,
+      "strings_with_warnings": 0,
+      "strings_with_errors": 0,
+      "missing_strings": 345,
+      "unreviewed_strings": 0,
+      "completed_strings": 2063,
+      "complete": false
+    },
+    {
+      "project": {
+        "slug": "sumo",
+        "name": "SUMO"
+      },
+      "total_strings": 3071,
+      "approved_strings": 2709,
+      "pretranslated_strings": 0,
+      "strings_with_warnings": 0,
+      "strings_with_errors": 0,
+      "missing_strings": 362,
+      "unreviewed_strings": 0,
+      "completed_strings": 2709,
+      "complete": false
+    },
+    {
+      "project": {
+        "slug": "amo-frontend",
+        "name": "AMO Frontend"
+      },
+      "total_strings": 807,
+      "approved_strings": 776,
+      "pretranslated_strings": 0,
+      "strings_with_warnings": 0,
+      "strings_with_errors": 0,
+      "missing_strings": 31,
+      "unreviewed_strings": 0,
+      "completed_strings": 776,
+      "complete": false
+    },
+    {
+      "project": {
+        "slug": "firefox",
+        "name": "Firefox"
+      },
+      "total_strings": 16883,
+      "approved_strings": 14515,
+      "pretranslated_strings": 0,
+      "strings_with_warnings": 0,
+      "strings_with_errors": 0,
+      "missing_strings": 2368,
+      "unreviewed_strings": 0,
+      "completed_strings": 14515,
+      "complete": false
+    },
+    {
+      "project": {
+        "slug": "thunderbird",
+        "name": "Thunderbird"
+      },
+      "total_strings": 11793,
+      "approved_strings": 11253,
+      "pretranslated_strings": 0,
+      "strings_with_warnings": 0,
+      "strings_with_errors": 0,
+      "missing_strings": 540,
+      "unreviewed_strings": 1,
+      "completed_strings": 11253,
+      "complete": false
+    },
+    {
+      "project": {
+        "slug": "firefox-for-ios",
+        "name": "Firefox for iOS"
+      },
+      "total_strings": 1986,
+      "approved_strings": 1770,
+      "pretranslated_strings": 0,
+      "strings_with_warnings": 0,
+      "strings_with_errors": 0,
+      "missing_strings": 216,
+      "unreviewed_strings": 0,
+      "completed_strings": 1770,
+      "complete": false
+    },
+    {
+      "project": {
+        "slug": "focus-for-ios",
+        "name": "Focus for iOS"
+      },
+      "total_strings": 254,
+      "approved_strings": 254,
+      "pretranslated_strings": 0,
+      "strings_with_warnings": 0,
+      "strings_with_errors": 0,
+      "missing_strings": 0,
+      "unreviewed_strings": 0,
+      "completed_strings": 254,
+      "complete": true
+    },
+    {
+      "project": {
+        "slug": "thunderbirdnet",
+        "name": "Thunderbird.net"
+      },
+      "total_strings": 1049,
+      "approved_strings": 872,
+      "pretranslated_strings": 0,
+      "strings_with_warnings": 0,
+      "strings_with_errors": 0,
+      "missing_strings": 177,
+      "unreviewed_strings": 0,
+      "completed_strings": 872,
+      "complete": false
+    },
+    {
+      "project": {
+        "slug": "common-voice",
+        "name": "Common Voice"
+      },
+      "total_strings": 2090,
+      "approved_strings": 1505,
+      "pretranslated_strings": 0,
+      "strings_with_warnings": 0,
+      "strings_with_errors": 0,
+      "missing_strings": 585,
+      "unreviewed_strings": 0,
+      "completed_strings": 1505,
+      "complete": false
+    },
+    {
+      "project": {
+        "slug": "mozilla-monitor-website",
+        "name": "Mozilla Monitor Website"
+      },
+      "total_strings": 671,
+      "approved_strings": 627,
+      "pretranslated_strings": 0,
+      "strings_with_warnings": 0,
+      "strings_with_errors": 0,
+      "missing_strings": 44,
+      "unreviewed_strings": 0,
+      "completed_strings": 627,
+      "complete": false
+    },
+    {
+      "project": {
+        "slug": "mozillaorg",
+        "name": "Mozilla.org"
+      },
+      "total_strings": 2163,
+      "approved_strings": 2067,
+      "pretranslated_strings": 0,
+      "strings_with_warnings": 0,
+      "strings_with_errors": 0,
+      "missing_strings": 96,
+      "unreviewed_strings": 0,
+      "completed_strings": 2067,
+      "complete": false
+    },
+    {
+      "project": {
+        "slug": "terminology",
+        "name": "Terminology"
+      },
+      "total_strings": 211,
+      "approved_strings": 95,
+      "pretranslated_strings": 0,
+      "strings_with_warnings": 0,
+      "strings_with_errors": 0,
+      "missing_strings": 116,
+      "unreviewed_strings": 0,
+      "completed_strings": 95,
+      "complete": false
+    },
+    {
+      "project": {
+        "slug": "mozilla-vpn-client",
+        "name": "Mozilla VPN Client"
+      },
+      "total_strings": 952,
+      "approved_strings": 856,
+      "pretranslated_strings": 0,
+      "strings_with_warnings": 0,
+      "strings_with_errors": 0,
+      "missing_strings": 96,
+      "unreviewed_strings": 2,
+      "completed_strings": 856,
+      "complete": false
+    },
+    {
+      "project": {
+        "slug": "mozilla-vpn-website",
+        "name": "Mozilla VPN Website"
+      },
+      "total_strings": 13,
+      "approved_strings": 13,
+      "pretranslated_strings": 0,
+      "strings_with_warnings": 0,
+      "strings_with_errors": 0,
+      "missing_strings": 0,
+      "unreviewed_strings": 0,
+      "completed_strings": 13,
+      "complete": true
+    },
+    {
+      "project": {
+        "slug": "firefox-for-android",
+        "name": "Firefox for Android"
+      },
+      "total_strings": 2607,
+      "approved_strings": 2338,
+      "pretranslated_strings": 0,
+      "strings_with_warnings": 0,
+      "strings_with_errors": 0,
+      "missing_strings": 269,
+      "unreviewed_strings": 0,
+      "completed_strings": 2338,
+      "complete": false
+    },
+    {
+      "project": {
+        "slug": "focus-for-android",
+        "name": "Focus for Android"
+      },
+      "total_strings": 245,
+      "approved_strings": 244,
+      "pretranslated_strings": 0,
+      "strings_with_warnings": 0,
+      "strings_with_errors": 0,
+      "missing_strings": 1,
+      "unreviewed_strings": 0,
+      "completed_strings": 244,
+      "complete": false
+    },
+    {
+      "project": {
+        "slug": "firefox-multi-account-containers",
+        "name": "Firefox Multi-Account Containers Add-on"
+      },
+      "total_strings": 132,
+      "approved_strings": 131,
+      "pretranslated_strings": 0,
+      "strings_with_warnings": 0,
+      "strings_with_errors": 0,
+      "missing_strings": 1,
+      "unreviewed_strings": 0,
+      "completed_strings": 131,
+      "complete": false
+    },
+    {
+      "project": {
+        "slug": "firefoxcom",
+        "name": "Firefox.com"
+      },
+      "total_strings": 1151,
+      "approved_strings": 1139,
+      "pretranslated_strings": 0,
+      "strings_with_warnings": 0,
+      "strings_with_errors": 0,
+      "missing_strings": 12,
+      "unreviewed_strings": 0,
+      "completed_strings": 1139,
+      "complete": false
+    },
+    {
+      "project": {
+        "slug": "mozilla-accounts-cms",
+        "name": "Mozilla accounts CMS"
+      },
+      "total_strings": 163,
+      "approved_strings": 116,
+      "pretranslated_strings": 0,
+      "strings_with_warnings": 0,
+      "strings_with_errors": 0,
+      "missing_strings": 47,
+      "unreviewed_strings": 0,
+      "completed_strings": 116,
+      "complete": false
+    }
+  ]
+}

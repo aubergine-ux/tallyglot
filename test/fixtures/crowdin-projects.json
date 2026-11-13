@@ -1,0 +1,21 @@
+{
+  "data": [
+    {
+      "data": {
+        "id": 4242,
+        "name": "Kestrel Notes",
+        "identifier": "kestrel-notes",
+        "webUrl": "https://crowdin.com/project/kestrel-notes"
+      }
+    },
+    {
+      "data": {
+        "id": 977,
+        "name": "Other",
+        "identifier": "other",
+        "webUrl": "https://crowdin.com/project/other"
+      }
+    }
+  ],
+  "pagination": { "offset": 0, "limit": 500 }
+}

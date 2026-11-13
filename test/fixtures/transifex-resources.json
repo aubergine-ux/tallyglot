@@ -1,0 +1,29 @@
+{
+  "data": [
+    {
+      "id": "o:heron:p:heron-desktop:r:app",
+      "type": "resources",
+      "attributes": {
+        "slug": "app",
+        "name": "Application",
+        "string_count": 820,
+        "word_count": 3900
+      }
+    },
+    {
+      "id": "o:heron:p:heron-desktop:r:website",
+      "type": "resources",
+      "attributes": {
+        "slug": "website",
+        "name": "Website",
+        "string_count": 140,
+        "word_count": 1100
+      }
+    }
+  ],
+  "links": {
+    "self": "https://rest.api.transifex.com/resources?filter[project]=o:heron:p:heron-desktop",
+    "next": null,
+    "previous": null
+  }
+}

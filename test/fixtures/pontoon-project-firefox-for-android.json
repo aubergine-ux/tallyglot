@@ -1,0 +1,102 @@
+{
+  "slug": "firefox-for-android",
+  "name": "Firefox for Android",
+  "priority": 5,
+  "deadline": "2026-11-17",
+  "visibility": "public",
+  "contact": "6rR8AX3KbEeoNmbCvE1BiS845o4",
+  "info": "<p>Welcome to the Firefox for Android Project Info page. This project is where the <a href=\"https://github.com/mozilla-m",
+  "system_project": false,
+  "disabled": false,
+  "sync_disabled": false,
+  "pretranslation_enabled": true,
+  "is_db_project": false,
+  "total_strings": 370194,
+  "approved_strings": 225127,
+  "pretranslated_strings": 1463,
+  "strings_with_warnings": 0,
+  "strings_with_errors": 1,
+  "missing_strings": 143603,
+  "unreviewed_strings": 7460,
+  "completed_strings": 225127,
+  "complete": false,
+  "tags": [],
+  "locales": ["sq", "fr", "gd", "de", "cy"],
+  "localizations": [
+    {
+      "locale": {
+        "code": "sq",
+        "name": "Albanian"
+      },
+      "total_strings": 2607,
+      "approved_strings": 2338,
+      "pretranslated_strings": 0,
+      "strings_with_warnings": 0,
+      "strings_with_errors": 0,
+      "missing_strings": 269,
+      "unreviewed_strings": 0,
+      "completed_strings": 2338,
+      "complete": false
+    },
+    {
+      "locale": {
+        "code": "fr",
+        "name": "French"
+      },
+      "total_strings": 2607,
+      "approved_strings": 2607,
+      "pretranslated_strings": 0,
+      "strings_with_warnings": 0,
+      "strings_with_errors": 0,
+      "missing_strings": 0,
+      "unreviewed_strings": 0,
+      "completed_strings": 2607,
+      "complete": true
+    },
+    {
+      "locale": {
+        "code": "gd",
+        "name": "Gaelic, Scottish"
+      },
+      "total_strings": 2607,
+      "approved_strings": 2039,
+      "pretranslated_strings": 0,
+      "strings_with_warnings": 0,
+      "strings_with_errors": 0,
+      "missing_strings": 568,
+      "unreviewed_strings": 0,
+      "completed_strings": 2039,
+      "complete": false
+    },
+    {
+      "locale": {
+        "code": "de",
+        "name": "German"
+      },
+      "total_strings": 2607,
+      "approved_strings": 2607,
+      "pretranslated_strings": 0,
+      "strings_with_warnings": 0,
+      "strings_with_errors": 0,
+      "missing_strings": 0,
+      "unreviewed_strings": 0,
+      "completed_strings": 2607,
+      "complete": true
+    },
+    {
+      "locale": {
+        "code": "cy",
+        "name": "Welsh"
+      },
+      "total_strings": 2607,
+      "approved_strings": 2602,
+      "pretranslated_strings": 5,
+      "strings_with_warnings": 0,
+      "strings_with_errors": 0,
+      "missing_strings": 0,
+      "unreviewed_strings": 0,
+      "completed_strings": 2602,
+      "complete": false
+    }
+  ]
+}

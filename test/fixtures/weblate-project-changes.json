@@ -1,0 +1,49 @@
+{
+  "count": 16042,
+  "next": "https://hosted.weblate.org/api/projects/trale/changes/?page=2&page_size=2",
+  "previous": null,
+  "results": [
+    {
+      "unit": null,
+      "component": "https://hosted.weblate.org/api/components/trale/localizations/",
+      "translation": null,
+      "addon": null,
+      "user": "https://hosted.weblate.org/api/users/weblate:push/",
+      "author": null,
+      "alert": null,
+      "timestamp": "2026-11-07T11:52:50.774629+01:00",
+      "action": 18,
+      "target": "",
+      "old": "",
+      "details": {
+        "change_origin": {
+          "scope": "system"
+        }
+      },
+      "id": 250014751,
+      "action_name": "Changes pushed",
+      "url": "https://hosted.weblate.org/api/changes/250014751/"
+    },
+    {
+      "unit": null,
+      "component": "https://hosted.weblate.org/api/components/trale/localizations/",
+      "translation": "https://hosted.weblate.org/api/translations/trale/localizations/th/",
+      "addon": null,
+      "user": "https://hosted.weblate.org/api/users/weblate:commit/",
+      "author": "https://hosted.weblate.org/api/users/weblate:commit/",
+      "alert": null,
+      "timestamp": "2026-11-07T11:51:34.516083+01:00",
+      "action": 17,
+      "target": "",
+      "old": "",
+      "details": {
+        "change_origin": {
+          "scope": "system"
+        }
+      },
+      "id": 250014431,
+      "action_name": "Changes committed",
+      "url": "https://hosted.weblate.org/api/changes/250014431/"
+    }
+  ]
+}

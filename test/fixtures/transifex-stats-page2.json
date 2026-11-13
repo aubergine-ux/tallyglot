@@ -1,0 +1,33 @@
+{
+  "data": [
+    {
+      "id": "o:heron:p:heron-desktop:r:website:l:pt_BR",
+      "type": "resource_language_stats",
+      "attributes": {
+        "untranslated_words": 0,
+        "translated_words": 1100,
+        "reviewed_words": 0,
+        "proofread_words": 0,
+        "total_words": 1100,
+        "untranslated_strings": 0,
+        "translated_strings": 140,
+        "reviewed_strings": 0,
+        "proofread_strings": 0,
+        "total_strings": 140,
+        "last_update": "2026-09-01T10:00:00Z",
+        "last_translation_update": "2026-08-20T11:00:00Z",
+        "last_review_update": null,
+        "last_proofread_update": null
+      },
+      "relationships": {
+        "resource": { "data": { "type": "resources", "id": "o:heron:p:heron-desktop:r:website" } },
+        "language": { "data": { "type": "languages", "id": "l:pt_BR" } }
+      }
+    }
+  ],
+  "links": {
+    "self": "https://rest.api.transifex.com/resource_language_stats?page[cursor]=abc",
+    "next": null,
+    "previous": null
+  }
+}

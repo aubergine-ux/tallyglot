@@ -1,4 +1,5 @@
-// Minimal Weblate REST client. Works in browsers and in Node 18+.
+// Minimal REST client shared by every platform adapter, plus the Weblate
+// flavour of it. Works in browsers and in Node 18+.
 
 export class RateLimitError extends Error {
   constructor(message, retryAfterSeconds) {
@@ -33,18 +34,33 @@ export function normalizeBaseUrl(url) {
   return u.replace(/\/+$/, '').replace(/\/api$/i, '');
 }
 
-export class WeblateClient {
+export class HttpClient {
   /**
    * @param {object} opts
    * @param {string} opts.baseUrl   e.g. https://hosted.weblate.org
-   * @param {string} [opts.token]   optional API token (raises the rate limit)
+   * @param {string} [opts.apiRoot] path prefix of the API below baseUrl, e.g. /api
+   * @param {string} [opts.token]   optional API token
+   * @param {Function} [opts.auth]  token -> headers; default is "Authorization: Token …"
+   * @param {string} [opts.accept]  Accept header
    * @param {Function} [opts.fetch] fetch implementation
    * @param {object} [opts.headers] extra headers (Node only: User-Agent)
    * @param {Function} [opts.onRequest] called after every request with rate info
    */
-  constructor({ baseUrl, token, fetch: fetchImpl, headers, onRequest } = {}) {
+  constructor({
+    baseUrl,
+    apiRoot,
+    token,
+    auth,
+    accept,
+    fetch: fetchImpl,
+    headers,
+    onRequest,
+  } = {}) {
     this.baseUrl = normalizeBaseUrl(baseUrl);
+    this.apiRoot = apiRoot || '';
     this.token = token || '';
+    this.auth = auth || ((t) => ({ Authorization: `Token ${t}` }));
+    this.accept = accept || 'application/json';
     this.fetch = fetchImpl || globalThis.fetch.bind(globalThis);
     this.headers = headers || {};
     this.onRequest = onRequest || (() => {});
@@ -55,7 +71,7 @@ export class WeblateClient {
   url(path, params) {
     const base = /^https?:\/\//i.test(path)
       ? path
-      : `${this.baseUrl}/api/${String(path).replace(/^\/+/, '')}`;
+      : `${this.baseUrl}${this.apiRoot}/${String(path).replace(/^\/+/, '')}`;
     const u = new URL(base);
     for (const [key, value] of Object.entries(params || {})) {
       if (value === undefined || value === null || value === '') continue;
@@ -67,8 +83,8 @@ export class WeblateClient {
 
   async get(path, params) {
     const url = this.url(path, params);
-    const headers = { Accept: 'application/json', ...this.headers };
-    if (this.token) headers.Authorization = `Token ${this.token}`;
+    const headers = { Accept: this.accept, ...this.headers };
+    if (this.token) Object.assign(headers, this.auth(this.token));
 
     let res;
     try {
@@ -104,6 +120,12 @@ export class WeblateClient {
     }
     if (!res.ok) throw new Error(`${this.baseUrl} answered HTTP ${res.status}`);
     return res.json();
+  }
+}
+
+export class WeblateClient extends HttpClient {
+  constructor(opts = {}) {
+    super({ ...opts, apiRoot: '/api' });
   }
 
   /** Follow `next` links, up to maxPages. Returns { results, complete }. */

@@ -1,0 +1,33 @@
+{
+  "data": [
+    {
+      "id": "o:heron:p:heron-desktop:r:app:l:pt_BR",
+      "type": "resource_language_stats",
+      "attributes": {
+        "untranslated_words": 300,
+        "translated_words": 3600,
+        "reviewed_words": 2000,
+        "proofread_words": 0,
+        "total_words": 3900,
+        "untranslated_strings": 70,
+        "translated_strings": 750,
+        "reviewed_strings": 400,
+        "proofread_strings": 0,
+        "total_strings": 820,
+        "last_update": "2026-11-08T10:00:00Z",
+        "last_translation_update": "2026-11-07T16:30:00Z",
+        "last_review_update": "2026-10-30T08:00:00Z",
+        "last_proofread_update": null
+      },
+      "relationships": {
+        "resource": { "data": { "type": "resources", "id": "o:heron:p:heron-desktop:r:app" } },
+        "language": { "data": { "type": "languages", "id": "l:pt_BR" } }
+      }
+    }
+  ],
+  "links": {
+    "self": "https://rest.api.transifex.com/resource_language_stats?filter[project]=o:heron:p:heron-desktop",
+    "next": "https://rest.api.transifex.com/resource_language_stats?filter[project]=o:heron:p:heron-desktop&page[cursor]=abc",
+    "previous": null
+  }
+}

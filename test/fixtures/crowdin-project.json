@@ -1,0 +1,18 @@
+{
+  "data": {
+    "id": 4242,
+    "userId": 6,
+    "sourceLanguageId": "en",
+    "targetLanguageIds": ["de", "sq", "pt-BR"],
+    "languageAccessPolicy": "open",
+    "name": "Kestrel Notes",
+    "identifier": "kestrel-notes",
+    "description": "A note taking app",
+    "publicDownloads": true,
+    "visibility": "open",
+    "webUrl": "https://crowdin.com/project/kestrel-notes",
+    "createdAt": "2024-02-11T10:21:00+00:00",
+    "updatedAt": "2026-11-01T08:00:00+00:00",
+    "lastActivity": "2026-11-10T17:45:00+00:00"
+  }
+}

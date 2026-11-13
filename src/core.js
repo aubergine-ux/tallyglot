@@ -2,7 +2,7 @@
 // Node script that the GitHub Action runs, so both produce identical data.
 
 import { NetworkError, NotFoundError, RateLimitError, normalizeBaseUrl } from './api.js';
-import { PRESETS, slugifyId } from './presets.js';
+import { PLATFORM_META, PRESETS, slugifyId } from './presets.js';
 
 // Change actions that mean "this user worked on a translation":
 // changed, suggestion added, translation added, suggestion accepted,
@@ -24,15 +24,24 @@ const list = (v) =>
     .map((s) => String(s).trim())
     .filter(Boolean);
 
-/** Fill in defaults and presets so the rest of the code can trust the shape. */
+const object = (v) => (v && typeof v === 'object' && !Array.isArray(v) ? v : {});
+
+/**
+ * Fill in defaults and presets so the rest of the code can trust the shape.
+ * Every key added since 1.0 is optional, so configs written for 1.0 load as is.
+ */
 export function normalizeConfig(raw = {}) {
   const globalUsers = list(raw.usernames);
   const seen = new Set();
   const instances = (raw.instances || []).map((item) => {
     const src = typeof item === 'string' ? { id: item } : { ...item };
+    const platform = PLATFORM_META[src.platform] ? src.platform : 'weblate';
+    const meta = PLATFORM_META[platform];
     const preset =
-      PRESETS.find((p) => p.id === src.id) ||
-      PRESETS.find((p) => src.url && normalizeBaseUrl(src.url) === p.url);
+      platform === 'weblate'
+        ? PRESETS.find((p) => p.id === src.id) ||
+          PRESETS.find((p) => src.url && normalizeBaseUrl(src.url) === p.url)
+        : { id: platform, name: meta.name, url: meta.url };
     const url = normalizeBaseUrl(src.url || preset?.url);
     let id = slugifyId(src.id || preset?.id || url);
     while (seen.has(id)) id += '-2';
@@ -40,13 +49,21 @@ export function normalizeConfig(raw = {}) {
     const own = list(src.usernames);
     return {
       id,
+      platform,
       name: src.name || preset?.name || url.replace(/^https?:\/\//, ''),
       url,
-      usernames: own.length ? own : globalUsers,
-      pinned: list(src.pinned),
+      // Only Weblate can look contributors up by name.
+      usernames: platform === 'weblate' ? (own.length ? own : globalUsers) : [],
+      // "projects" reads better for platforms that are configured as a list of
+      // projects; it means the same as "pinned".
+      pinned: [...new Set([...list(src.pinned), ...list(src.projects)])],
+      language: String(src.language || '').trim(),
       enabled: src.enabled !== false,
     };
   });
+  const alerts = object(raw.alerts);
+  const findWork = object(raw.findWork);
+  const team = object(raw.team);
   return {
     language: String(raw.language || '').trim(),
     languageName: String(raw.languageName || '').trim(),
@@ -60,17 +77,51 @@ export function normalizeConfig(raw = {}) {
     discoveryPages:
       Number(raw.discoveryPages) > 0 ? Number(raw.discoveryPages) : DEFAULTS.discoveryPages,
     badgeLabel: String(raw.badgeLabel || '').trim(),
+    displayName: String(raw.displayName || '').trim(),
+    alerts: {
+      channels: list(alerts.channels ?? ['rss']).filter((c) =>
+        ['rss', 'webhook', 'issue'].includes(c),
+      ),
+      digest: alerts.digest !== false,
+      minStrings: Number(alerts.minStrings) > 0 ? Number(alerts.minStrings) : 1,
+      projects: object(alerts.projects),
+    },
+    findWork: {
+      enabled: findWork.enabled !== false,
+      maxPercent:
+        Number(findWork.maxPercent) >= 0 && findWork.maxPercent !== undefined
+          ? Number(findWork.maxPercent)
+          : 80,
+      requestsPerRun:
+        Number(findWork.requestsPerRun) >= 0 && findWork.requestsPerRun !== undefined
+          ? Number(findWork.requestsPerRun)
+          : 15,
+    },
+    team: { name: String(team.name || '').trim(), enabled: !!(team.name || team.enabled) },
+    maintainer: (Array.isArray(raw.maintainer) ? raw.maintainer : [])
+      .map((m) => ({
+        instance: String(m?.instance || '').trim(),
+        project: String(m?.project || '').trim(),
+      }))
+      .filter((m) => m.instance && m.project),
   };
 }
 
+/** An instance shows up on the dashboard once it has something to look for. */
+export const isActiveInstance = (i) =>
+  i.enabled && (i.usernames.length > 0 || i.pinned.length > 0 || i.platform === 'pontoon');
+
 /** Identifies what a set of entries was fetched for, to detect config changes. */
 export function instanceFingerprint(instance, language) {
-  return JSON.stringify([
+  const parts = [
     instance.url,
-    language.toLowerCase(),
+    (instance.language || language).toLowerCase(),
     [...instance.usernames].map((u) => u.toLowerCase()).sort(),
     [...instance.pinned].sort(),
-  ]);
+  ];
+  // Weblate fingerprints keep their 1.0 form, so existing snapshots stay valid.
+  if (instance.platform && instance.platform !== 'weblate') parts.push(instance.platform);
+  return JSON.stringify(parts);
 }
 
 /** "https://x/api/translations/proj/comp/sq/" -> { project, component, language } */
@@ -101,9 +152,13 @@ export function emptyKnown() {
  * history, newest first. Each run reads what is new since the previous run,
  * and, while older history remains, another `pages` thousand changes of it.
  * A very long history is therefore walked back over several runs.
+ *
+ * `onChanges(username, changes)` receives every change in the language exactly
+ * once; the Action builds the activity calendar and the glossary from it.
  */
-export async function discover(client, { usernames, language, known, pages, now }) {
+export async function discover(client, { usernames, language, known, pages, now, onChanges }) {
   const errors = [];
+  let mine = [];
   const record = (changes) => {
     let oldest = null;
     for (const change of changes) {
@@ -111,6 +166,7 @@ export async function discover(client, { usernames, language, known, pages, now 
       if (stamp && (!oldest || stamp < oldest)) oldest = stamp;
       const parsed = parseTranslationUrl(change.translation);
       if (!parsed || !sameLang(parsed.language, language)) continue;
+      mine.push(change);
       const prev = known.translations[change.translation];
       if (!prev) known.translations[change.translation] = { lastContribution: stamp };
       else if (stamp && (!prev.lastContribution || stamp > prev.lastContribution)) {
@@ -126,6 +182,7 @@ export async function discover(client, { usernames, language, known, pages, now 
     const saved = known.users[username];
     const state = typeof saved === 'string' ? { since: saved, before: null } : { ...saved };
     const query = { user: username, action: TRANSLATION_ACTIONS, page_size: 1000 };
+    mine = [];
     try {
       const fresh = await client.getPaged(
         'changes/',
@@ -146,6 +203,9 @@ export async function discover(client, { usernames, language, known, pages, now 
       }
       state.since = new Date(now).toISOString();
       known.users[username] = state;
+      // Reported only once the read position is saved, so that a run cut short
+      // by a rate limit never reports the same change twice.
+      if (onChanges && mine.length) onChanges(username, mine);
     } catch (err) {
       if (err instanceof RateLimitError || err instanceof NetworkError) throw err;
       errors.push(`Could not read contributions of "${username}": ${err.message}`);
@@ -213,10 +273,12 @@ export function buildEntry({ detail, stats, instance, apiUrl, lastContribution, 
     id: `${instance.id}:${parsed.project}/${parsed.component}`,
     apiUrl,
     instance: instance.id,
+    platform: 'weblate',
     project: {
       slug: project.slug || parsed.project,
       name: project.name || parsed.project,
       url: project.web_url || `${instance.url}/projects/${parsed.project}/`,
+      web: project.web || '',
     },
     component: {
       slug: component.slug || parsed.component,
@@ -233,6 +295,7 @@ export function buildEntry({ detail, stats, instance, apiUrl, lastContribution, 
     approvedPercent: review ? (stats.approved_percent ?? 0) : null,
     failing: detail.failing_checks ?? 0,
     suggestions: detail.have_suggestion ?? 0,
+    comments: detail.have_comment ?? stats?.comments ?? 0,
     lastChange: detail.last_change ? new Date(detail.last_change).toISOString() : null,
     lastContribution: lastContribution || null,
     webUrl: detail.web_url || '',
@@ -242,8 +305,9 @@ export function buildEntry({ detail, stats, instance, apiUrl, lastContribution, 
   };
 }
 
-/** Link that opens the next string needing work in Weblate's editor. */
+/** Link that opens the next string needing work in the platform's editor. */
 export function nextStringUrl(entry) {
+  if (entry.platform && entry.platform !== 'weblate') return entry.nextUrl || entry.webUrl;
   if (!entry.translateUrl) return entry.webUrl;
   if (entry.untranslated > 0) return `${entry.translateUrl}?q=state:empty`;
   if (entry.fuzzy > 0) return `${entry.translateUrl}?q=state:needs-editing`;
@@ -259,8 +323,12 @@ export function daysSince(iso, now = Date.now()) {
   return (now - new Date(iso).getTime()) / DAY;
 }
 
-/** Stale = still has work left, and nobody touched it for `staleDays`. */
+/**
+ * Stale = still has work left, and nobody touched it for `staleDays`. Platforms
+ * that do not report when a translation last changed are never called stale.
+ */
 export function isStale(entry, staleDays = DEFAULTS.staleDays, now = Date.now()) {
+  if (!entry.lastChange && entry.platform && entry.platform !== 'weblate') return false;
   return !isComplete(entry) && daysSince(entry.lastChange, now) >= staleDays;
 }
 
@@ -280,6 +348,7 @@ export async function refreshInstance(client, instance, opts) {
     freshMs = 0,
     now = Date.now(),
     onProgress = () => {},
+    onChanges,
   } = opts;
   const known = structuredClone(opts.known || emptyKnown());
   for (const key of Object.keys(emptyKnown())) known[key] ||= {};
@@ -318,6 +387,7 @@ export async function refreshInstance(client, instance, opts) {
         known,
         pages: discoveryPages,
         now,
+        onChanges,
       })),
     );
     const pins = await resolvePins(client, { pinned: instance.pinned, language, known, now });

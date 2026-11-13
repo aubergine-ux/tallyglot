@@ -1,0 +1,60 @@
+{
+  "data": [
+    {
+      "data": {
+        "languageId": "de",
+        "language": { "id": "de", "name": "German", "editorCode": "de", "locale": "de-DE" },
+        "words": {
+          "total": 7249,
+          "translated": 7249,
+          "preTranslateAppliedTo": 0,
+          "approved": 7100
+        },
+        "phrases": {
+          "total": 3041,
+          "translated": 3041,
+          "preTranslateAppliedTo": 0,
+          "approved": 2990
+        },
+        "translationProgress": 100,
+        "approvalProgress": 98
+      }
+    },
+    {
+      "data": {
+        "languageId": "sq",
+        "language": { "id": "sq", "name": "Albanian", "editorCode": "sq", "locale": "sq-AL" },
+        "words": {
+          "total": 7249,
+          "translated": 3651,
+          "preTranslateAppliedTo": 0,
+          "approved": 3637
+        },
+        "phrases": {
+          "total": 3041,
+          "translated": 2631,
+          "preTranslateAppliedTo": 0,
+          "approved": 2622
+        },
+        "translationProgress": 86,
+        "approvalProgress": 86
+      }
+    },
+    {
+      "data": {
+        "languageId": "pt-BR",
+        "language": {
+          "id": "pt-BR",
+          "name": "Portuguese, Brazilian",
+          "editorCode": "ptbr",
+          "locale": "pt-BR"
+        },
+        "words": { "total": 7249, "translated": 1200, "preTranslateAppliedTo": 0, "approved": 0 },
+        "phrases": { "total": 3041, "translated": 610, "preTranslateAppliedTo": 0, "approved": 0 },
+        "translationProgress": 20,
+        "approvalProgress": 0
+      }
+    }
+  ],
+  "pagination": { "offset": 0, "limit": 500 }
+}

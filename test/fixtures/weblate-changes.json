@@ -1,0 +1,51 @@
+{
+  "count": 603,
+  "next": "https://hosted.weblate.org/api/changes/?action=5&page=2&page_size=2&user=aubergine-ux",
+  "previous": null,
+  "results": [
+    {
+      "unit": "https://hosted.weblate.org/api/units/206930139/",
+      "component": "https://hosted.weblate.org/api/components/trale/localizations/",
+      "translation": "https://hosted.weblate.org/api/translations/trale/localizations/sq/",
+      "addon": null,
+      "user": "https://hosted.weblate.org/api/users/aubergine-ux/",
+      "author": "https://hosted.weblate.org/api/users/aubergine-ux/",
+      "alert": null,
+      "timestamp": "2026-09-22T14:42:51.769875+02:00",
+      "action": 5,
+      "target": "Na mbështet me një yll.",
+      "old": "",
+      "details": {
+        "state": 20,
+        "source": "Support us with a star.",
+        "context": "starOnGithubSubtitle",
+        "old_state": 0
+      },
+      "id": 230510650,
+      "action_name": "Translation added",
+      "url": "https://hosted.weblate.org/api/changes/230510650/"
+    },
+    {
+      "unit": "https://hosted.weblate.org/api/units/206930138/",
+      "component": "https://hosted.weblate.org/api/components/trale/localizations/",
+      "translation": "https://hosted.weblate.org/api/translations/trale/localizations/sq/",
+      "addon": null,
+      "user": "https://hosted.weblate.org/api/users/aubergine-ux/",
+      "author": "https://hosted.weblate.org/api/users/aubergine-ux/",
+      "alert": null,
+      "timestamp": "2026-09-22T14:42:35.752535+02:00",
+      "action": 5,
+      "target": "Jepi një yll në GitHub",
+      "old": "",
+      "details": {
+        "state": 20,
+        "source": "Star on GitHub",
+        "context": "starOnGithub",
+        "old_state": 0
+      },
+      "id": 230510639,
+      "action_name": "Translation added",
+      "url": "https://hosted.weblate.org/api/changes/230510639/"
+    }
+  ]
+}

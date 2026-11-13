@@ -1,0 +1,19 @@
+{
+  "data": {
+    "id": "o:heron:p:heron-desktop",
+    "type": "projects",
+    "attributes": {
+      "slug": "heron-desktop",
+      "name": "Heron Desktop",
+      "type": "file",
+      "private": false,
+      "archived": false,
+      "description": "Desktop client",
+      "homepage_url": "https://example.org/heron",
+      "repository_url": "https://github.com/example/heron",
+      "datetime_created": "2023-05-02T09:00:00Z",
+      "datetime_modified": "2026-11-09T12:00:00Z"
+    },
+    "links": { "self": "https://rest.api.transifex.com/projects/o:heron:p:heron-desktop" }
+  }
+}
