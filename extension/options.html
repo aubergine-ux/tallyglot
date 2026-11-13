@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light dark" />
+    <title>Tallyglot</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 16px;
+        width: 300px;
+        font:
+          14px/1.45 system-ui,
+          sans-serif;
+      }
+      h1 {
+        margin: 0 0 12px;
+        font-size: 16px;
+      }
+      label {
+        display: block;
+        margin-bottom: 12px;
+        font-size: 13px;
+      }
+      input {
+        display: block;
+        box-sizing: border-box;
+        width: 100%;
+        margin-top: 4px;
+        padding: 7px 9px;
+        font: inherit;
+      }
+      small {
+        display: block;
+        margin-top: 3px;
+        opacity: 0.75;
+      }
+      .row {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      button {
+        padding: 7px 14px;
+        font: inherit;
+        font-weight: 600;
+        cursor: pointer;
+      }
+      a[hidden] {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 data-msg="optionsTitle"></h1>
+    <form id="form">
+      <label
+        ><span data-msg="optionsLanguage"></span>
+        <input
+          id="language"
+          autocomplete="off"
+          autocapitalize="off"
+          spellcheck="false"
+          placeholder="sq" />
+        <small data-msg="optionsLanguageHint"></small
+      ></label>
+      <label
+        ><span data-msg="optionsDashboard"></span>
+        <input id="dashboard" type="url" placeholder="https://you.github.io/tallyglot/"
+      /></label>
+      <div class="row">
+        <button type="submit" data-msg="optionsSave"></button>
+        <span id="saved" role="status"></span>
+        <a id="open" target="_blank" rel="noopener" data-msg="optionsOpen" hidden></a>
+      </div>
+    </form>
+    <script src="options.js"></script>
+  </body>
+</html>

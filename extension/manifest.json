@@ -1,0 +1,48 @@
+{
+  "manifest_version": 3,
+  "name": "__MSG_name__",
+  "description": "__MSG_description__",
+  "version": "2.0.0",
+  "default_locale": "en",
+  "icons": {
+    "48": "icon-48.png",
+    "128": "icon-128.png"
+  },
+  "action": {
+    "default_title": "__MSG_name__",
+    "default_popup": "options.html"
+  },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": false
+  },
+  "permissions": ["storage"],
+  "host_permissions": [
+    "https://hosted.weblate.org/*",
+    "https://translate.codeberg.org/*",
+    "https://translate.fedoraproject.org/*",
+    "https://pontoon.mozilla.org/*",
+    "https://api.github.com/*",
+    "https://codeberg.org/*"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "scripts": ["detect.js", "background.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/*", "https://codeberg.org/*"],
+      "js": ["detect.js", "content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "tallyglot@aubergine-ux.github.io",
+      "strict_min_version": "121.0",
+      "data_collection_permissions": {
+        "required": ["none"]
+      }
+    }
+  }
+}

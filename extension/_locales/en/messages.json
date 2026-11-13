@@ -1,0 +1,46 @@
+{
+  "name": { "message": "Tallyglot" },
+  "description": {
+    "message": "Shows a repository's translation status for your language on GitHub and Codeberg, with a link straight to the translation platform."
+  },
+  "title": { "message": "Translation" },
+  "status": {
+    "message": "$LANGUAGE$: $PERCENT$% translated",
+    "placeholders": { "language": { "content": "$1" }, "percent": { "content": "$2" } }
+  },
+  "left": { "message": "$COUNT$ strings left", "placeholders": { "count": { "content": "$1" } } },
+  "complete": { "message": "Fully translated" },
+  "notStarted": {
+    "message": "$LANGUAGE$ has not been started",
+    "placeholders": { "language": { "content": "$1" } }
+  },
+  "translate": { "message": "Translate" },
+  "start": { "message": "Start translating" },
+  "openOn": {
+    "message": "Open on $PLATFORM$",
+    "placeholders": { "platform": { "content": "$1" } }
+  },
+  "translatedOn": {
+    "message": "Translated on $PLATFORM$",
+    "placeholders": { "platform": { "content": "$1" } }
+  },
+  "statusUnknown": { "message": "Status is not available here" },
+  "noPlatform": { "message": "Translation files, but no translation platform" },
+  "noPlatformHint": {
+    "message": "This project keeps translations in the repository ($EXAMPLE$). Translating means opening a pull request.",
+    "placeholders": { "example": { "content": "$1" } }
+  },
+  "configOnly": {
+    "message": "Uses $PLATFORM$, but the project address is not linked from the README.",
+    "placeholders": { "platform": { "content": "$1" } }
+  },
+  "setLanguage": { "message": "Choose your language to see its status" },
+  "close": { "message": "Hide" },
+  "optionsTitle": { "message": "Tallyglot" },
+  "optionsLanguage": { "message": "Your language code" },
+  "optionsLanguageHint": { "message": "As translation platforms write it: sq, pt_BR, zh_Hans." },
+  "optionsDashboard": { "message": "Your Tallyglot dashboard (optional)" },
+  "optionsSave": { "message": "Save" },
+  "optionsSaved": { "message": "Saved" },
+  "optionsOpen": { "message": "Open my dashboard" }
+}
