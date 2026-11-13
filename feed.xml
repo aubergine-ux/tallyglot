@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+ <channel>
+  <title>Tallyglot: new Albanian strings</title>
+  <link></link>
+  <description>New strings to translate in the projects tracked by Tallyglot.</description>
+  <lastBuildDate>Fri, 13 Nov 2026 04:57:32 GMT</lastBuildDate>
+  <item>
+   <title>AdventureLog: 87 new strings (482 strings waiting, 76.9% translated)</title>
+   <link>https://hosted.weblate.org/translate/adventurelog/web-app/sq/?q=state:empty</link>
+   <guid isPermaLink="false">hosted:adventurelog@2026-11-13T04:57:32.216Z</guid>
+   <pubDate>Fri, 13 Nov 2026 04:57:32 GMT</pubDate>
+   <description>87 new strings to translate in AdventureLog.</description>
+  </item>
+ </channel>
+</rss>

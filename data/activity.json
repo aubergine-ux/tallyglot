@@ -1,0 +1,519 @@
+{
+ "version": 1,
+ "updatedAt": "2026-11-13T04:57:32.216Z",
+ "sources": {
+  "hosted": "[\"https://hosted.weblate.org\",\"sq\",[\"aubergine-ux\"],[]]",
+  "codeberg": "[\"https://translate.codeberg.org\",\"sq\",[\"aubergine-ux\"],[]]"
+ },
+ "days": {
+  "2026-09-22": {
+   "hosted:trale": 2,
+   "hosted:mona": 18
+  },
+  "2026-08-30": {
+   "hosted:immich": 2,
+   "hosted:f-droid": 5,
+   "hosted:mona": 2
+  },
+  "2026-08-26": {
+   "hosted:seal": 107
+  },
+  "2026-08-25": {
+   "hosted:mona": 142
+  },
+  "2026-08-24": {
+   "hosted:mona": 123
+  },
+  "2026-08-20": {
+   "hosted:immich": 3,
+   "hosted:trale": 3,
+   "hosted:readyou": 2,
+   "hosted:adventurelog": 17
+  },
+  "2026-08-15": {
+   "hosted:adventurelog": 17,
+   "hosted:grit": 1,
+   "hosted:readyou": 344,
+   "hosted:seal": 330
+  },
+  "2026-08-14": {
+   "hosted:next-player": 62
+  },
+  "2026-08-09": {
+   "hosted:immich": 120
+  },
+  "2026-08-03": {
+   "hosted:grit": 87
+  },
+  "2026-08-01": {
+   "hosted:aurora-store": 16,
+   "hosted:prismlauncher": 29,
+   "hosted:next-player": 24,
+   "hosted:pfa": 1
+  },
+  "2026-07-30": {
+   "hosted:immich": 137
+  },
+  "2026-07-26": {
+   "hosted:adventurelog": 59
+  },
+  "2026-07-23": {
+   "hosted:aurora-store": 2,
+   "hosted:adventurelog": 555
+  },
+  "2026-07-22": {
+   "hosted:immich": 170
+  },
+  "2026-07-16": {
+   "hosted:immich": 161
+  },
+  "2026-07-07": {
+   "hosted:thunder": 459
+  }
+ },
+ "users": {
+  "hosted": {
+   "aubergine-ux": {
+    "2026-09-22": 20,
+    "2026-08-30": 9,
+    "2026-08-26": 107,
+    "2026-08-25": 142,
+    "2026-08-24": 123,
+    "2026-08-20": 25,
+    "2026-08-15": 692,
+    "2026-08-14": 62,
+    "2026-08-09": 120,
+    "2026-08-03": 87,
+    "2026-08-01": 70,
+    "2026-07-30": 137,
+    "2026-07-26": 59,
+    "2026-07-23": 557,
+    "2026-07-22": 170,
+    "2026-07-16": 161,
+    "2026-07-07": 459
+   }
+  }
+ },
+ "recent": [
+  {
+   "at": "2026-09-22T12:42:51.769Z",
+   "user": "aubergine-ux",
+   "project": "hosted:trale",
+   "component": "localizations",
+   "action": "Translation added"
+  },
+  {
+   "at": "2026-09-22T12:42:35.752Z",
+   "user": "aubergine-ux",
+   "project": "hosted:trale",
+   "component": "localizations",
+   "action": "Translation added"
+  },
+  {
+   "at": "2026-09-22T12:41:50.426Z",
+   "user": "aubergine-ux",
+   "project": "hosted:mona",
+   "component": "mona-app",
+   "action": "Translation uploaded"
+  },
+  {
+   "at": "2026-09-22T12:41:50.426Z",
+   "user": "aubergine-ux",
+   "project": "hosted:mona",
+   "component": "mona-app",
+   "action": "Translation uploaded"
+  },
+  {
+   "at": "2026-09-22T12:41:50.426Z",
+   "user": "aubergine-ux",
+   "project": "hosted:mona",
+   "component": "mona-app",
+   "action": "Translation uploaded"
+  },
+  {
+   "at": "2026-09-22T12:41:50.426Z",
+   "user": "aubergine-ux",
+   "project": "hosted:mona",
+   "component": "mona-app",
+   "action": "Translation uploaded"
+  },
+  {
+   "at": "2026-09-22T12:41:50.426Z",
+   "user": "aubergine-ux",
+   "project": "hosted:mona",
+   "component": "mona-app",
+   "action": "Translation uploaded"
+  },
+  {
+   "at": "2026-09-22T12:41:50.426Z",
+   "user": "aubergine-ux",
+   "project": "hosted:mona",
+   "component": "mona-app",
+   "action": "Translation uploaded"
+  },
+  {
+   "at": "2026-09-22T12:41:50.426Z",
+   "user": "aubergine-ux",
+   "project": "hosted:mona",
+   "component": "mona-app",
+   "action": "Translation uploaded"
+  },
+  {
+   "at": "2026-09-22T12:41:50.426Z",
+   "user": "aubergine-ux",
+   "project": "hosted:mona",
+   "component": "mona-app",
+   "action": "Translation uploaded"
+  },
+  {
+   "at": "2026-09-22T12:41:50.426Z",
+   "user": "aubergine-ux",
+   "project": "hosted:mona",
+   "component": "mona-app",
+   "action": "Translation uploaded"
+  },
+  {
+   "at": "2026-09-22T12:41:50.426Z",
+   "user": "aubergine-ux",
+   "project": "hosted:mona",
+   "component": "mona-app",
+   "action": "Translation uploaded"
+  },
+  {
+   "at": "2026-09-22T12:41:50.426Z",
+   "user": "aubergine-ux",
+   "project": "hosted:mona",
+   "component": "mona-app",
+   "action": "Translation uploaded"
+  },
+  {
+   "at": "2026-09-22T12:41:50.426Z",
+   "user": "aubergine-ux",
+   "project": "hosted:mona",
+   "component": "mona-app",
+   "action": "Translation uploaded"
+  },
+  {
+   "at": "2026-09-22T12:41:50.426Z",
+   "user": "aubergine-ux",
+   "project": "hosted:mona",
+   "component": "mona-app",
+   "action": "Translation uploaded"
+  },
+  {
+   "at": "2026-09-22T12:41:50.426Z",
+   "user": "aubergine-ux",
+   "project": "hosted:mona",
+   "component": "mona-app",
+   "action": "Translation uploaded"
+  },
+  {
+   "at": "2026-09-22T12:41:50.426Z",
+   "user": "aubergine-ux",
+   "project": "hosted:mona",
+   "component": "mona-app",
+   "action": "Translation uploaded"
+  },
+  {
+   "at": "2026-09-22T12:41:50.426Z",
+   "user": "aubergine-ux",
+   "project": "hosted:mona",
+   "component": "mona-app",
+   "action": "Translation uploaded"
+  },
+  {
+   "at": "2026-09-22T12:41:50.426Z",
+   "user": "aubergine-ux",
+   "project": "hosted:mona",
+   "component": "mona-app",
+   "action": "Translation uploaded"
+  },
+  {
+   "at": "2026-09-22T12:41:50.426Z",
+   "user": "aubergine-ux",
+   "project": "hosted:mona",
+   "component": "mona-app",
+   "action": "Translation uploaded"
+  },
+  {
+   "at": "2026-08-30T02:41:59.527Z",
+   "user": "aubergine-ux",
+   "project": "hosted:immich",
+   "component": "immich",
+   "action": "Translation added"
+  },
+  {
+   "at": "2026-08-30T02:41:37.593Z",
+   "user": "aubergine-ux",
+   "project": "hosted:immich",
+   "component": "immich",
+   "action": "Translation added"
+  },
+  {
+   "at": "2026-08-30T02:41:00.350Z",
+   "user": "aubergine-ux",
+   "project": "hosted:f-droid",
+   "component": "f-droid",
+   "action": "Translation added"
+  },
+  {
+   "at": "2026-08-30T02:40:58.064Z",
+   "user": "aubergine-ux",
+   "project": "hosted:f-droid",
+   "component": "f-droid",
+   "action": "Translation added"
+  },
+  {
+   "at": "2026-08-30T02:40:51.971Z",
+   "user": "aubergine-ux",
+   "project": "hosted:f-droid",
+   "component": "f-droid",
+   "action": "Translation added"
+  },
+  {
+   "at": "2026-08-30T02:40:45.973Z",
+   "user": "aubergine-ux",
+   "project": "hosted:f-droid",
+   "component": "f-droid",
+   "action": "Translation added"
+  },
+  {
+   "at": "2026-08-30T02:40:43.003Z",
+   "user": "aubergine-ux",
+   "project": "hosted:f-droid",
+   "component": "f-droid",
+   "action": "Translation added"
+  },
+  {
+   "at": "2026-08-30T02:40:25.992Z",
+   "user": "aubergine-ux",
+   "project": "hosted:mona",
+   "component": "mona-app",
+   "action": "Translation added"
+  },
+  {
+   "at": "2026-08-30T02:40:07.808Z",
+   "user": "aubergine-ux",
+   "project": "hosted:mona",
+   "component": "mona-app",
+   "action": "Translation added"
+  },
+  {
+   "at": "2026-08-26T11:50:16.161Z",
+   "user": "aubergine-ux",
+   "project": "hosted:seal",
+   "component": "glossary",
+   "action": "Translation added"
+  },
+  {
+   "at": "2026-08-26T11:50:13.176Z",
+   "user": "aubergine-ux",
+   "project": "hosted:seal",
+   "component": "glossary",
+   "action": "Translation added"
+  },
+  {
+   "at": "2026-08-26T11:50:06.973Z",
+   "user": "aubergine-ux",
+   "project": "hosted:seal",
+   "component": "glossary",
+   "action": "Translation changed"
+  },
+  {
+   "at": "2026-08-26T11:49:52.101Z",
+   "user": "aubergine-ux",
+   "project": "hosted:seal",
+   "component": "glossary",
+   "action": "Translation added"
+  },
+  {
+   "at": "2026-08-26T11:49:49.038Z",
+   "user": "aubergine-ux",
+   "project": "hosted:seal",
+   "component": "glossary",
+   "action": "Translation added"
+  },
+  {
+   "at": "2026-08-26T11:49:35.545Z",
+   "user": "aubergine-ux",
+   "project": "hosted:seal",
+   "component": "glossary",
+   "action": "Translation added"
+  },
+  {
+   "at": "2026-08-26T11:49:15.134Z",
+   "user": "aubergine-ux",
+   "project": "hosted:seal",
+   "component": "glossary",
+   "action": "Translation added"
+  },
+  {
+   "at": "2026-08-26T11:49:09.821Z",
+   "user": "aubergine-ux",
+   "project": "hosted:seal",
+   "component": "glossary",
+   "action": "Translation added"
+  },
+  {
+   "at": "2026-08-26T11:47:23.461Z",
+   "user": "aubergine-ux",
+   "project": "hosted:seal",
+   "component": "strings",
+   "action": "Translation added"
+  },
+  {
+   "at": "2026-08-26T11:47:14.326Z",
+   "user": "aubergine-ux",
+   "project": "hosted:seal",
+   "component": "strings",
+   "action": "Translation added"
+  },
+  {
+   "at": "2026-08-26T11:47:06.744Z",
+   "user": "aubergine-ux",
+   "project": "hosted:seal",
+   "component": "strings",
+   "action": "Translation added"
+  },
+  {
+   "at": "2026-08-26T11:46:50.734Z",
+   "user": "aubergine-ux",
+   "project": "hosted:seal",
+   "component": "strings",
+   "action": "Translation changed"
+  },
+  {
+   "at": "2026-08-26T11:46:38.068Z",
+   "user": "aubergine-ux",
+   "project": "hosted:seal",
+   "component": "strings",
+   "action": "Translation changed"
+  },
+  {
+   "at": "2026-08-26T11:46:08.675Z",
+   "user": "aubergine-ux",
+   "project": "hosted:seal",
+   "component": "strings",
+   "action": "Translation changed"
+  },
+  {
+   "at": "2026-08-26T11:45:34.552Z",
+   "user": "aubergine-ux",
+   "project": "hosted:seal",
+   "component": "strings",
+   "action": "Translation uploaded"
+  },
+  {
+   "at": "2026-08-26T11:45:34.552Z",
+   "user": "aubergine-ux",
+   "project": "hosted:seal",
+   "component": "strings",
+   "action": "Translation uploaded"
+  },
+  {
+   "at": "2026-08-26T11:45:34.552Z",
+   "user": "aubergine-ux",
+   "project": "hosted:seal",
+   "component": "strings",
+   "action": "Translation uploaded"
+  },
+  {
+   "at": "2026-08-26T11:45:34.552Z",
+   "user": "aubergine-ux",
+   "project": "hosted:seal",
+   "component": "strings",
+   "action": "Translation uploaded"
+  },
+  {
+   "at": "2026-08-26T11:45:34.552Z",
+   "user": "aubergine-ux",
+   "project": "hosted:seal",
+   "component": "strings",
+   "action": "Translation uploaded"
+  },
+  {
+   "at": "2026-08-26T11:45:34.552Z",
+   "user": "aubergine-ux",
+   "project": "hosted:seal",
+   "component": "strings",
+   "action": "Translation uploaded"
+  },
+  {
+   "at": "2026-08-26T11:45:34.552Z",
+   "user": "aubergine-ux",
+   "project": "hosted:seal",
+   "component": "strings",
+   "action": "Translation uploaded"
+  },
+  {
+   "at": "2026-08-26T11:45:34.552Z",
+   "user": "aubergine-ux",
+   "project": "hosted:seal",
+   "component": "strings",
+   "action": "Translation uploaded"
+  },
+  {
+   "at": "2026-08-26T11:45:34.552Z",
+   "user": "aubergine-ux",
+   "project": "hosted:seal",
+   "component": "strings",
+   "action": "Translation uploaded"
+  },
+  {
+   "at": "2026-08-26T11:45:34.552Z",
+   "user": "aubergine-ux",
+   "project": "hosted:seal",
+   "component": "strings",
+   "action": "Translation uploaded"
+  },
+  {
+   "at": "2026-08-26T11:45:34.552Z",
+   "user": "aubergine-ux",
+   "project": "hosted:seal",
+   "component": "strings",
+   "action": "Translation uploaded"
+  },
+  {
+   "at": "2026-08-26T11:45:34.552Z",
+   "user": "aubergine-ux",
+   "project": "hosted:seal",
+   "component": "strings",
+   "action": "Translation uploaded"
+  },
+  {
+   "at": "2026-08-26T11:45:34.552Z",
+   "user": "aubergine-ux",
+   "project": "hosted:seal",
+   "component": "strings",
+   "action": "Translation uploaded"
+  },
+  {
+   "at": "2026-08-26T11:45:34.552Z",
+   "user": "aubergine-ux",
+   "project": "hosted:seal",
+   "component": "strings",
+   "action": "Translation uploaded"
+  },
+  {
+   "at": "2026-08-26T11:45:34.552Z",
+   "user": "aubergine-ux",
+   "project": "hosted:seal",
+   "component": "strings",
+   "action": "Translation uploaded"
+  },
+  {
+   "at": "2026-08-26T11:45:34.552Z",
+   "user": "aubergine-ux",
+   "project": "hosted:seal",
+   "component": "strings",
+   "action": "Translation uploaded"
+  },
+  {
+   "at": "2026-08-26T11:45:34.552Z",
+   "user": "aubergine-ux",
+   "project": "hosted:seal",
+   "component": "strings",
+   "action": "Translation uploaded"
+  }
+ ]
+}

@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generatedAt": "2026-11-13T13:05:47.136Z",
+ "generatedAt": "2026-11-13T04:57:32.216Z",
  "language": {
   "code": "sq",
   "name": "Albanian"
@@ -8,9 +8,10 @@
  "instances": {
   "hosted": {
    "name": "Hosted Weblate",
+   "platform": "weblate",
    "url": "https://hosted.weblate.org",
    "fingerprint": "[\"https://hosted.weblate.org\",\"sq\",[\"aubergine-ux\"],[]]",
-   "updatedAt": "2026-11-13T13:05:47.136Z",
+   "updatedAt": "2026-11-13T04:57:32.216Z",
    "entries": [
     {
      "id": "hosted:accrescent/glossary",
@@ -50,10 +51,12 @@
      "id": "hosted:adventurelog/web-app",
      "apiUrl": "https://hosted.weblate.org/api/translations/adventurelog/web-app/sq/",
      "instance": "hosted",
+     "platform": "weblate",
      "project": {
       "slug": "adventurelog",
       "name": "AdventureLog",
-      "url": "https://hosted.weblate.org/projects/adventurelog/"
+      "url": "https://hosted.weblate.org/projects/adventurelog/",
+      "web": "https://adventurelog.app"
      },
      "component": {
       "slug": "web-app",
@@ -73,21 +76,24 @@
      "approvedPercent": null,
      "failing": 37,
      "suggestions": 0,
+     "comments": 0,
      "lastChange": "2026-11-12T14:59:30.639Z",
      "lastContribution": "2026-08-20T14:38:49.150Z",
      "webUrl": "https://hosted.weblate.org/projects/adventurelog/web-app/sq/",
      "translateUrl": "https://hosted.weblate.org/translate/adventurelog/web-app/sq/",
      "pinned": false,
-     "fetchedAt": "2026-11-13T13:05:47.136Z"
+     "fetchedAt": "2026-11-13T04:57:32.216Z"
     },
     {
      "id": "hosted:aurora-store/aurorastore-translations",
      "apiUrl": "https://hosted.weblate.org/api/translations/aurora-store/aurorastore-translations/sq/",
      "instance": "hosted",
+     "platform": "weblate",
      "project": {
       "slug": "aurora-store",
       "name": "Aurora Store",
-      "url": "https://hosted.weblate.org/projects/aurora-store/"
+      "url": "https://hosted.weblate.org/projects/aurora-store/",
+      "web": "https://gitlab.com/AuroraOSS/AuroraStore"
      },
      "component": {
       "slug": "aurorastore-translations",
@@ -107,21 +113,24 @@
      "approvedPercent": null,
      "failing": 0,
      "suggestions": 0,
+     "comments": 1,
      "lastChange": "2026-11-03T20:26:15.139Z",
      "lastContribution": "2026-08-01T12:14:42.168Z",
      "webUrl": "https://hosted.weblate.org/projects/aurora-store/aurorastore-translations/sq/",
      "translateUrl": "https://hosted.weblate.org/translate/aurora-store/aurorastore-translations/sq/",
      "pinned": false,
-     "fetchedAt": "2026-11-13T13:05:47.136Z"
+     "fetchedAt": "2026-11-13T04:57:32.216Z"
     },
     {
      "id": "hosted:f-droid/f-droid",
      "apiUrl": "https://hosted.weblate.org/api/translations/f-droid/f-droid/sq/",
      "instance": "hosted",
+     "platform": "weblate",
      "project": {
       "slug": "f-droid",
       "name": "F-Droid",
-      "url": "https://hosted.weblate.org/projects/f-droid/"
+      "url": "https://hosted.weblate.org/projects/f-droid/",
+      "web": "https://f-droid.org/"
      },
      "component": {
       "slug": "f-droid",
@@ -141,21 +150,24 @@
      "approvedPercent": 97.6,
      "failing": 0,
      "suggestions": 0,
+     "comments": 0,
      "lastChange": "2026-11-10T22:14:49.480Z",
      "lastContribution": "2026-08-30T02:41:00.350Z",
      "webUrl": "https://hosted.weblate.org/projects/f-droid/f-droid/sq/",
      "translateUrl": "https://hosted.weblate.org/translate/f-droid/f-droid/sq/",
      "pinned": false,
-     "fetchedAt": "2026-11-13T13:05:47.136Z"
+     "fetchedAt": "2026-11-13T04:57:32.216Z"
     },
     {
      "id": "hosted:grit/strings",
      "apiUrl": "https://hosted.weblate.org/api/translations/grit/strings/sq/",
      "instance": "hosted",
+     "platform": "weblate",
      "project": {
       "slug": "grit",
       "name": "Grit",
-      "url": "https://hosted.weblate.org/projects/grit/"
+      "url": "https://hosted.weblate.org/projects/grit/",
+      "web": "https://github.com/shub39/Grit"
      },
      "component": {
       "slug": "strings",
@@ -175,21 +187,24 @@
      "approvedPercent": null,
      "failing": 0,
      "suggestions": 0,
+     "comments": 0,
      "lastChange": "2026-10-22T08:03:42.473Z",
      "lastContribution": "2026-08-15T17:30:43.239Z",
      "webUrl": "https://hosted.weblate.org/projects/grit/strings/sq/",
      "translateUrl": "https://hosted.weblate.org/translate/grit/strings/sq/",
      "pinned": false,
-     "fetchedAt": "2026-11-13T13:05:47.136Z"
+     "fetchedAt": "2026-11-13T04:57:32.216Z"
     },
     {
      "id": "hosted:immich/immich",
      "apiUrl": "https://hosted.weblate.org/api/translations/immich/immich/sq/",
      "instance": "hosted",
+     "platform": "weblate",
      "project": {
       "slug": "immich",
       "name": "Immich",
-      "url": "https://hosted.weblate.org/projects/immich/"
+      "url": "https://hosted.weblate.org/projects/immich/",
+      "web": "https://immich.app"
      },
      "component": {
       "slug": "immich",
@@ -209,21 +224,24 @@
      "approvedPercent": null,
      "failing": 1,
      "suggestions": 0,
+     "comments": 0,
      "lastChange": "2026-11-06T17:47:25.955Z",
      "lastContribution": "2026-08-30T02:41:59.527Z",
      "webUrl": "https://hosted.weblate.org/projects/immich/immich/sq/",
      "translateUrl": "https://hosted.weblate.org/translate/immich/immich/sq/",
      "pinned": false,
-     "fetchedAt": "2026-11-13T13:05:47.136Z"
+     "fetchedAt": "2026-11-13T04:57:32.216Z"
     },
     {
      "id": "hosted:mona/mona-app",
      "apiUrl": "https://hosted.weblate.org/api/translations/mona/mona-app/sq/",
      "instance": "hosted",
+     "platform": "weblate",
      "project": {
       "slug": "mona",
       "name": "Mona",
-      "url": "https://hosted.weblate.org/projects/mona/"
+      "url": "https://hosted.weblate.org/projects/mona/",
+      "web": "https://github.com/mona-hrt/mona"
      },
      "component": {
       "slug": "mona-app",
@@ -243,21 +261,24 @@
      "approvedPercent": null,
      "failing": 1,
      "suggestions": 0,
+     "comments": 0,
      "lastChange": "2026-11-04T19:21:37.743Z",
      "lastContribution": "2026-09-22T12:41:50.426Z",
      "webUrl": "https://hosted.weblate.org/projects/mona/mona-app/sq/",
      "translateUrl": "https://hosted.weblate.org/translate/mona/mona-app/sq/",
      "pinned": false,
-     "fetchedAt": "2026-11-13T13:05:47.136Z"
+     "fetchedAt": "2026-11-13T04:57:32.216Z"
     },
     {
      "id": "hosted:next-player/android-strings-core",
      "apiUrl": "https://hosted.weblate.org/api/translations/next-player/android-strings-core/sq/",
      "instance": "hosted",
+     "platform": "weblate",
      "project": {
       "slug": "next-player",
       "name": "Next Player",
-      "url": "https://hosted.weblate.org/projects/next-player/"
+      "url": "https://hosted.weblate.org/projects/next-player/",
+      "web": "https://github.com/anilbeesetti/nextplayer"
      },
      "component": {
       "slug": "android-strings-core",
@@ -277,12 +298,13 @@
      "approvedPercent": null,
      "failing": 0,
      "suggestions": 0,
+     "comments": 0,
      "lastChange": "2026-11-06T18:03:41.338Z",
      "lastContribution": "2026-08-14T15:08:24.780Z",
      "webUrl": "https://hosted.weblate.org/projects/next-player/android-strings-core/sq/",
      "translateUrl": "https://hosted.weblate.org/translate/next-player/android-strings-core/sq/",
      "pinned": false,
-     "fetchedAt": "2026-11-13T13:05:47.136Z"
+     "fetchedAt": "2026-11-13T04:57:32.216Z"
     },
     {
      "id": "hosted:pfa/notes%252Fnotes-android-app",
@@ -322,10 +344,12 @@
      "id": "hosted:prismlauncher/launcher",
      "apiUrl": "https://hosted.weblate.org/api/translations/prismlauncher/launcher/sq/",
      "instance": "hosted",
+     "platform": "weblate",
      "project": {
       "slug": "prismlauncher",
       "name": "Prism Launcher",
-      "url": "https://hosted.weblate.org/projects/prismlauncher/"
+      "url": "https://hosted.weblate.org/projects/prismlauncher/",
+      "web": "https://github.com/PrismLauncher"
      },
      "component": {
       "slug": "launcher",
@@ -345,21 +369,24 @@
      "approvedPercent": null,
      "failing": 64,
      "suggestions": 19,
+     "comments": 0,
      "lastChange": "2026-11-12T00:02:53.928Z",
      "lastContribution": "2026-08-01T12:14:23.021Z",
      "webUrl": "https://hosted.weblate.org/projects/prismlauncher/launcher/sq/",
      "translateUrl": "https://hosted.weblate.org/translate/prismlauncher/launcher/sq/",
      "pinned": false,
-     "fetchedAt": "2026-11-13T13:05:47.136Z"
+     "fetchedAt": "2026-11-13T04:57:32.216Z"
     },
     {
      "id": "hosted:readyou/android-strings",
      "apiUrl": "https://hosted.weblate.org/api/translations/readyou/android-strings/sq/",
      "instance": "hosted",
+     "platform": "weblate",
      "project": {
       "slug": "readyou",
       "name": "ReadYou",
-      "url": "https://hosted.weblate.org/projects/readyou/"
+      "url": "https://hosted.weblate.org/projects/readyou/",
+      "web": "https://github.com/ReadYouApp/ReadYou"
      },
      "component": {
       "slug": "android-strings",
@@ -379,21 +406,24 @@
      "approvedPercent": null,
      "failing": 0,
      "suggestions": 0,
+     "comments": 0,
      "lastChange": "2026-08-20T19:52:16.458Z",
      "lastContribution": "2026-08-20T14:39:44.675Z",
      "webUrl": "https://hosted.weblate.org/projects/readyou/android-strings/sq/",
      "translateUrl": "https://hosted.weblate.org/translate/readyou/android-strings/sq/",
      "pinned": false,
-     "fetchedAt": "2026-11-13T13:05:47.136Z"
+     "fetchedAt": "2026-11-13T04:57:32.216Z"
     },
     {
      "id": "hosted:seal/glossary",
      "apiUrl": "https://hosted.weblate.org/api/translations/seal/glossary/sq/",
      "instance": "hosted",
+     "platform": "weblate",
      "project": {
       "slug": "seal",
       "name": "Seal",
-      "url": "https://hosted.weblate.org/projects/seal/"
+      "url": "https://hosted.weblate.org/projects/seal/",
+      "web": "https://github.com/JunkFood02/Seal"
      },
      "component": {
       "slug": "glossary",
@@ -413,21 +443,24 @@
      "approvedPercent": null,
      "failing": 0,
      "suggestions": 0,
+     "comments": 0,
      "lastChange": "2026-09-17T10:30:07.827Z",
      "lastContribution": "2026-08-26T11:50:16.161Z",
      "webUrl": "https://hosted.weblate.org/projects/seal/glossary/sq/",
      "translateUrl": "https://hosted.weblate.org/translate/seal/glossary/sq/",
      "pinned": false,
-     "fetchedAt": "2026-11-13T13:05:47.136Z"
+     "fetchedAt": "2026-11-13T04:57:32.216Z"
     },
     {
      "id": "hosted:seal/strings",
      "apiUrl": "https://hosted.weblate.org/api/translations/seal/strings/sq/",
      "instance": "hosted",
+     "platform": "weblate",
      "project": {
       "slug": "seal",
       "name": "Seal",
-      "url": "https://hosted.weblate.org/projects/seal/"
+      "url": "https://hosted.weblate.org/projects/seal/",
+      "web": "https://github.com/JunkFood02/Seal"
      },
      "component": {
       "slug": "strings",
@@ -447,12 +480,13 @@
      "approvedPercent": null,
      "failing": 0,
      "suggestions": 0,
+     "comments": 0,
      "lastChange": "2026-08-26T12:51:27.676Z",
      "lastContribution": "2026-08-26T11:47:23.461Z",
      "webUrl": "https://hosted.weblate.org/projects/seal/strings/sq/",
      "translateUrl": "https://hosted.weblate.org/translate/seal/strings/sq/",
      "pinned": false,
-     "fetchedAt": "2026-11-13T13:05:47.136Z"
+     "fetchedAt": "2026-11-13T04:57:32.216Z"
     },
     {
      "id": "hosted:thunder/thunder",
@@ -492,10 +526,12 @@
      "id": "hosted:trale/localizations",
      "apiUrl": "https://hosted.weblate.org/api/translations/trale/localizations/sq/",
      "instance": "hosted",
+     "platform": "weblate",
      "project": {
       "slug": "trale",
       "name": "trale",
-      "url": "https://hosted.weblate.org/projects/trale/"
+      "url": "https://hosted.weblate.org/projects/trale/",
+      "web": "https://github.com/QuantumPhysique/trale"
      },
      "component": {
       "slug": "localizations",
@@ -515,19 +551,20 @@
      "approvedPercent": null,
      "failing": 0,
      "suggestions": 0,
+     "comments": 0,
      "lastChange": "2026-10-04T09:51:52.939Z",
      "lastContribution": "2026-09-22T12:42:51.769Z",
      "webUrl": "https://hosted.weblate.org/projects/trale/localizations/sq/",
      "translateUrl": "https://hosted.weblate.org/translate/trale/localizations/sq/",
      "pinned": false,
-     "fetchedAt": "2026-11-13T13:05:47.136Z"
+     "fetchedAt": "2026-11-13T04:57:32.216Z"
     }
    ],
    "known": {
     "users": {
      "aubergine-ux": {
-      "before": null,
-      "since": "2026-11-13T13:05:47.136Z"
+      "before": "2026-07-07T15:45:30.242Z",
+      "since": "2026-11-13T04:57:32.216Z"
      }
     },
     "translations": {
@@ -580,10 +617,14 @@
     "pins": {},
     "missing": {}
    },
-   "errors": []
+   "errors": [
+    "rate limit reached, 3 component(s) not refreshed this run (add a token to TALLYGLOT_TOKENS to avoid this)",
+    "older contribution history is still being read; more components may appear on the next run"
+   ]
   },
   "codeberg": {
    "name": "Codeberg Translate",
+   "platform": "weblate",
    "url": "https://translate.codeberg.org",
    "fingerprint": "[\"https://translate.codeberg.org\",\"sq\",[\"aubergine-ux\"],[]]",
    "updatedAt": "2026-11-12T08:54:28.105Z",
@@ -595,7 +636,7 @@
     "missing": {}
    },
    "errors": [
-    "rate limit reached, some component(s) not refreshed this run (add a token to WEBLATE_TOKENS to avoid this)"
+    "rate limit reached, some component(s) not refreshed this run (add a token to TALLYGLOT_TOKENS to avoid this)"
    ]
   }
  }

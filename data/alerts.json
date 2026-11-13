@@ -1,0 +1,14 @@
+{
+ "version": 1,
+ "events": [
+  {
+   "project": "hosted:adventurelog",
+   "name": "AdventureLog",
+   "added": 87,
+   "waiting": 482,
+   "percent": 76.9,
+   "url": "https://hosted.weblate.org/translate/adventurelog/web-app/sq/?q=state:empty",
+   "at": "2026-11-13T04:57:32.216Z"
+  }
+ ]
+}
