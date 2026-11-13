@@ -1,0 +1,32 @@
+{
+ "version": 1,
+ "events": [
+  {
+   "project": "hosted:quillpad",
+   "name": "Quillpad",
+   "added": 310,
+   "waiting": 2353,
+   "percent": 68.3,
+   "url": "https://hosted.weblate.org/translate/quillpad/-/sq/?q=state:empty",
+   "at": "2025-12-26T09:00:00.000Z"
+  },
+  {
+   "project": "fedora:harbor-installer",
+   "name": "Harbor Installer",
+   "added": 42,
+   "waiting": 663,
+   "percent": 75.2,
+   "url": "https://translate.fedoraproject.org/translate/harbor-installer/-/sq/?q=state:empty",
+   "at": "2025-12-13T09:00:00.000Z"
+  },
+  {
+   "project": "codeberg:saltmarsh-mail",
+   "name": "Saltmarsh Mail",
+   "added": 18,
+   "waiting": 478,
+   "percent": 67.9,
+   "url": "https://translate.codeberg.org/translate/saltmarsh-mail/-/sq/?q=state:empty",
+   "at": "2025-11-29T09:00:00.000Z"
+  }
+ ]
+}

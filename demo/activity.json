@@ -1,0 +1,985 @@
+{
+ "version": 1,
+ "updatedAt": "2026-01-15T09:00:00.000Z",
+ "sources": {},
+ "days": {
+  "2024-12-12": {
+   "fedora:harbor-installer": 10,
+   "hosted:lanternfish-reader": 2
+  },
+  "2024-12-15": {
+   "codeberg:saltmarsh-mail": 16,
+   "hosted:lanternfish-reader": 1,
+   "codeberg:pebble-feeds": 8
+  },
+  "2024-12-16": {
+   "hosted:lanternfish-reader": 38,
+   "codeberg:driftwood": 22
+  },
+  "2024-12-17": {
+   "hosted:quillpad": 1
+  },
+  "2024-12-18": {
+   "hosted:quillpad": 3,
+   "fedora:harbor-installer": 24
+  },
+  "2024-12-21": {
+   "fedora:wicker-settings": 33,
+   "codeberg:saltmarsh-mail": 8,
+   "hosted:lanternfish-reader": 6
+  },
+  "2024-12-22": {
+   "codeberg:saltmarsh-mail": 34
+  },
+  "2024-12-23": {
+   "fedora:harbor-installer": 1,
+   "fedora:wicker-settings": 1
+  },
+  "2024-12-26": {
+   "hosted:lanternfish-reader": 13
+  },
+  "2024-12-31": {
+   "hosted:lanternfish-reader": 27
+  },
+  "2025-01-29": {
+   "fedora:copperplate": 28,
+   "codeberg:pebble-feeds": 1,
+   "hosted:lanternfish-reader": 5
+  },
+  "2025-01-31": {
+   "hosted:tinderbox-ci": 26
+  },
+  "2025-02-07": {
+   "hosted:quillpad": 55
+  },
+  "2025-02-09": {
+   "hosted:quillpad": 6
+  },
+  "2025-02-14": {
+   "codeberg:driftwood": 9
+  },
+  "2025-02-15": {
+   "hosted:tinderbox-ci": 5,
+   "hosted:lanternfish-reader": 15
+  },
+  "2025-02-16": {
+   "codeberg:saltmarsh-mail": 26,
+   "hosted:lanternfish-reader": 1
+  },
+  "2025-02-17": {
+   "hosted:marrow-notes": 1
+  },
+  "2025-02-18": {
+   "hosted:papaya-maps": 51
+  },
+  "2025-02-19": {
+   "fedora:copperplate": 1
+  },
+  "2025-02-20": {
+   "fedora:wicker-settings": 14
+  },
+  "2025-02-21": {
+   "hosted:quillpad": 8
+  },
+  "2025-02-22": {
+   "fedora:copperplate": 36,
+   "fedora:harbor-installer": 31
+  },
+  "2025-02-24": {
+   "hosted:lanternfish-reader": 57
+  },
+  "2025-02-25": {
+   "hosted:tinderbox-ci": 13,
+   "fedora:copperplate": 34,
+   "hosted:lanternfish-reader": 36
+  },
+  "2025-02-26": {
+   "hosted:quillpad": 8,
+   "codeberg:driftwood": 23
+  },
+  "2025-02-27": {
+   "fedora:harbor-installer": 2,
+   "hosted:lanternfish-reader": 9
+  },
+  "2025-03-01": {
+   "codeberg:saltmarsh-mail": 1,
+   "fedora:harbor-installer": 1,
+   "hosted:tinderbox-ci": 3
+  },
+  "2025-03-03": {
+   "hosted:tinderbox-ci": 3,
+   "hosted:marrow-notes": 14,
+   "hosted:lanternfish-reader": 2
+  },
+  "2025-03-04": {
+   "hosted:papaya-maps": 1
+  },
+  "2025-03-05": {
+   "hosted:papaya-maps": 22,
+   "fedora:harbor-installer": 3,
+   "codeberg:saltmarsh-mail": 36
+  },
+  "2025-03-07": {
+   "hosted:papaya-maps": 1,
+   "hosted:tinderbox-ci": 4,
+   "hosted:lanternfish-reader": 1
+  },
+  "2025-03-08": {
+   "fedora:harbor-installer": 6,
+   "codeberg:driftwood": 22
+  },
+  "2025-03-09": {
+   "codeberg:pebble-feeds": 10
+  },
+  "2025-03-10": {
+   "hosted:tinderbox-ci": 36,
+   "hosted:marrow-notes": 6
+  },
+  "2025-03-11": {
+   "hosted:lanternfish-reader": 34
+  },
+  "2025-03-14": {
+   "hosted:lanternfish-reader": 17
+  },
+  "2025-03-15": {
+   "fedora:copperplate": 26,
+   "hosted:papaya-maps": 5
+  },
+  "2025-03-16": {
+   "codeberg:driftwood": 1,
+   "hosted:lanternfish-reader": 20
+  },
+  "2025-03-17": {
+   "codeberg:saltmarsh-mail": 10
+  },
+  "2025-03-19": {
+   "hosted:marrow-notes": 23
+  },
+  "2025-03-23": {
+   "fedora:harbor-installer": 30,
+   "hosted:marrow-notes": 11,
+   "fedora:copperplate": 2
+  },
+  "2025-03-24": {
+   "hosted:quillpad": 6,
+   "hosted:lanternfish-reader": 6
+  },
+  "2025-03-25": {
+   "hosted:lanternfish-reader": 9
+  },
+  "2025-03-26": {
+   "codeberg:pebble-feeds": 3,
+   "hosted:lanternfish-reader": 20
+  },
+  "2025-03-27": {
+   "fedora:copperplate": 35
+  },
+  "2025-03-28": {
+   "hosted:lanternfish-reader": 28
+  },
+  "2025-04-02": {
+   "hosted:lanternfish-reader": 5,
+   "codeberg:driftwood": 1
+  },
+  "2025-04-03": {
+   "hosted:marrow-notes": 44
+  },
+  "2025-04-07": {
+   "hosted:marrow-notes": 5,
+   "codeberg:saltmarsh-mail": 5
+  },
+  "2025-04-08": {
+   "hosted:lanternfish-reader": 10
+  },
+  "2025-04-09": {
+   "codeberg:saltmarsh-mail": 33
+  },
+  "2025-04-10": {
+   "fedora:wicker-settings": 8,
+   "hosted:lanternfish-reader": 1
+  },
+  "2025-04-11": {
+   "hosted:lanternfish-reader": 18,
+   "codeberg:saltmarsh-mail": 28
+  },
+  "2025-04-12": {
+   "fedora:wicker-settings": 5
+  },
+  "2025-04-14": {
+   "fedora:wicker-settings": 10,
+   "hosted:lanternfish-reader": 13,
+   "hosted:papaya-maps": 1
+  },
+  "2025-04-15": {
+   "fedora:harbor-installer": 36,
+   "hosted:papaya-maps": 22,
+   "hosted:quillpad": 12
+  },
+  "2025-04-16": {
+   "hosted:lanternfish-reader": 18
+  },
+  "2025-04-17": {
+   "codeberg:driftwood": 8
+  },
+  "2025-04-18": {
+   "hosted:papaya-maps": 1,
+   "codeberg:pebble-feeds": 1
+  },
+  "2025-04-19": {
+   "hosted:papaya-maps": 1,
+   "hosted:tinderbox-ci": 12
+  },
+  "2025-04-20": {
+   "hosted:tinderbox-ci": 3,
+   "hosted:quillpad": 18
+  },
+  "2025-04-22": {
+   "hosted:lanternfish-reader": 18,
+   "hosted:marrow-notes": 29,
+   "hosted:papaya-maps": 35
+  },
+  "2025-04-24": {
+   "hosted:tinderbox-ci": 16,
+   "hosted:marrow-notes": 3,
+   "codeberg:driftwood": 2
+  },
+  "2025-04-26": {
+   "hosted:lanternfish-reader": 33,
+   "hosted:tinderbox-ci": 1,
+   "fedora:harbor-installer": 1
+  },
+  "2025-04-27": {
+   "hosted:marrow-notes": 2
+  },
+  "2025-04-28": {
+   "hosted:lanternfish-reader": 10,
+   "hosted:tinderbox-ci": 33,
+   "hosted:quillpad": 7
+  },
+  "2025-04-29": {
+   "codeberg:saltmarsh-mail": 20
+  },
+  "2025-04-30": {
+   "hosted:lanternfish-reader": 40,
+   "hosted:tinderbox-ci": 2,
+   "fedora:copperplate": 26
+  },
+  "2025-05-01": {
+   "fedora:harbor-installer": 13
+  },
+  "2025-05-02": {
+   "hosted:lanternfish-reader": 3,
+   "hosted:marrow-notes": 32
+  },
+  "2025-05-03": {
+   "hosted:papaya-maps": 13,
+   "fedora:copperplate": 26
+  },
+  "2025-05-05": {
+   "hosted:lanternfish-reader": 5
+  },
+  "2025-05-07": {
+   "codeberg:pebble-feeds": 33
+  },
+  "2025-05-08": {
+   "hosted:papaya-maps": 5
+  },
+  "2025-05-09": {
+   "hosted:lanternfish-reader": 17
+  },
+  "2025-05-10": {
+   "hosted:lanternfish-reader": 22
+  },
+  "2025-05-11": {
+   "hosted:marrow-notes": 1
+  },
+  "2025-05-12": {
+   "hosted:lanternfish-reader": 42
+  },
+  "2025-05-13": {
+   "hosted:lanternfish-reader": 66,
+   "fedora:copperplate": 7
+  },
+  "2025-05-14": {
+   "hosted:lanternfish-reader": 21
+  },
+  "2025-05-15": {
+   "codeberg:driftwood": 28
+  },
+  "2025-05-16": {
+   "fedora:harbor-installer": 1
+  },
+  "2025-05-18": {
+   "hosted:marrow-notes": 28
+  },
+  "2025-05-19": {
+   "codeberg:pebble-feeds": 26,
+   "hosted:lanternfish-reader": 1,
+   "fedora:harbor-installer": 8
+  },
+  "2025-05-21": {
+   "hosted:lanternfish-reader": 36,
+   "codeberg:saltmarsh-mail": 6
+  },
+  "2025-05-22": {
+   "fedora:copperplate": 26,
+   "hosted:papaya-maps": 3,
+   "hosted:tinderbox-ci": 14
+  },
+  "2025-05-23": {
+   "hosted:tinderbox-ci": 1,
+   "hosted:quillpad": 1
+  },
+  "2025-05-25": {
+   "fedora:wicker-settings": 1
+  },
+  "2025-05-26": {
+   "hosted:tinderbox-ci": 28,
+   "fedora:copperplate": 3
+  },
+  "2025-05-27": {
+   "hosted:lanternfish-reader": 19,
+   "hosted:papaya-maps": 15,
+   "codeberg:saltmarsh-mail": 2
+  },
+  "2025-05-28": {
+   "hosted:quillpad": 69
+  },
+  "2025-05-29": {
+   "hosted:quillpad": 6
+  },
+  "2025-05-30": {
+   "hosted:lanternfish-reader": 27,
+   "codeberg:driftwood": 15,
+   "hosted:marrow-notes": 2
+  },
+  "2025-05-31": {
+   "fedora:copperplate": 1,
+   "hosted:quillpad": 2
+  },
+  "2025-06-01": {
+   "hosted:tinderbox-ci": 8,
+   "hosted:marrow-notes": 2,
+   "codeberg:pebble-feeds": 2
+  },
+  "2025-06-02": {
+   "hosted:tinderbox-ci": 28
+  },
+  "2025-06-03": {
+   "codeberg:pebble-feeds": 29,
+   "hosted:marrow-notes": 1
+  },
+  "2025-06-04": {
+   "fedora:copperplate": 14
+  },
+  "2025-06-05": {
+   "hosted:quillpad": 53
+  },
+  "2025-06-06": {
+   "hosted:quillpad": 37
+  },
+  "2025-06-07": {
+   "hosted:lanternfish-reader": 26,
+   "hosted:tinderbox-ci": 17
+  },
+  "2025-06-09": {
+   "fedora:harbor-installer": 6,
+   "hosted:tinderbox-ci": 17,
+   "hosted:quillpad": 15
+  },
+  "2025-06-10": {
+   "hosted:lanternfish-reader": 5
+  },
+  "2025-06-11": {
+   "hosted:tinderbox-ci": 7
+  },
+  "2025-06-12": {
+   "hosted:lanternfish-reader": 11,
+   "codeberg:pebble-feeds": 28
+  },
+  "2025-06-13": {
+   "codeberg:saltmarsh-mail": 6
+  },
+  "2025-06-14": {
+   "fedora:harbor-installer": 28
+  },
+  "2025-06-15": {
+   "hosted:lanternfish-reader": 9,
+   "fedora:harbor-installer": 13
+  },
+  "2025-06-16": {
+   "hosted:lanternfish-reader": 43
+  },
+  "2025-06-19": {
+   "hosted:lanternfish-reader": 21
+  },
+  "2025-06-21": {
+   "codeberg:saltmarsh-mail": 3
+  },
+  "2025-06-29": {
+   "codeberg:pebble-feeds": 19,
+   "fedora:wicker-settings": 23
+  },
+  "2025-07-01": {
+   "hosted:papaya-maps": 11,
+   "codeberg:driftwood": 1
+  },
+  "2025-07-10": {
+   "codeberg:saltmarsh-mail": 15,
+   "hosted:papaya-maps": 23
+  },
+  "2025-07-14": {
+   "hosted:quillpad": 10
+  },
+  "2025-07-15": {
+   "codeberg:pebble-feeds": 1
+  },
+  "2025-07-21": {
+   "hosted:quillpad": 14,
+   "hosted:lanternfish-reader": 34
+  },
+  "2025-07-23": {
+   "codeberg:saltmarsh-mail": 1
+  },
+  "2025-09-07": {
+   "codeberg:saltmarsh-mail": 17,
+   "hosted:quillpad": 1
+  },
+  "2025-10-06": {
+   "hosted:marrow-notes": 2
+  },
+  "2025-10-08": {
+   "fedora:wicker-settings": 10,
+   "hosted:lanternfish-reader": 73
+  },
+  "2025-10-15": {
+   "hosted:papaya-maps": 15,
+   "codeberg:driftwood": 1,
+   "fedora:wicker-settings": 3
+  },
+  "2025-10-26": {
+   "hosted:lanternfish-reader": 40,
+   "hosted:quillpad": 13
+  },
+  "2025-10-27": {
+   "hosted:marrow-notes": 42,
+   "hosted:papaya-maps": 7
+  },
+  "2025-11-12": {
+   "hosted:lanternfish-reader": 11
+  },
+  "2025-11-14": {
+   "fedora:wicker-settings": 1
+  },
+  "2025-11-20": {
+   "hosted:quillpad": 4
+  },
+  "2025-11-26": {
+   "hosted:lanternfish-reader": 29,
+   "codeberg:saltmarsh-mail": 22
+  },
+  "2025-11-30": {
+   "hosted:marrow-notes": 6,
+   "hosted:papaya-maps": 4
+  },
+  "2025-12-07": {
+   "hosted:tinderbox-ci": 7
+  },
+  "2025-12-10": {
+   "hosted:quillpad": 9,
+   "hosted:lanternfish-reader": 1,
+   "codeberg:driftwood": 39
+  },
+  "2025-12-11": {
+   "fedora:harbor-installer": 20
+  },
+  "2025-12-12": {
+   "codeberg:saltmarsh-mail": 13
+  },
+  "2025-12-16": {
+   "codeberg:saltmarsh-mail": 7
+  },
+  "2025-12-20": {
+   "hosted:papaya-maps": 7,
+   "hosted:quillpad": 25
+  },
+  "2025-12-21": {
+   "fedora:harbor-installer": 15,
+   "codeberg:saltmarsh-mail": 19
+  },
+  "2025-12-26": {
+   "hosted:papaya-maps": 1,
+   "hosted:tinderbox-ci": 7
+  },
+  "2025-12-27": {
+   "codeberg:saltmarsh-mail": 9,
+   "hosted:lanternfish-reader": 13
+  },
+  "2025-12-30": {
+   "hosted:marrow-notes": 21
+  },
+  "2025-12-31": {
+   "fedora:harbor-installer": 9,
+   "hosted:lanternfish-reader": 7
+  },
+  "2026-01-01": {
+   "codeberg:pebble-feeds": 3,
+   "hosted:quillpad": 12,
+   "fedora:harbor-installer": 35
+  },
+  "2026-01-03": {
+   "hosted:marrow-notes": 27,
+   "hosted:tinderbox-ci": 19
+  },
+  "2026-01-04": {
+   "hosted:lanternfish-reader": 14
+  },
+  "2026-01-06": {
+   "codeberg:saltmarsh-mail": 31,
+   "codeberg:pebble-feeds": 29
+  },
+  "2026-01-07": {
+   "hosted:quillpad": 35
+  },
+  "2026-01-08": {
+   "hosted:papaya-maps": 7
+  },
+  "2026-01-10": {
+   "hosted:lanternfish-reader": 9,
+   "hosted:papaya-maps": 12
+  },
+  "2026-01-11": {
+   "codeberg:pebble-feeds": 2,
+   "codeberg:driftwood": 2,
+   "hosted:tinderbox-ci": 20
+  },
+  "2026-01-12": {
+   "hosted:lanternfish-reader": 33,
+   "hosted:tinderbox-ci": 24,
+   "codeberg:driftwood": 7
+  },
+  "2026-01-13": {
+   "hosted:marrow-notes": 31,
+   "hosted:tinderbox-ci": 28,
+   "fedora:wicker-settings": 33
+  },
+  "2026-01-14": {
+   "hosted:papaya-maps": 12
+  },
+  "2026-01-15": {
+   "hosted:papaya-maps": 3,
+   "codeberg:pebble-feeds": 2
+  }
+ },
+ "users": {
+  "fedora": {
+   "demo": {
+    "2024-12-12": 10,
+    "2024-12-21": 33,
+    "2025-02-19": 1,
+    "2025-02-20": 14,
+    "2025-02-22": 31,
+    "2025-02-25": 34,
+    "2025-02-27": 2,
+    "2025-03-05": 3,
+    "2025-03-08": 6,
+    "2025-03-23": 32,
+    "2025-04-10": 8,
+    "2025-04-12": 5,
+    "2025-04-14": 10,
+    "2025-04-15": 36,
+    "2025-04-26": 1,
+    "2025-05-01": 13,
+    "2025-05-03": 26,
+    "2025-05-13": 7,
+    "2025-05-16": 1,
+    "2025-05-19": 8,
+    "2025-05-22": 26,
+    "2025-05-25": 1,
+    "2025-05-31": 1,
+    "2025-06-14": 28,
+    "2025-06-15": 13,
+    "2025-06-29": 23,
+    "2025-10-15": 3,
+    "2025-11-14": 1,
+    "2025-12-11": 20,
+    "2025-12-21": 15,
+    "2025-12-31": 9,
+    "2026-01-01": 35,
+    "2026-01-13": 33
+   },
+   "besnik": {
+    "2024-12-18": 24,
+    "2024-12-23": 1,
+    "2025-01-29": 28,
+    "2025-03-01": 1,
+    "2025-04-30": 26,
+    "2025-06-04": 14,
+    "2025-06-09": 6,
+    "2025-10-08": 10
+   },
+   "mira": {
+    "2024-12-23": 1,
+    "2025-02-22": 36,
+    "2025-03-15": 26,
+    "2025-03-27": 35,
+    "2025-05-26": 3
+   }
+  },
+  "hosted": {
+   "besnik": {
+    "2024-12-12": 2,
+    "2025-02-17": 1,
+    "2025-02-18": 39,
+    "2025-02-21": 8,
+    "2025-03-03": 14,
+    "2025-03-04": 1,
+    "2025-03-07": 4,
+    "2025-03-10": 6,
+    "2025-03-26": 20,
+    "2025-04-02": 4,
+    "2025-04-14": 13,
+    "2025-04-18": 1,
+    "2025-04-26": 33,
+    "2025-05-11": 1,
+    "2025-05-12": 42,
+    "2025-05-21": 36,
+    "2025-05-23": 2,
+    "2025-05-29": 6,
+    "2025-05-31": 1,
+    "2025-10-15": 15,
+    "2025-11-20": 4,
+    "2025-11-30": 2,
+    "2025-12-20": 25,
+    "2026-01-03": 27,
+    "2026-01-12": 33
+   },
+   "demo": {
+    "2024-12-15": 1,
+    "2024-12-16": 38,
+    "2024-12-17": 1,
+    "2024-12-18": 3,
+    "2024-12-21": 6,
+    "2025-01-29": 5,
+    "2025-01-31": 26,
+    "2025-02-07": 55,
+    "2025-02-15": 20,
+    "2025-02-16": 1,
+    "2025-02-18": 12,
+    "2025-02-24": 24,
+    "2025-02-25": 13,
+    "2025-02-26": 8,
+    "2025-02-27": 9,
+    "2025-03-01": 3,
+    "2025-03-03": 2,
+    "2025-03-05": 22,
+    "2025-03-07": 2,
+    "2025-03-11": 34,
+    "2025-03-14": 17,
+    "2025-03-15": 5,
+    "2025-03-16": 20,
+    "2025-03-24": 12,
+    "2025-03-25": 9,
+    "2025-03-28": 28,
+    "2025-04-03": 23,
+    "2025-04-07": 5,
+    "2025-04-08": 10,
+    "2025-04-11": 18,
+    "2025-04-14": 1,
+    "2025-04-15": 34,
+    "2025-04-16": 18,
+    "2025-04-19": 13,
+    "2025-04-20": 3,
+    "2025-04-22": 64,
+    "2025-04-24": 19,
+    "2025-04-26": 1,
+    "2025-04-28": 7,
+    "2025-04-30": 2,
+    "2025-05-02": 35,
+    "2025-05-05": 5,
+    "2025-05-08": 5,
+    "2025-05-09": 17,
+    "2025-05-13": 66,
+    "2025-05-14": 21,
+    "2025-05-19": 1,
+    "2025-05-22": 17,
+    "2025-05-26": 16,
+    "2025-05-27": 34,
+    "2025-05-28": 39,
+    "2025-05-30": 2,
+    "2025-06-01": 2,
+    "2025-06-05": 34,
+    "2025-06-06": 37,
+    "2025-06-07": 42,
+    "2025-06-10": 5,
+    "2025-06-12": 11,
+    "2025-06-15": 9,
+    "2025-06-16": 43,
+    "2025-07-01": 11,
+    "2025-07-10": 23,
+    "2025-07-21": 48,
+    "2025-09-07": 1,
+    "2025-10-06": 2,
+    "2025-10-08": 73,
+    "2025-10-26": 53,
+    "2025-10-27": 49,
+    "2025-11-30": 8,
+    "2025-12-10": 10,
+    "2025-12-26": 8,
+    "2026-01-01": 12,
+    "2026-01-03": 19,
+    "2026-01-04": 14,
+    "2026-01-07": 35,
+    "2026-01-08": 7,
+    "2026-01-10": 21,
+    "2026-01-11": 20,
+    "2026-01-13": 28,
+    "2026-01-15": 3
+   },
+   "mira": {
+    "2024-12-26": 13,
+    "2024-12-31": 27,
+    "2025-02-09": 6,
+    "2025-02-24": 33,
+    "2025-02-25": 36,
+    "2025-03-03": 3,
+    "2025-03-10": 36,
+    "2025-03-19": 23,
+    "2025-03-23": 11,
+    "2025-04-02": 1,
+    "2025-04-03": 21,
+    "2025-04-10": 1,
+    "2025-04-20": 18,
+    "2025-04-22": 18,
+    "2025-04-27": 2,
+    "2025-04-28": 43,
+    "2025-04-30": 40,
+    "2025-05-03": 13,
+    "2025-05-10": 22,
+    "2025-05-18": 28,
+    "2025-05-26": 12,
+    "2025-05-28": 30,
+    "2025-05-30": 27,
+    "2025-05-31": 1,
+    "2025-06-01": 8,
+    "2025-06-02": 28,
+    "2025-06-03": 1,
+    "2025-06-05": 19,
+    "2025-06-07": 1,
+    "2025-06-09": 32,
+    "2025-06-11": 7,
+    "2025-06-19": 21,
+    "2025-07-14": 10,
+    "2025-11-12": 11,
+    "2025-11-26": 29,
+    "2025-12-07": 7,
+    "2025-12-20": 7,
+    "2025-12-27": 13,
+    "2025-12-30": 21,
+    "2025-12-31": 7,
+    "2026-01-12": 24,
+    "2026-01-13": 31,
+    "2026-01-14": 12
+   }
+  },
+  "codeberg": {
+   "mira": {
+    "2024-12-15": 24,
+    "2024-12-21": 8,
+    "2025-03-05": 36,
+    "2025-03-16": 1,
+    "2025-04-11": 28,
+    "2025-05-15": 28,
+    "2025-06-12": 1,
+    "2025-12-21": 19,
+    "2026-01-01": 3
+   },
+   "demo": {
+    "2024-12-16": 22,
+    "2024-12-22": 34,
+    "2025-02-14": 9,
+    "2025-02-16": 26,
+    "2025-02-26": 23,
+    "2025-03-01": 1,
+    "2025-03-08": 22,
+    "2025-03-26": 3,
+    "2025-04-07": 5,
+    "2025-04-09": 33,
+    "2025-04-18": 1,
+    "2025-04-24": 2,
+    "2025-04-29": 2,
+    "2025-05-07": 33,
+    "2025-05-19": 26,
+    "2025-05-21": 6,
+    "2025-05-30": 15,
+    "2025-06-01": 2,
+    "2025-06-12": 27,
+    "2025-06-13": 6,
+    "2025-06-21": 3,
+    "2025-06-29": 19,
+    "2025-07-01": 1,
+    "2025-07-10": 15,
+    "2025-07-15": 1,
+    "2025-07-23": 1,
+    "2025-09-07": 4,
+    "2025-11-26": 22,
+    "2025-12-10": 39,
+    "2025-12-12": 13,
+    "2025-12-16": 7,
+    "2025-12-27": 9,
+    "2026-01-06": 60,
+    "2026-01-11": 2,
+    "2026-01-12": 7,
+    "2026-01-15": 2
+   },
+   "besnik": {
+    "2025-01-29": 1,
+    "2025-03-09": 10,
+    "2025-03-17": 10,
+    "2025-04-02": 1,
+    "2025-04-17": 8,
+    "2025-04-29": 18,
+    "2025-05-27": 2,
+    "2025-06-03": 29,
+    "2025-09-07": 13,
+    "2025-10-15": 1,
+    "2026-01-11": 2
+   }
+  }
+ },
+ "recent": [
+  {
+   "at": "2026-01-15T04:00:00.000Z",
+   "user": "demo",
+   "project": "hosted:papaya-maps",
+   "component": "app",
+   "action": "Translation added"
+  },
+  {
+   "at": "2026-01-15T03:00:00.000Z",
+   "user": "demo",
+   "project": "codeberg:pebble-feeds",
+   "component": "app",
+   "action": "Translation added"
+  },
+  {
+   "at": "2026-01-14T02:00:00.000Z",
+   "user": "mira",
+   "project": "hosted:papaya-maps",
+   "component": "app",
+   "action": "Translation added"
+  },
+  {
+   "at": "2026-01-13T03:00:00.000Z",
+   "user": "mira",
+   "project": "hosted:marrow-notes",
+   "component": "app",
+   "action": "Translation added"
+  },
+  {
+   "at": "2026-01-13T03:00:00.000Z",
+   "user": "demo",
+   "project": "hosted:tinderbox-ci",
+   "component": "app",
+   "action": "Translation added"
+  },
+  {
+   "at": "2026-01-13T03:00:00.000Z",
+   "user": "demo",
+   "project": "fedora:wicker-settings",
+   "component": "app",
+   "action": "Translation added"
+  },
+  {
+   "at": "2026-01-12T06:00:00.000Z",
+   "user": "mira",
+   "project": "hosted:tinderbox-ci",
+   "component": "app",
+   "action": "Translation added"
+  },
+  {
+   "at": "2026-01-12T05:00:00.000Z",
+   "user": "besnik",
+   "project": "hosted:lanternfish-reader",
+   "component": "app",
+   "action": "Translation added"
+  },
+  {
+   "at": "2026-01-12T02:00:00.000Z",
+   "user": "demo",
+   "project": "codeberg:driftwood",
+   "component": "app",
+   "action": "Translation added"
+  },
+  {
+   "at": "2026-01-11T07:00:00.000Z",
+   "user": "demo",
+   "project": "hosted:tinderbox-ci",
+   "component": "app",
+   "action": "Translation added"
+  },
+  {
+   "at": "2026-01-11T05:00:00.000Z",
+   "user": "demo",
+   "project": "codeberg:pebble-feeds",
+   "component": "app",
+   "action": "Translation changed"
+  },
+  {
+   "at": "2026-01-11T03:00:00.000Z",
+   "user": "besnik",
+   "project": "codeberg:driftwood",
+   "component": "app",
+   "action": "Translation added"
+  },
+  {
+   "at": "2026-01-10T08:00:00.000Z",
+   "user": "demo",
+   "project": "hosted:lanternfish-reader",
+   "component": "app",
+   "action": "Translation added"
+  },
+  {
+   "at": "2026-01-10T05:00:00.000Z",
+   "user": "demo",
+   "project": "hosted:papaya-maps",
+   "component": "app",
+   "action": "Translation added"
+  },
+  {
+   "at": "2026-01-08T03:00:00.000Z",
+   "user": "demo",
+   "project": "hosted:papaya-maps",
+   "component": "app",
+   "action": "Translation added"
+  },
+  {
+   "at": "2026-01-07T03:00:00.000Z",
+   "user": "demo",
+   "project": "hosted:quillpad",
+   "component": "app",
+   "action": "Translation changed"
+  },
+  {
+   "at": "2026-01-06T07:00:00.000Z",
+   "user": "demo",
+   "project": "codeberg:saltmarsh-mail",
+   "component": "app",
+   "action": "Translation added"
+  },
+  {
+   "at": "2026-01-06T03:00:00.000Z",
+   "user": "demo",
+   "project": "codeberg:pebble-feeds",
+   "component": "app",
+   "action": "Translation added"
+  },
+  {
+   "at": "2026-01-04T02:00:00.000Z",
+   "user": "demo",
+   "project": "hosted:lanternfish-reader",
+   "component": "app",
+   "action": "Translation changed"
+  }
+ ]
+}

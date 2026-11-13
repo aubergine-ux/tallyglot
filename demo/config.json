@@ -1,8 +1,13 @@
 {
   "language": "sq",
   "usernames": [
-    "demo"
+    "demo",
+    "mira",
+    "besnik"
   ],
+  "team": {
+    "name": "Albanian team"
+  },
   "instances": [
     {
       "id": "hosted"
