@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generatedAt": "2026-11-12T09:23:09.728Z",
+ "generatedAt": "2026-11-13T13:05:47.136Z",
  "language": {
   "code": "sq",
   "name": "Albanian"
@@ -10,7 +10,7 @@
    "name": "Hosted Weblate",
    "url": "https://hosted.weblate.org",
    "fingerprint": "[\"https://hosted.weblate.org\",\"sq\",[\"aubergine-ux\"],[]]",
-   "updatedAt": "2026-11-12T09:23:09.728Z",
+   "updatedAt": "2026-11-13T13:05:47.136Z",
    "entries": [
     {
      "id": "hosted:accrescent/glossary",
@@ -44,7 +44,7 @@
      "webUrl": "https://hosted.weblate.org/projects/accrescent/glossary/sq/",
      "translateUrl": "https://hosted.weblate.org/translate/accrescent/glossary/sq/",
      "pinned": false,
-     "fetchedAt": "2026-11-12T09:23:09.728Z"
+     "fetchedAt": "2026-11-13T13:05:47.136Z"
     },
     {
      "id": "hosted:adventurelog/web-app",
@@ -63,22 +63,22 @@
       "code": "sq",
       "name": "Albanian"
      },
-     "total": 2007,
+     "total": 2094,
      "translated": 1612,
      "fuzzy": 5,
-     "untranslated": 390,
-     "translatedPercent": 80.3,
+     "untranslated": 477,
+     "translatedPercent": 76.9,
      "review": false,
      "approved": null,
      "approvedPercent": null,
      "failing": 37,
      "suggestions": 0,
-     "lastChange": "2026-11-05T02:56:18.272Z",
+     "lastChange": "2026-11-12T14:59:30.639Z",
      "lastContribution": "2026-08-20T14:38:49.150Z",
      "webUrl": "https://hosted.weblate.org/projects/adventurelog/web-app/sq/",
      "translateUrl": "https://hosted.weblate.org/translate/adventurelog/web-app/sq/",
      "pinned": false,
-     "fetchedAt": "2026-11-12T09:23:09.728Z"
+     "fetchedAt": "2026-11-13T13:05:47.136Z"
     },
     {
      "id": "hosted:aurora-store/aurorastore-translations",
@@ -112,7 +112,7 @@
      "webUrl": "https://hosted.weblate.org/projects/aurora-store/aurorastore-translations/sq/",
      "translateUrl": "https://hosted.weblate.org/translate/aurora-store/aurorastore-translations/sq/",
      "pinned": false,
-     "fetchedAt": "2026-11-12T09:23:09.728Z"
+     "fetchedAt": "2026-11-13T13:05:47.136Z"
     },
     {
      "id": "hosted:f-droid/f-droid",
@@ -146,7 +146,7 @@
      "webUrl": "https://hosted.weblate.org/projects/f-droid/f-droid/sq/",
      "translateUrl": "https://hosted.weblate.org/translate/f-droid/f-droid/sq/",
      "pinned": false,
-     "fetchedAt": "2026-11-12T09:23:09.728Z"
+     "fetchedAt": "2026-11-13T13:05:47.136Z"
     },
     {
      "id": "hosted:grit/strings",
@@ -180,7 +180,7 @@
      "webUrl": "https://hosted.weblate.org/projects/grit/strings/sq/",
      "translateUrl": "https://hosted.weblate.org/translate/grit/strings/sq/",
      "pinned": false,
-     "fetchedAt": "2026-11-12T09:23:09.728Z"
+     "fetchedAt": "2026-11-13T13:05:47.136Z"
     },
     {
      "id": "hosted:immich/immich",
@@ -214,7 +214,7 @@
      "webUrl": "https://hosted.weblate.org/projects/immich/immich/sq/",
      "translateUrl": "https://hosted.weblate.org/translate/immich/immich/sq/",
      "pinned": false,
-     "fetchedAt": "2026-11-12T09:23:09.728Z"
+     "fetchedAt": "2026-11-13T13:05:47.136Z"
     },
     {
      "id": "hosted:mona/mona-app",
@@ -248,7 +248,7 @@
      "webUrl": "https://hosted.weblate.org/projects/mona/mona-app/sq/",
      "translateUrl": "https://hosted.weblate.org/translate/mona/mona-app/sq/",
      "pinned": false,
-     "fetchedAt": "2026-11-12T09:23:09.728Z"
+     "fetchedAt": "2026-11-13T13:05:47.136Z"
     },
     {
      "id": "hosted:next-player/android-strings-core",
@@ -282,7 +282,7 @@
      "webUrl": "https://hosted.weblate.org/projects/next-player/android-strings-core/sq/",
      "translateUrl": "https://hosted.weblate.org/translate/next-player/android-strings-core/sq/",
      "pinned": false,
-     "fetchedAt": "2026-11-12T09:23:09.728Z"
+     "fetchedAt": "2026-11-13T13:05:47.136Z"
     },
     {
      "id": "hosted:pfa/notes%252Fnotes-android-app",
@@ -316,7 +316,7 @@
      "webUrl": "https://hosted.weblate.org/projects/pfa/notes/notes-android-app/sq/",
      "translateUrl": "https://hosted.weblate.org/translate/pfa/notes/notes-android-app/sq/",
      "pinned": false,
-     "fetchedAt": "2026-11-12T09:23:09.728Z"
+     "fetchedAt": "2026-11-13T13:05:47.136Z"
     },
     {
      "id": "hosted:prismlauncher/launcher",
@@ -350,7 +350,7 @@
      "webUrl": "https://hosted.weblate.org/projects/prismlauncher/launcher/sq/",
      "translateUrl": "https://hosted.weblate.org/translate/prismlauncher/launcher/sq/",
      "pinned": false,
-     "fetchedAt": "2026-11-12T09:23:09.728Z"
+     "fetchedAt": "2026-11-13T13:05:47.136Z"
     },
     {
      "id": "hosted:readyou/android-strings",
@@ -384,7 +384,7 @@
      "webUrl": "https://hosted.weblate.org/projects/readyou/android-strings/sq/",
      "translateUrl": "https://hosted.weblate.org/translate/readyou/android-strings/sq/",
      "pinned": false,
-     "fetchedAt": "2026-11-12T09:23:09.728Z"
+     "fetchedAt": "2026-11-13T13:05:47.136Z"
     },
     {
      "id": "hosted:seal/glossary",
@@ -418,7 +418,7 @@
      "webUrl": "https://hosted.weblate.org/projects/seal/glossary/sq/",
      "translateUrl": "https://hosted.weblate.org/translate/seal/glossary/sq/",
      "pinned": false,
-     "fetchedAt": "2026-11-12T09:23:09.728Z"
+     "fetchedAt": "2026-11-13T13:05:47.136Z"
     },
     {
      "id": "hosted:seal/strings",
@@ -452,7 +452,7 @@
      "webUrl": "https://hosted.weblate.org/projects/seal/strings/sq/",
      "translateUrl": "https://hosted.weblate.org/translate/seal/strings/sq/",
      "pinned": false,
-     "fetchedAt": "2026-11-12T09:23:09.728Z"
+     "fetchedAt": "2026-11-13T13:05:47.136Z"
     },
     {
      "id": "hosted:thunder/thunder",
@@ -486,7 +486,7 @@
      "webUrl": "https://hosted.weblate.org/projects/thunder/thunder/sq/",
      "translateUrl": "https://hosted.weblate.org/translate/thunder/thunder/sq/",
      "pinned": false,
-     "fetchedAt": "2026-11-12T09:23:09.728Z"
+     "fetchedAt": "2026-11-13T13:05:47.136Z"
     },
     {
      "id": "hosted:trale/localizations",
@@ -520,14 +520,14 @@
      "webUrl": "https://hosted.weblate.org/projects/trale/localizations/sq/",
      "translateUrl": "https://hosted.weblate.org/translate/trale/localizations/sq/",
      "pinned": false,
-     "fetchedAt": "2026-11-12T09:23:09.728Z"
+     "fetchedAt": "2026-11-13T13:05:47.136Z"
     }
    ],
    "known": {
     "users": {
      "aubergine-ux": {
       "before": null,
-      "since": "2026-11-12T09:23:09.728Z"
+      "since": "2026-11-13T13:05:47.136Z"
      }
     },
     "translations": {
