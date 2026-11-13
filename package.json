@@ -1,17 +1,42 @@
 {
   "name": "tallyglot",
-  "version": "1.0.0",
-  "description": "Translation progress for one language across multiple Weblate instances",
-  "private": true,
+  "version": "2.0.0",
+  "description": "Translation progress for one language across Weblate, Pontoon, Crowdin, Transifex and Lokalise",
   "type": "module",
   "license": "MIT",
+  "homepage": "https://github.com/aubergine-ux/tallyglot#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aubergine-ux/tallyglot.git"
+  },
+  "keywords": [
+    "translation",
+    "localization",
+    "l10n",
+    "i18n",
+    "weblate",
+    "pontoon",
+    "crowdin",
+    "transifex",
+    "lokalise",
+    "cli"
+  ],
+  "bin": {
+    "tallyglot": "bin/tallyglot.mjs"
+  },
+  "files": [
+    "bin",
+    "src",
+    "LICENSE",
+    "README.md"
+  ],
   "scripts": {
     "start": "node scripts/serve.mjs",
     "setup": "node scripts/setup.mjs",
     "build-data": "node scripts/build-data.mjs",
     "demo-data": "node scripts/make-demo.mjs",
     "test": "node --test",
-    "test:e2e": "node e2e/run.mjs",
+    "test:e2e": "node e2e/run.mjs && node e2e/pages.mjs && node e2e/extension.mjs",
     "format": "npx prettier@3 --write ."
   },
   "engines": {
