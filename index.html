@@ -6,8 +6,13 @@
     <meta name="color-scheme" content="light dark" />
     <meta
       name="description"
-      content="Translation progress for one language across multiple Weblate instances."
+      content="Translation progress for one language across Weblate, Pontoon, Crowdin, Transifex and Lokalise."
     />
+    <meta name="theme-color" content="#f5f2ec" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#131210" media="(prefers-color-scheme: dark)" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="assets/icon-192.png" />
+    <link rel="alternate" type="application/rss+xml" title="Tallyglot alerts" href="feed.xml" />
     <title>Tallyglot</title>
     <link rel="icon" href="assets/icon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="assets/styles.css" />
@@ -23,6 +28,7 @@
     <script type="module" src="src/app.js"></script>
   </head>
   <body>
+    <a id="skip" class="skip" href="#app">Skip to content</a>
     <header class="top">
       <a class="brand" href="./" aria-label="Tallyglot home">
         <svg viewBox="0 0 32 32" width="26" height="26" aria-hidden="true">
@@ -48,13 +54,7 @@
           </svg>
           <span>Refresh</span>
         </button>
-        <button
-          id="theme"
-          class="btn icon"
-          type="button"
-          aria-label="Switch theme"
-          title="Switch theme"
-        >
+        <button id="theme" class="btn icon" type="button" aria-label="Switch theme">
           <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true">
             <path
               d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5z"
@@ -81,17 +81,14 @@
         </button>
       </div>
     </header>
+    <nav id="nav" class="nav"></nav>
+    <p id="offline" class="offline" role="status" hidden></p>
 
-    <main id="app" aria-live="polite">
+    <main id="app" tabindex="-1">
       <p class="loading">Loading…</p>
     </main>
 
-    <footer class="foot">
-      <p>
-        Tallyglot is open source under the MIT license. Data comes from the public
-        <a href="https://docs.weblate.org/en/latest/api.html">Weblate REST API</a>.
-      </p>
-    </footer>
+    <footer id="foot" class="foot"></footer>
 
     <dialog id="settings" aria-labelledby="settings-title"></dialog>
     <div id="toast" role="status" aria-live="polite"></div>
