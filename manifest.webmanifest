@@ -1,0 +1,28 @@
+{
+  "name": "Tallyglot",
+  "short_name": "Tallyglot",
+  "description": "Translation progress for one language across Weblate, Pontoon, Crowdin, Transifex and Lokalise.",
+  "id": "./",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f5f2ec",
+  "theme_color": "#e8590c",
+  "categories": ["productivity", "utilities"],
+  "icons": [
+    { "src": "assets/icon.svg", "sizes": "any", "type": "image/svg+xml" },
+    { "src": "assets/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "assets/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    {
+      "src": "assets/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    { "name": "Review queue", "url": "./?view=review" },
+    { "name": "Stats", "url": "./?view=stats" },
+    { "name": "Find work", "url": "./?view=find" }
+  ]
+}
