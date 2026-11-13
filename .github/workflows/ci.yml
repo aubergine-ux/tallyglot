@@ -6,6 +6,9 @@ on:
     paths-ignore:
       - 'data/**'
       - 'badges/**'
+      - 'cards/**'
+      - 'maintainer/**'
+      - 'feed.xml'
       - '**.md'
   pull_request:
 
@@ -13,7 +16,29 @@ permissions:
   contents: read
 
 jobs:
-  test:
+  unit:
+    name: Unit tests (${{ matrix.os }}, Node ${{ matrix.node }})
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+        node: [22]
+        include:
+          - os: ubuntu-latest
+            node: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node }}
+
+      - name: Unit tests
+        run: npm test
+
+  browser:
+    name: Browser tests (headless Chrome)
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -22,10 +47,10 @@ jobs:
         with:
           node-version: 22
 
-      - name: Unit tests
-        run: npm test
+      - name: Formatting
+        run: npx --yes prettier@3 --check .
 
-      - name: End-to-end tests (headless Chrome)
+      - name: Dashboard, pages and extension
         run: npm run test:e2e
         env:
           CHROME_BIN: google-chrome

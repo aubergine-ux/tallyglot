@@ -21,7 +21,7 @@ export function findChrome() {
   return null;
 }
 
-export async function launch({ width = 1280, height = 900, scale = 1 } = {}) {
+export async function launch({ width = 1280, height = 900, scale = 1, args = [] } = {}) {
   const bin = findChrome();
   if (!bin) throw new Error('No Chrome or Chromium found. Set CHROME_BIN.');
   const profile = mkdtempSync(join(tmpdir(), 'tallyglot-e2e-'));
@@ -34,6 +34,7 @@ export async function launch({ width = 1280, height = 900, scale = 1 } = {}) {
     `--user-data-dir=${profile}`,
     `--window-size=${width},${height}`,
     `--force-device-scale-factor=${scale}`,
+    ...args,
     'about:blank',
   ]);
   const wsUrl = await new Promise((resolve, reject) => {
@@ -81,6 +82,8 @@ export async function launch({ width = 1280, height = 900, scale = 1 } = {}) {
   const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
   const page = {
     cmd,
+    /** Browser-level command (not tied to the tab), e.g. Target.getTargets. */
+    browser: (method, params) => send(method, params),
     sleep,
     /** Run an expression in the page and return its (JSON-serialisable) value. */
     async eval(expression) {
