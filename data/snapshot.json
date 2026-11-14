@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generatedAt": "2026-11-13T04:57:32.216Z",
+ "generatedAt": "2026-11-14T12:10:15.217Z",
  "language": {
   "code": "sq",
   "name": "Albanian"
@@ -11,16 +11,18 @@
    "platform": "weblate",
    "url": "https://hosted.weblate.org",
    "fingerprint": "[\"https://hosted.weblate.org\",\"sq\",[\"aubergine-ux\"],[]]",
-   "updatedAt": "2026-11-13T04:57:32.216Z",
+   "updatedAt": "2026-11-14T12:10:15.217Z",
    "entries": [
     {
      "id": "hosted:accrescent/glossary",
      "apiUrl": "https://hosted.weblate.org/api/translations/accrescent/glossary/sq/",
      "instance": "hosted",
+     "platform": "weblate",
      "project": {
       "slug": "accrescent",
       "name": "Accrescent",
-      "url": "https://hosted.weblate.org/projects/accrescent/"
+      "url": "https://hosted.weblate.org/projects/accrescent/",
+      "web": "https://accrescent.app"
      },
      "component": {
       "slug": "glossary",
@@ -40,12 +42,13 @@
      "approvedPercent": 0,
      "failing": 0,
      "suggestions": 0,
+     "comments": 0,
      "lastChange": "2026-11-06T05:16:29.651Z",
      "lastContribution": "2026-06-13T11:10:51.091Z",
      "webUrl": "https://hosted.weblate.org/projects/accrescent/glossary/sq/",
      "translateUrl": "https://hosted.weblate.org/translate/accrescent/glossary/sq/",
      "pinned": false,
-     "fetchedAt": "2026-11-13T13:05:47.136Z"
+     "fetchedAt": "2026-11-14T12:10:15.217Z"
     },
     {
      "id": "hosted:adventurelog/web-app",
@@ -82,7 +85,7 @@
      "webUrl": "https://hosted.weblate.org/projects/adventurelog/web-app/sq/",
      "translateUrl": "https://hosted.weblate.org/translate/adventurelog/web-app/sq/",
      "pinned": false,
-     "fetchedAt": "2026-11-13T04:57:32.216Z"
+     "fetchedAt": "2026-11-14T12:10:15.217Z"
     },
     {
      "id": "hosted:aurora-store/aurorastore-translations",
@@ -119,7 +122,7 @@
      "webUrl": "https://hosted.weblate.org/projects/aurora-store/aurorastore-translations/sq/",
      "translateUrl": "https://hosted.weblate.org/translate/aurora-store/aurorastore-translations/sq/",
      "pinned": false,
-     "fetchedAt": "2026-11-13T04:57:32.216Z"
+     "fetchedAt": "2026-11-14T12:10:15.217Z"
     },
     {
      "id": "hosted:f-droid/f-droid",
@@ -156,7 +159,7 @@
      "webUrl": "https://hosted.weblate.org/projects/f-droid/f-droid/sq/",
      "translateUrl": "https://hosted.weblate.org/translate/f-droid/f-droid/sq/",
      "pinned": false,
-     "fetchedAt": "2026-11-13T04:57:32.216Z"
+     "fetchedAt": "2026-11-14T12:10:15.217Z"
     },
     {
      "id": "hosted:grit/strings",
@@ -193,7 +196,7 @@
      "webUrl": "https://hosted.weblate.org/projects/grit/strings/sq/",
      "translateUrl": "https://hosted.weblate.org/translate/grit/strings/sq/",
      "pinned": false,
-     "fetchedAt": "2026-11-13T04:57:32.216Z"
+     "fetchedAt": "2026-11-14T12:10:15.217Z"
     },
     {
      "id": "hosted:immich/immich",
@@ -230,7 +233,7 @@
      "webUrl": "https://hosted.weblate.org/projects/immich/immich/sq/",
      "translateUrl": "https://hosted.weblate.org/translate/immich/immich/sq/",
      "pinned": false,
-     "fetchedAt": "2026-11-13T04:57:32.216Z"
+     "fetchedAt": "2026-11-14T12:10:15.217Z"
     },
     {
      "id": "hosted:mona/mona-app",
@@ -267,7 +270,7 @@
      "webUrl": "https://hosted.weblate.org/projects/mona/mona-app/sq/",
      "translateUrl": "https://hosted.weblate.org/translate/mona/mona-app/sq/",
      "pinned": false,
-     "fetchedAt": "2026-11-13T04:57:32.216Z"
+     "fetchedAt": "2026-11-14T12:10:15.217Z"
     },
     {
      "id": "hosted:next-player/android-strings-core",
@@ -304,16 +307,18 @@
      "webUrl": "https://hosted.weblate.org/projects/next-player/android-strings-core/sq/",
      "translateUrl": "https://hosted.weblate.org/translate/next-player/android-strings-core/sq/",
      "pinned": false,
-     "fetchedAt": "2026-11-13T04:57:32.216Z"
+     "fetchedAt": "2026-11-14T12:10:15.217Z"
     },
     {
      "id": "hosted:pfa/notes%252Fnotes-android-app",
      "apiUrl": "https://hosted.weblate.org/api/translations/pfa/notes%252Fnotes-android-app/sq/",
      "instance": "hosted",
+     "platform": "weblate",
      "project": {
       "slug": "pfa",
       "name": "Privacy Friendly Apps",
-      "url": "https://hosted.weblate.org/projects/pfa/"
+      "url": "https://hosted.weblate.org/projects/pfa/",
+      "web": "https://secuso.org/pfa"
      },
      "component": {
       "slug": "notes-android-app",
@@ -333,12 +338,13 @@
      "approvedPercent": null,
      "failing": 0,
      "suggestions": 0,
+     "comments": 0,
      "lastChange": "2026-08-02T13:01:49.561Z",
      "lastContribution": "2026-08-01T12:07:11.036Z",
      "webUrl": "https://hosted.weblate.org/projects/pfa/notes/notes-android-app/sq/",
      "translateUrl": "https://hosted.weblate.org/translate/pfa/notes/notes-android-app/sq/",
      "pinned": false,
-     "fetchedAt": "2026-11-13T13:05:47.136Z"
+     "fetchedAt": "2026-11-14T12:10:15.217Z"
     },
     {
      "id": "hosted:prismlauncher/launcher",
@@ -375,7 +381,7 @@
      "webUrl": "https://hosted.weblate.org/projects/prismlauncher/launcher/sq/",
      "translateUrl": "https://hosted.weblate.org/translate/prismlauncher/launcher/sq/",
      "pinned": false,
-     "fetchedAt": "2026-11-13T04:57:32.216Z"
+     "fetchedAt": "2026-11-14T12:10:15.217Z"
     },
     {
      "id": "hosted:readyou/android-strings",
@@ -412,7 +418,7 @@
      "webUrl": "https://hosted.weblate.org/projects/readyou/android-strings/sq/",
      "translateUrl": "https://hosted.weblate.org/translate/readyou/android-strings/sq/",
      "pinned": false,
-     "fetchedAt": "2026-11-13T04:57:32.216Z"
+     "fetchedAt": "2026-11-14T12:10:15.217Z"
     },
     {
      "id": "hosted:seal/glossary",
@@ -449,7 +455,7 @@
      "webUrl": "https://hosted.weblate.org/projects/seal/glossary/sq/",
      "translateUrl": "https://hosted.weblate.org/translate/seal/glossary/sq/",
      "pinned": false,
-     "fetchedAt": "2026-11-13T04:57:32.216Z"
+     "fetchedAt": "2026-11-14T12:10:15.217Z"
     },
     {
      "id": "hosted:seal/strings",
@@ -486,16 +492,18 @@
      "webUrl": "https://hosted.weblate.org/projects/seal/strings/sq/",
      "translateUrl": "https://hosted.weblate.org/translate/seal/strings/sq/",
      "pinned": false,
-     "fetchedAt": "2026-11-13T04:57:32.216Z"
+     "fetchedAt": "2026-11-14T12:10:15.217Z"
     },
     {
      "id": "hosted:thunder/thunder",
      "apiUrl": "https://hosted.weblate.org/api/translations/thunder/thunder/sq/",
      "instance": "hosted",
+     "platform": "weblate",
      "project": {
       "slug": "thunder",
       "name": "Thunder",
-      "url": "https://hosted.weblate.org/projects/thunder/"
+      "url": "https://hosted.weblate.org/projects/thunder/",
+      "web": "https://github.com/thunder-app/thunder"
      },
      "component": {
       "slug": "thunder",
@@ -515,12 +523,13 @@
      "approvedPercent": null,
      "failing": 0,
      "suggestions": 0,
+     "comments": 0,
      "lastChange": "2026-08-03T16:34:45.328Z",
      "lastContribution": "2026-07-07T15:45:30.243Z",
      "webUrl": "https://hosted.weblate.org/projects/thunder/thunder/sq/",
      "translateUrl": "https://hosted.weblate.org/translate/thunder/thunder/sq/",
      "pinned": false,
-     "fetchedAt": "2026-11-13T13:05:47.136Z"
+     "fetchedAt": "2026-11-14T12:10:15.217Z"
     },
     {
      "id": "hosted:trale/localizations",
@@ -557,14 +566,14 @@
      "webUrl": "https://hosted.weblate.org/projects/trale/localizations/sq/",
      "translateUrl": "https://hosted.weblate.org/translate/trale/localizations/sq/",
      "pinned": false,
-     "fetchedAt": "2026-11-13T04:57:32.216Z"
+     "fetchedAt": "2026-11-14T12:10:15.217Z"
     }
    ],
    "known": {
     "users": {
      "aubergine-ux": {
-      "before": "2026-07-07T15:45:30.242Z",
-      "since": "2026-11-13T04:57:32.216Z"
+      "before": "2026-06-28T10:43:52.515Z",
+      "since": "2026-11-14T12:10:15.217Z"
      }
     },
     "translations": {
@@ -618,7 +627,6 @@
     "missing": {}
    },
    "errors": [
-    "rate limit reached, 3 component(s) not refreshed this run (add a token to TALLYGLOT_TOKENS to avoid this)",
     "older contribution history is still being read; more components may appear on the next run"
    ]
   },

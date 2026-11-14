@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updatedAt": "2026-11-13T04:57:32.216Z",
+ "updatedAt": "2026-11-14T12:10:15.217Z",
  "sources": {
   "hosted": "[\"https://hosted.weblate.org\",\"sq\",[\"aubergine-ux\"],[]]",
   "codeberg": "[\"https://translate.codeberg.org\",\"sq\",[\"aubergine-ux\"],[]]"
@@ -68,7 +68,23 @@
    "hosted:immich": 161
   },
   "2026-07-07": {
-   "hosted:thunder": 459
+   "hosted:thunder": 938
+  },
+  "2026-07-06": {
+   "hosted:next-player": 45,
+   "hosted:thunder": 2,
+   "hosted:immich": 776
+  },
+  "2026-07-01": {
+   "hosted:trale": 17
+  },
+  "2026-06-30": {
+   "hosted:prismlauncher": 731,
+   "hosted:immich": 29
+  },
+  "2026-06-28": {
+   "hosted:next-player": 293,
+   "hosted:prismlauncher": 628
   }
  },
  "users": {
@@ -90,7 +106,11 @@
     "2026-07-23": 557,
     "2026-07-22": 170,
     "2026-07-16": 161,
-    "2026-07-07": 459
+    "2026-07-07": 938,
+    "2026-07-06": 823,
+    "2026-07-01": 17,
+    "2026-06-30": 760,
+    "2026-06-28": 921
    }
   }
  },
