@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updatedAt": "2026-11-14T12:10:15.217Z",
+ "updatedAt": "2026-11-15T12:43:10.241Z",
  "sources": {
   "hosted": "[\"https://hosted.weblate.org\",\"sq\",[\"aubergine-ux\"],[]]",
   "codeberg": "[\"https://translate.codeberg.org\",\"sq\",[\"aubergine-ux\"],[]]"
@@ -84,7 +84,35 @@
   },
   "2026-06-28": {
    "hosted:next-player": 293,
-   "hosted:prismlauncher": 628
+   "hosted:prismlauncher": 1225,
+   "hosted:immich": 41
+  },
+  "2026-06-27": {
+   "hosted:prismlauncher": 82,
+   "hosted:immich": 373,
+   "hosted:pfa": 116
+  },
+  "2026-06-15": {
+   "hosted:aurora-store": 2
+  },
+  "2026-06-14": {
+   "hosted:aurora-store": 2
+  },
+  "2026-06-13": {
+   "hosted:trale": 247,
+   "hosted:pfa": 69,
+   "hosted:immich": 181,
+   "hosted:next-player": 5,
+   "hosted:aurora-store": 5,
+   "hosted:accrescent": 1,
+   "hosted:f-droid": 1
+  },
+  "2026-06-12": {
+   "hosted:immich": 5
+  },
+  "2026-06-11": {
+   "hosted:f-droid": 1,
+   "hosted:immich": 36
   }
  },
  "users": {
@@ -110,7 +138,13 @@
     "2026-07-06": 823,
     "2026-07-01": 17,
     "2026-06-30": 760,
-    "2026-06-28": 921
+    "2026-06-28": 1559,
+    "2026-06-27": 571,
+    "2026-06-15": 2,
+    "2026-06-14": 2,
+    "2026-06-13": 509,
+    "2026-06-12": 5,
+    "2026-06-11": 37
    }
   }
  },
