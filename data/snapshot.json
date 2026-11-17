@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generatedAt": "2026-11-16T13:37:31.334Z",
+ "generatedAt": "2026-11-17T14:22:34.230Z",
  "language": {
   "code": "sq",
   "name": "Albanian"
@@ -11,7 +11,7 @@
    "platform": "weblate",
    "url": "https://hosted.weblate.org",
    "fingerprint": "[\"https://hosted.weblate.org\",\"sq\",[\"aubergine-ux\"],[]]",
-   "updatedAt": "2026-11-16T13:37:31.334Z",
+   "updatedAt": "2026-11-17T14:22:34.230Z",
    "entries": [
     {
      "id": "hosted:accrescent/glossary",
@@ -48,7 +48,7 @@
      "webUrl": "https://hosted.weblate.org/projects/accrescent/glossary/sq/",
      "translateUrl": "https://hosted.weblate.org/translate/accrescent/glossary/sq/",
      "pinned": false,
-     "fetchedAt": "2026-11-16T13:37:31.334Z"
+     "fetchedAt": "2026-11-17T14:22:34.230Z"
     },
     {
      "id": "hosted:adventurelog/web-app",
@@ -85,7 +85,7 @@
      "webUrl": "https://hosted.weblate.org/projects/adventurelog/web-app/sq/",
      "translateUrl": "https://hosted.weblate.org/translate/adventurelog/web-app/sq/",
      "pinned": false,
-     "fetchedAt": "2026-11-16T13:37:31.334Z"
+     "fetchedAt": "2026-11-17T14:22:34.230Z"
     },
     {
      "id": "hosted:aurora-store/aurorastore-translations",
@@ -106,23 +106,23 @@
       "code": "sq",
       "name": "Albanian"
      },
-     "total": 661,
-     "translated": 621,
+     "total": 667,
+     "translated": 619,
      "fuzzy": 0,
-     "untranslated": 40,
-     "translatedPercent": 93.9,
+     "untranslated": 48,
+     "translatedPercent": 92.8,
      "review": false,
      "approved": null,
      "approvedPercent": null,
      "failing": 0,
      "suggestions": 0,
      "comments": 1,
-     "lastChange": "2026-11-03T20:26:15.139Z",
+     "lastChange": "2026-11-16T15:47:04.395Z",
      "lastContribution": "2026-08-01T12:14:42.168Z",
      "webUrl": "https://hosted.weblate.org/projects/aurora-store/aurorastore-translations/sq/",
      "translateUrl": "https://hosted.weblate.org/translate/aurora-store/aurorastore-translations/sq/",
      "pinned": false,
-     "fetchedAt": "2026-11-16T13:37:31.334Z"
+     "fetchedAt": "2026-11-17T14:22:34.230Z"
     },
     {
      "id": "hosted:f-droid/f-droid",
@@ -159,7 +159,7 @@
      "webUrl": "https://hosted.weblate.org/projects/f-droid/f-droid/sq/",
      "translateUrl": "https://hosted.weblate.org/translate/f-droid/f-droid/sq/",
      "pinned": false,
-     "fetchedAt": "2026-11-16T13:37:31.334Z"
+     "fetchedAt": "2026-11-17T14:22:34.230Z"
     },
     {
      "id": "hosted:grit/strings",
@@ -196,7 +196,7 @@
      "webUrl": "https://hosted.weblate.org/projects/grit/strings/sq/",
      "translateUrl": "https://hosted.weblate.org/translate/grit/strings/sq/",
      "pinned": false,
-     "fetchedAt": "2026-11-16T13:37:31.334Z"
+     "fetchedAt": "2026-11-17T14:22:34.230Z"
     },
     {
      "id": "hosted:immich/immich",
@@ -217,23 +217,23 @@
       "code": "sq",
       "name": "Albanian"
      },
-     "total": 2419,
+     "total": 2425,
      "translated": 1578,
      "fuzzy": 3,
-     "untranslated": 838,
-     "translatedPercent": 65.2,
+     "untranslated": 844,
+     "translatedPercent": 65,
      "review": false,
      "approved": null,
      "approvedPercent": null,
      "failing": 1,
      "suggestions": 0,
      "comments": 0,
-     "lastChange": "2026-11-06T17:47:25.955Z",
+     "lastChange": "2026-11-16T18:04:14.137Z",
      "lastContribution": "2026-08-30T02:41:59.527Z",
      "webUrl": "https://hosted.weblate.org/projects/immich/immich/sq/",
      "translateUrl": "https://hosted.weblate.org/translate/immich/immich/sq/",
      "pinned": false,
-     "fetchedAt": "2026-11-16T13:37:31.334Z"
+     "fetchedAt": "2026-11-17T14:22:34.230Z"
     },
     {
      "id": "hosted:mona/mona-app",
@@ -270,7 +270,7 @@
      "webUrl": "https://hosted.weblate.org/projects/mona/mona-app/sq/",
      "translateUrl": "https://hosted.weblate.org/translate/mona/mona-app/sq/",
      "pinned": false,
-     "fetchedAt": "2026-11-16T13:37:31.334Z"
+     "fetchedAt": "2026-11-17T14:22:34.230Z"
     },
     {
      "id": "hosted:next-player/android-strings-core",
@@ -307,7 +307,7 @@
      "webUrl": "https://hosted.weblate.org/projects/next-player/android-strings-core/sq/",
      "translateUrl": "https://hosted.weblate.org/translate/next-player/android-strings-core/sq/",
      "pinned": false,
-     "fetchedAt": "2026-11-16T13:37:31.334Z"
+     "fetchedAt": "2026-11-17T14:22:34.230Z"
     },
     {
      "id": "hosted:pfa/notes%252Fnotes-android-app",
@@ -344,7 +344,7 @@
      "webUrl": "https://hosted.weblate.org/projects/pfa/notes/notes-android-app/sq/",
      "translateUrl": "https://hosted.weblate.org/translate/pfa/notes/notes-android-app/sq/",
      "pinned": false,
-     "fetchedAt": "2026-11-16T13:37:31.334Z"
+     "fetchedAt": "2026-11-17T14:22:34.230Z"
     },
     {
      "id": "hosted:prismlauncher/launcher",
@@ -365,23 +365,23 @@
       "code": "sq",
       "name": "Albanian"
      },
-     "total": 2581,
+     "total": 2585,
      "translated": 2373,
      "fuzzy": 19,
-     "untranslated": 189,
-     "translatedPercent": 91.9,
+     "untranslated": 193,
+     "translatedPercent": 91.7,
      "review": false,
      "approved": null,
      "approvedPercent": null,
      "failing": 64,
      "suggestions": 19,
      "comments": 0,
-     "lastChange": "2026-11-12T00:02:53.928Z",
+     "lastChange": "2026-11-16T15:37:17.396Z",
      "lastContribution": "2026-08-01T12:14:23.021Z",
      "webUrl": "https://hosted.weblate.org/projects/prismlauncher/launcher/sq/",
      "translateUrl": "https://hosted.weblate.org/translate/prismlauncher/launcher/sq/",
      "pinned": false,
-     "fetchedAt": "2026-11-16T13:37:31.334Z"
+     "fetchedAt": "2026-11-17T14:22:34.230Z"
     },
     {
      "id": "hosted:readyou/android-strings",
@@ -418,7 +418,7 @@
      "webUrl": "https://hosted.weblate.org/projects/readyou/android-strings/sq/",
      "translateUrl": "https://hosted.weblate.org/translate/readyou/android-strings/sq/",
      "pinned": false,
-     "fetchedAt": "2026-11-16T13:37:31.334Z"
+     "fetchedAt": "2026-11-17T14:22:34.230Z"
     },
     {
      "id": "hosted:seal/glossary",
@@ -455,7 +455,7 @@
      "webUrl": "https://hosted.weblate.org/projects/seal/glossary/sq/",
      "translateUrl": "https://hosted.weblate.org/translate/seal/glossary/sq/",
      "pinned": false,
-     "fetchedAt": "2026-11-16T13:37:31.334Z"
+     "fetchedAt": "2026-11-17T14:22:34.230Z"
     },
     {
      "id": "hosted:seal/strings",
@@ -492,7 +492,7 @@
      "webUrl": "https://hosted.weblate.org/projects/seal/strings/sq/",
      "translateUrl": "https://hosted.weblate.org/translate/seal/strings/sq/",
      "pinned": false,
-     "fetchedAt": "2026-11-16T13:37:31.334Z"
+     "fetchedAt": "2026-11-17T14:22:34.230Z"
     },
     {
      "id": "hosted:thunder/thunder",
@@ -529,7 +529,7 @@
      "webUrl": "https://hosted.weblate.org/projects/thunder/thunder/sq/",
      "translateUrl": "https://hosted.weblate.org/translate/thunder/thunder/sq/",
      "pinned": false,
-     "fetchedAt": "2026-11-16T13:37:31.334Z"
+     "fetchedAt": "2026-11-17T14:22:34.230Z"
     },
     {
      "id": "hosted:trale/localizations",
@@ -566,14 +566,14 @@
      "webUrl": "https://hosted.weblate.org/projects/trale/localizations/sq/",
      "translateUrl": "https://hosted.weblate.org/translate/trale/localizations/sq/",
      "pinned": false,
-     "fetchedAt": "2026-11-16T13:37:31.334Z"
+     "fetchedAt": "2026-11-17T14:22:34.230Z"
     }
    ],
    "known": {
     "users": {
      "aubergine-ux": {
       "before": null,
-      "since": "2026-11-16T13:37:31.334Z"
+      "since": "2026-11-17T14:22:34.230Z"
      }
     },
     "translations": {

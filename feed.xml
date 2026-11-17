@@ -4,7 +4,28 @@
   <title>Tallyglot: new Albanian strings</title>
   <link>https://aubergine-ux.github.io/tallyglot/</link>
   <description>New strings to translate in the projects tracked by Tallyglot.</description>
-  <lastBuildDate>Fri, 13 Nov 2026 04:57:32 GMT</lastBuildDate>
+  <lastBuildDate>Tue, 17 Nov 2026 14:22:34 GMT</lastBuildDate>
+  <item>
+   <title>Aurora Store: 6 new strings (48 strings waiting, 92.8% translated)</title>
+   <link>https://hosted.weblate.org/translate/aurora-store/aurorastore-translations/sq/?q=state:empty</link>
+   <guid isPermaLink="false">hosted:aurora-store@2026-11-17T14:22:34.230Z</guid>
+   <pubDate>Tue, 17 Nov 2026 14:22:34 GMT</pubDate>
+   <description>6 new strings to translate in Aurora Store.</description>
+  </item>
+  <item>
+   <title>Immich: 6 new strings (847 strings waiting, 65% translated)</title>
+   <link>https://hosted.weblate.org/translate/immich/immich/sq/?q=state:empty</link>
+   <guid isPermaLink="false">hosted:immich@2026-11-17T14:22:34.230Z</guid>
+   <pubDate>Tue, 17 Nov 2026 14:22:34 GMT</pubDate>
+   <description>6 new strings to translate in Immich.</description>
+  </item>
+  <item>
+   <title>Prism Launcher: 4 new strings (212 strings waiting, 91.7% translated)</title>
+   <link>https://hosted.weblate.org/translate/prismlauncher/launcher/sq/?q=state:empty</link>
+   <guid isPermaLink="false">hosted:prismlauncher@2026-11-17T14:22:34.230Z</guid>
+   <pubDate>Tue, 17 Nov 2026 14:22:34 GMT</pubDate>
+   <description>4 new strings to translate in Prism Launcher.</description>
+  </item>
   <item>
    <title>AdventureLog: 87 new strings (482 strings waiting, 76.9% translated)</title>
    <link>https://hosted.weblate.org/translate/adventurelog/web-app/sq/?q=state:empty</link>

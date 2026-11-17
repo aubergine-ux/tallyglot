@@ -2,6 +2,33 @@
  "version": 1,
  "events": [
   {
+   "project": "hosted:aurora-store",
+   "name": "Aurora Store",
+   "added": 6,
+   "waiting": 48,
+   "percent": 92.8,
+   "url": "https://hosted.weblate.org/translate/aurora-store/aurorastore-translations/sq/?q=state:empty",
+   "at": "2026-11-17T14:22:34.230Z"
+  },
+  {
+   "project": "hosted:immich",
+   "name": "Immich",
+   "added": 6,
+   "waiting": 847,
+   "percent": 65,
+   "url": "https://hosted.weblate.org/translate/immich/immich/sq/?q=state:empty",
+   "at": "2026-11-17T14:22:34.230Z"
+  },
+  {
+   "project": "hosted:prismlauncher",
+   "name": "Prism Launcher",
+   "added": 4,
+   "waiting": 212,
+   "percent": 91.7,
+   "url": "https://hosted.weblate.org/translate/prismlauncher/launcher/sq/?q=state:empty",
+   "at": "2026-11-17T14:22:34.230Z"
+  },
+  {
    "project": "hosted:adventurelog",
    "name": "AdventureLog",
    "added": 87,
