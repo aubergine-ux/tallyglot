@@ -2,6 +2,15 @@
  "version": 1,
  "events": [
   {
+   "project": "hosted:next-player",
+   "name": "Next Player",
+   "added": 3,
+   "waiting": 100,
+   "percent": 81,
+   "url": "https://hosted.weblate.org/translate/next-player/android-strings-core/sq/?q=state:empty",
+   "at": "2026-11-19T14:25:14.845Z"
+  },
+  {
    "project": "hosted:aurora-store",
    "name": "Aurora Store",
    "added": 6,

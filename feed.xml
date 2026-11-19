@@ -4,7 +4,14 @@
   <title>Tallyglot: new Albanian strings</title>
   <link>https://aubergine-ux.github.io/tallyglot/</link>
   <description>New strings to translate in the projects tracked by Tallyglot.</description>
-  <lastBuildDate>Tue, 17 Nov 2026 14:22:34 GMT</lastBuildDate>
+  <lastBuildDate>Thu, 19 Nov 2026 14:25:14 GMT</lastBuildDate>
+  <item>
+   <title>Next Player: 3 new strings (100 strings waiting, 81% translated)</title>
+   <link>https://hosted.weblate.org/translate/next-player/android-strings-core/sq/?q=state:empty</link>
+   <guid isPermaLink="false">hosted:next-player@2026-11-19T14:25:14.845Z</guid>
+   <pubDate>Thu, 19 Nov 2026 14:25:14 GMT</pubDate>
+   <description>3 new strings to translate in Next Player.</description>
+  </item>
   <item>
    <title>Aurora Store: 6 new strings (48 strings waiting, 92.8% translated)</title>
    <link>https://hosted.weblate.org/translate/aurora-store/aurorastore-translations/sq/?q=state:empty</link>
