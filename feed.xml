@@ -4,7 +4,14 @@
   <title>Tallyglot: new Albanian strings</title>
   <link>https://aubergine-ux.github.io/tallyglot/</link>
   <description>New strings to translate in the projects tracked by Tallyglot.</description>
-  <lastBuildDate>Thu, 19 Nov 2026 14:25:14 GMT</lastBuildDate>
+  <lastBuildDate>Fri, 20 Nov 2026 13:59:49 GMT</lastBuildDate>
+  <item>
+   <title>Immich: 1 new string (849 strings waiting, 64.9% translated)</title>
+   <link>https://hosted.weblate.org/translate/immich/immich/sq/?q=state:empty</link>
+   <guid isPermaLink="false">hosted:immich@2026-11-20T13:59:49.110Z</guid>
+   <pubDate>Fri, 20 Nov 2026 13:59:49 GMT</pubDate>
+   <description>1 new string to translate in Immich.</description>
+  </item>
   <item>
    <title>Next Player: 3 new strings (100 strings waiting, 81% translated)</title>
    <link>https://hosted.weblate.org/translate/next-player/android-strings-core/sq/?q=state:empty</link>

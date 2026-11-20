@@ -2,6 +2,15 @@
  "version": 1,
  "events": [
   {
+   "project": "hosted:immich",
+   "name": "Immich",
+   "added": 1,
+   "waiting": 849,
+   "percent": 64.9,
+   "url": "https://hosted.weblate.org/translate/immich/immich/sq/?q=state:empty",
+   "at": "2026-11-20T13:59:49.110Z"
+  },
+  {
    "project": "hosted:next-player",
    "name": "Next Player",
    "added": 3,
