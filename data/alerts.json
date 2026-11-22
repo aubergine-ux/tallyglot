@@ -2,6 +2,15 @@
  "version": 1,
  "events": [
   {
+   "project": "hosted:trale",
+   "name": "trale",
+   "added": 3,
+   "waiting": 12,
+   "percent": 95.6,
+   "url": "https://hosted.weblate.org/translate/trale/localizations/sq/?q=state:empty",
+   "at": "2026-11-22T13:19:45.963Z"
+  },
+  {
    "project": "hosted:immich",
    "name": "Immich",
    "added": 1,
