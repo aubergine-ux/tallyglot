@@ -2,6 +2,42 @@
  "version": 1,
  "events": [
   {
+   "project": "hosted:adventurelog",
+   "name": "AdventureLog",
+   "added": 119,
+   "waiting": 625,
+   "percent": 71.7,
+   "url": "https://hosted.weblate.org/translate/adventurelog/web-app/sq/?q=state:empty",
+   "at": "2026-11-24T15:51:39.448Z"
+  },
+  {
+   "project": "hosted:prismlauncher",
+   "name": "Prism Launcher",
+   "added": 7,
+   "waiting": 219,
+   "percent": 91.5,
+   "url": "https://hosted.weblate.org/translate/prismlauncher/launcher/sq/?q=state:empty",
+   "at": "2026-11-24T15:51:39.448Z"
+  },
+  {
+   "project": "hosted:immich",
+   "name": "Immich",
+   "added": 2,
+   "waiting": 851,
+   "percent": 64.9,
+   "url": "https://hosted.weblate.org/translate/immich/immich/sq/?q=state:empty",
+   "at": "2026-11-24T15:51:39.448Z"
+  },
+  {
+   "project": "hosted:f-droid",
+   "name": "F-Droid",
+   "added": 1,
+   "waiting": 12,
+   "percent": 97.4,
+   "url": "https://hosted.weblate.org/translate/f-droid/f-droid/sq/?q=state:empty",
+   "at": "2026-11-24T15:51:39.448Z"
+  },
+  {
    "project": "hosted:trale",
    "name": "trale",
    "added": 3,

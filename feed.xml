@@ -4,7 +4,35 @@
   <title>Tallyglot: new Albanian strings</title>
   <link>https://aubergine-ux.github.io/tallyglot/</link>
   <description>New strings to translate in the projects tracked by Tallyglot.</description>
-  <lastBuildDate>Sun, 22 Nov 2026 13:19:45 GMT</lastBuildDate>
+  <lastBuildDate>Tue, 24 Nov 2026 15:51:39 GMT</lastBuildDate>
+  <item>
+   <title>AdventureLog: 119 new strings (625 strings waiting, 71.7% translated)</title>
+   <link>https://hosted.weblate.org/translate/adventurelog/web-app/sq/?q=state:empty</link>
+   <guid isPermaLink="false">hosted:adventurelog@2026-11-24T15:51:39.448Z</guid>
+   <pubDate>Tue, 24 Nov 2026 15:51:39 GMT</pubDate>
+   <description>119 new strings to translate in AdventureLog.</description>
+  </item>
+  <item>
+   <title>Prism Launcher: 7 new strings (219 strings waiting, 91.5% translated)</title>
+   <link>https://hosted.weblate.org/translate/prismlauncher/launcher/sq/?q=state:empty</link>
+   <guid isPermaLink="false">hosted:prismlauncher@2026-11-24T15:51:39.448Z</guid>
+   <pubDate>Tue, 24 Nov 2026 15:51:39 GMT</pubDate>
+   <description>7 new strings to translate in Prism Launcher.</description>
+  </item>
+  <item>
+   <title>Immich: 2 new strings (851 strings waiting, 64.9% translated)</title>
+   <link>https://hosted.weblate.org/translate/immich/immich/sq/?q=state:empty</link>
+   <guid isPermaLink="false">hosted:immich@2026-11-24T15:51:39.448Z</guid>
+   <pubDate>Tue, 24 Nov 2026 15:51:39 GMT</pubDate>
+   <description>2 new strings to translate in Immich.</description>
+  </item>
+  <item>
+   <title>F-Droid: 1 new string (12 strings waiting, 97.4% translated)</title>
+   <link>https://hosted.weblate.org/translate/f-droid/f-droid/sq/?q=state:empty</link>
+   <guid isPermaLink="false">hosted:f-droid@2026-11-24T15:51:39.448Z</guid>
+   <pubDate>Tue, 24 Nov 2026 15:51:39 GMT</pubDate>
+   <description>1 new string to translate in F-Droid.</description>
+  </item>
   <item>
    <title>trale: 3 new strings (12 strings waiting, 95.6% translated)</title>
    <link>https://hosted.weblate.org/translate/trale/localizations/sq/?q=state:empty</link>
