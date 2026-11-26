@@ -4,6 +4,33 @@
   {
    "project": "hosted:adventurelog",
    "name": "AdventureLog",
+   "added": 57,
+   "waiting": 682,
+   "percent": 69.9,
+   "url": "https://hosted.weblate.org/translate/adventurelog/web-app/sq/?q=state:empty",
+   "at": "2026-11-26T15:12:04.895Z"
+  },
+  {
+   "project": "hosted:f-droid",
+   "name": "F-Droid",
+   "added": 19,
+   "waiting": 31,
+   "percent": 93.6,
+   "url": "https://hosted.weblate.org/translate/f-droid/f-droid/sq/?q=state:empty",
+   "at": "2026-11-26T15:12:04.895Z"
+  },
+  {
+   "project": "hosted:prismlauncher",
+   "name": "Prism Launcher",
+   "added": 3,
+   "waiting": 222,
+   "percent": 91.4,
+   "url": "https://hosted.weblate.org/translate/prismlauncher/launcher/sq/?q=state:empty",
+   "at": "2026-11-26T15:12:04.895Z"
+  },
+  {
+   "project": "hosted:adventurelog",
+   "name": "AdventureLog",
    "added": 119,
    "waiting": 625,
    "percent": 71.7,

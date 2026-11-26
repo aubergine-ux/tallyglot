@@ -4,7 +4,28 @@
   <title>Tallyglot: new Albanian strings</title>
   <link>https://aubergine-ux.github.io/tallyglot/</link>
   <description>New strings to translate in the projects tracked by Tallyglot.</description>
-  <lastBuildDate>Tue, 24 Nov 2026 15:51:39 GMT</lastBuildDate>
+  <lastBuildDate>Thu, 26 Nov 2026 15:12:04 GMT</lastBuildDate>
+  <item>
+   <title>AdventureLog: 57 new strings (682 strings waiting, 69.9% translated)</title>
+   <link>https://hosted.weblate.org/translate/adventurelog/web-app/sq/?q=state:empty</link>
+   <guid isPermaLink="false">hosted:adventurelog@2026-11-26T15:12:04.895Z</guid>
+   <pubDate>Thu, 26 Nov 2026 15:12:04 GMT</pubDate>
+   <description>57 new strings to translate in AdventureLog.</description>
+  </item>
+  <item>
+   <title>F-Droid: 19 new strings (31 strings waiting, 93.6% translated)</title>
+   <link>https://hosted.weblate.org/translate/f-droid/f-droid/sq/?q=state:empty</link>
+   <guid isPermaLink="false">hosted:f-droid@2026-11-26T15:12:04.895Z</guid>
+   <pubDate>Thu, 26 Nov 2026 15:12:04 GMT</pubDate>
+   <description>19 new strings to translate in F-Droid.</description>
+  </item>
+  <item>
+   <title>Prism Launcher: 3 new strings (222 strings waiting, 91.4% translated)</title>
+   <link>https://hosted.weblate.org/translate/prismlauncher/launcher/sq/?q=state:empty</link>
+   <guid isPermaLink="false">hosted:prismlauncher@2026-11-26T15:12:04.895Z</guid>
+   <pubDate>Thu, 26 Nov 2026 15:12:04 GMT</pubDate>
+   <description>3 new strings to translate in Prism Launcher.</description>
+  </item>
   <item>
    <title>AdventureLog: 119 new strings (625 strings waiting, 71.7% translated)</title>
    <link>https://hosted.weblate.org/translate/adventurelog/web-app/sq/?q=state:empty</link>
