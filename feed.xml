@@ -4,7 +4,14 @@
   <title>Tallyglot: new Albanian strings</title>
   <link>https://aubergine-ux.github.io/tallyglot/</link>
   <description>New strings to translate in the projects tracked by Tallyglot.</description>
-  <lastBuildDate>Thu, 26 Nov 2026 15:12:04 GMT</lastBuildDate>
+  <lastBuildDate>Fri, 27 Nov 2026 15:03:27 GMT</lastBuildDate>
+  <item>
+   <title>Prism Launcher: 2 new strings (224 strings waiting, 91.3% translated)</title>
+   <link>https://hosted.weblate.org/translate/prismlauncher/launcher/sq/?q=state:empty</link>
+   <guid isPermaLink="false">hosted:prismlauncher@2026-11-27T15:03:27.492Z</guid>
+   <pubDate>Fri, 27 Nov 2026 15:03:27 GMT</pubDate>
+   <description>2 new strings to translate in Prism Launcher.</description>
+  </item>
   <item>
    <title>AdventureLog: 57 new strings (682 strings waiting, 69.9% translated)</title>
    <link>https://hosted.weblate.org/translate/adventurelog/web-app/sq/?q=state:empty</link>

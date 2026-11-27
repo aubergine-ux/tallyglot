@@ -2,6 +2,15 @@
  "version": 1,
  "events": [
   {
+   "project": "hosted:prismlauncher",
+   "name": "Prism Launcher",
+   "added": 2,
+   "waiting": 224,
+   "percent": 91.3,
+   "url": "https://hosted.weblate.org/translate/prismlauncher/launcher/sq/?q=state:empty",
+   "at": "2026-11-27T15:03:27.492Z"
+  },
+  {
    "project": "hosted:adventurelog",
    "name": "AdventureLog",
    "added": 57,
